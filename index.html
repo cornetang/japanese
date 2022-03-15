@@ -1,5 +1,4163 @@
 <html>
+<head>
+	<title>Genki Vocab</title>
+	<link href="http://mottie.github.io/tablesorter/css/theme.default.css" rel="stylesheet">
+	<style>
+		span.l {border-bottom: 1px solid red;}
+		span.h {border-top: 1px solid red;}
+		span.lc {border: solid red;border-width: 0 0 1px 1px;}
+		span.hc {border: solid red; border-width: 1px 0 0 1px;}
+		span.m { background-color:#DCDCDC; }
+	</style>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.tablesorter/2.31.3/js/jquery.tablesorter.min.js"></script> 
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(function() {    
+			$("#keywords").tablesorter();
+			$('#filter_japanese').change(function() { updateFilter() });
+			$('#filter_hiragana').change(function() { updateFilter() });
+			$('#filter_english').change(function() { updateFilter() });
+			$('#filter_type').change(function() { updateFilter() });
+			$('#filter_lesson').change(function() { updateFilter() });
+
+			function updateFilter() {
+				$("#keywords tr").show();
+				$("#keywords td.japanese:not(:contains('" + $('#filter_japanese').val() + "'))").parent().hide();
+				$("#keywords td.hiragana:not(:contains('" + $('#filter_hiragana').val() + "'))").parent().hide();
+				$("#keywords td.english:not(:contains('" + $('#filter_english').val() + "'))").parent().hide();
+				$("#keywords td.type:not(:contains('" + $('#filter_type').val() + "'))").parent().hide();
+				$("#keywords td.lesson:not(:contains('" + $('#filter_lesson').val() + "'))").parent().hide();
+			}
+		});
+	</script>
+</head>
 <body>
-	Test website
+	<table id="keywords">
+		<thead>
+			<tr>
+				<th><span>Japanese</span><br><input type="text" id="filter_japanese"/></th>
+				<th><span>Hiragana</span><br><input type="text" id="filter_hiragana"/></th>
+				<th><span>English</span><br><input type="text" id="filter_english"></th>
+				<th><span>Type</span><br><input type="text" id="filter_type"/></th>
+				<th><span>Lesson</span><br><input type="text" id="filter_lesson"/></th>
+				<th><span>#</span></th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr class="vocab">
+				<td class="japanese">漢字</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">じ</SPAN></td>
+				<td class="english">kanji</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">教科書</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">か</SPAN><SPAN class="lc">し</SPAN><SPAN class="l">ょ</SPAN></td>
+				<td class="english">kyoukashou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">頁</td>
+				<td class="hiragana"><SPAN class="l">ペ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ジ</SPAN></td>
+				<td class="english">peeji</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">次</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">ぎ</SPAN></td>
+				<td class="english">tsugi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お金</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">ね</SPAN></td>
+				<td class="english">okane</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">荷物</td>
+				<td class="hiragana"><SPAN class="h">に</SPAN><SPAN class="lc">も</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">nimotsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">パサコン</td>
+				<td class="hiragana"><SPAN class="l">パ</SPAN><SPAN class="hc">サ</SPAN><SPAN class="h">コ</SPAN><SPAN class="h">ン</SPAN></td>
+				<td class="english">pasakon</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">シャワー</td>
+				<td class="hiragana"><SPAN class="h">シ</SPAN><SPAN class="h">ャ</SPAN><SPAN class="lc">ワ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">shawaa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">エアコン</td>
+				<td class="hiragana"><SPAN class="l">エ</SPAN><SPAN class="hc">ア</SPAN><SPAN class="h">コ</SPAN><SPAN class="h">ン</SPAN></td>
+				<td class="english">eakon</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">電気</td>
+				<td class="hiragana"><SPAN class="h">で</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">denki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">窓</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">ど</SPAN></td>
+				<td class="english">mado</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">電車</td>
+				<td class="hiragana"><SPAN class="l">で</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゃ</SPAN></td>
+				<td class="english">densha</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">国</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">に</SPAN></td>
+				<td class="english">kuni</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今週</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">konshuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">来週</td>
+				<td class="hiragana"><SPAN class="l">ら</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">raishuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">来年</td>
+				<td class="hiragana"><SPAN class="l">ら</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">ね</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">rainen</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">夜</td>
+				<td class="hiragana"><SPAN class="h">よ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">yoru</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L6</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大変</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">へ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">daihenna</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L6</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">遊ぶ</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">そ</SPAN><SPAN class="h">ぶ</SPAN></td>
+				<td class="english">asobu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">急ぐ</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">そ</SPAN><SPAN class="lc">ぐ</SPAN></td>
+				<td class="english">isogu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">返す</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">kaesu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">消す</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">す</SPAN></td>
+				<td class="english">kesu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">死ぬ</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">ぬ</SPAN></td>
+				<td class="english">shinu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">座る</td>
+				<td class="hiragana"><SPAN class="l">す</SPAN><SPAN class="hc">わ</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">suwaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">立つ</td>
+				<td class="hiragana"><SPAN class="h">た</SPAN><SPAN class="lc">つ</SPAN></td>
+				<td class="english">tatsu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">タバコを吸う</td>
+				<td class="hiragana"><SPAN class="l">タ</SPAN><SPAN class="hc">バ</SPAN><SPAN class="h">コ</SPAN><SPAN class="h">を</SPAN><SPAN class="h">す</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">tabakoosuu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">使う</td>
+				<td class="hiragana"><SPAN class="l m">つ</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">tsukau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">手伝う</td>
+				<td class="hiragana"><SPAN class="l">て</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">だ</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">tetsudau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">入る</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">hairu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">持つ</td>
+				<td class="hiragana"><SPAN class="h">も</SPAN><SPAN class="lc">つ</SPAN></td>
+				<td class="english">motsu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">休む</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">す</SPAN><SPAN class="lc">む</SPAN></td>
+				<td class="english">yasumu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L6</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">開ける</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">け</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">akeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">閉める</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">め</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">shimeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">教える</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">え</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">oshieru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">忘れる</td>
+				<td class="hiragana"><SPAN class="l">わ</SPAN><SPAN class="hc">す</SPAN><SPAN class="h">れ</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">wasureru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">降りる</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">り</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">oriru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">借りる</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">り</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">kariru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">シャワーを浴びる</td>
+				<td class="hiragana"><SPAN class="h">シ</SPAN><SPAN class="h">ャ</SPAN><SPAN class="lc">ワ</SPAN><SPAN class="l">ー</SPAN><SPAN class="l">を</SPAN><SPAN class="l">あ</SPAN><SPAN class="l">び</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">shawaaoabiru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">つける</td>
+				<td class="hiragana"><SPAN class="l m">つ</SPAN><SPAN class="hc">け</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">tsukeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L6</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">電話する</td>
+				<td class="hiragana"><SPAN class="l">で</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">わ</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">denwasuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L6</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">連れてくる</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">れ</SPAN><SPAN class="h">て</SPAN><SPAN class="h">く</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">tsuretekuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L6</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">持ってくる</td>
+				<td class="hiragana"><SPAN class="l">も</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">て</SPAN><SPAN class="h">く</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">mottekuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L6</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">後で</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">と</SPAN><SPAN class="l">で</SPAN></td>
+				<td class="english">atode</td>
+				<td class="type">Others</td>
+				<td class="lesson">L6</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">すぐ</td>
+				<td class="hiragana"><SPAN class="h">す</SPAN><SPAN class="lc">ぐ</SPAN></td>
+				<td class="english">sugu</td>
+				<td class="type">Others</td>
+				<td class="lesson">L6</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ゆっくり</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">く</SPAN><SPAN class="lc">り</SPAN></td>
+				<td class="english">yukkuri</td>
+				<td class="type">Others</td>
+				<td class="lesson">L6</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">結構です</td>
+				<td class="hiragana"><SPAN class="h">け</SPAN><SPAN class="lc">つ</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">う</SPAN><SPAN class="l">で</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">kekkoudesu</td>
+				<td class="type">Others</td>
+				<td class="lesson">L6</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">本当ですか</td>
+				<td class="hiragana"><SPAN class="l">ほ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">と</SPAN><SPAN class="h">う</SPAN><SPAN class="h">で</SPAN><SPAN class="lc m">す</SPAN><SPAN class="l">か</SPAN></td>
+				<td class="english">hontoudesuka</td>
+				<td class="type">Others</td>
+				<td class="lesson">L6</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">教育制度</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">い</SPAN><SPAN class="h m">く</SPAN><SPAN class="h">せ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">ど</SPAN></td>
+				<td class="english">kyouikuseido</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">義務教育</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="hc">む</SPAN><SPAN class="h">き</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">い</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">gimukyouiku</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">保育園</td>
+				<td class="hiragana"><SPAN class="l">ほ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">く</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">hoikuen</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">幼稚園</td>
+				<td class="hiragana"><SPAN class="l">よ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ち</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">youchien</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">小学校</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">が</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">shougakkou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">中学校</td>
+				<td class="hiragana"><SPAN class="l">ち</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">が</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">chuukakkou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">中学校</td>
+				<td class="hiragana"><SPAN class="l">ち</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">が</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">chuugaku</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">高等学校</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">と</SPAN><SPAN class="h">う</SPAN><SPAN class="h">が</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">koutougakkou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">高校</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">こ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">koukou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大学</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">が</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">daigaku</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">短期大学</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">き</SPAN><SPAN class="h">だ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">が</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">tankidaigaku</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">短大</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">だ</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">tandai</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大学院</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">が</SPAN><SPAN class="h">く</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">daigakuin</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">夏休み</td>
+				<td class="hiragana"><SPAN class="l">な</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">や</SPAN><SPAN class="lc">す</SPAN><SPAN class="l">み</SPAN></td>
+				<td class="english">natsuyasu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">冬休み</td>
+				<td class="hiragana"><SPAN class="l">ふ</SPAN><SPAN class="hc">ゆ</SPAN><SPAN class="h">や</SPAN><SPAN class="lc">す</SPAN><SPAN class="l">み</SPAN></td>
+				<td class="english">fuyuyasu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">春休み</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">る</SPAN><SPAN class="h">や</SPAN><SPAN class="lc">す</SPAN><SPAN class="l">み</SPAN></td>
+				<td class="english">haruyasu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L6</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まっすぎ行く</td>
+				<td class="hiragana"><SPAN class="l">ま</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">す</SPAN><SPAN class="lc">ぎ</SPAN><SPAN class="l">い</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">massugiiku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">左に曲がる</td>
+				<td class="hiragana"><SPAN class="l">ひ</SPAN><SPAN class="hc">だ</SPAN><SPAN class="h">り</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">が</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">hidarinimagaru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">右に曲がる</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ぎ</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">が</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">miginimagaru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">道を渡る</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">を</SPAN><SPAN class="h">わ</SPAN><SPAN class="h">た</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">michiowataru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">二つ目の角を左に曲がる</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">つ</SPAN><SPAN class="h">め</SPAN><SPAN class="lc">の</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">ど</SPAN><SPAN class="l">を</SPAN><SPAN class="l">ひ</SPAN><SPAN class="hc">だ</SPAN><SPAN class="h">り</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">が</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">futatsumenokadoohidarinimagaru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">一つ目の信号を右に曲がる</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">つ</SPAN><SPAN class="h">め</SPAN><SPAN class="lc">の</SPAN><SPAN class="l">し</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ご</SPAN><SPAN class="h">う</SPAN><SPAN class="h">を</SPAN><SPAN class="lc">み</SPAN><SPAN class="hc">ぎ</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">が</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">hitotsumenoshingouomiginimagaru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">道の左側</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">の</SPAN><SPAN class="h">ひ</SPAN><SPAN class="h">だ</SPAN><SPAN class="h">り</SPAN><SPAN class="h">が</SPAN><SPAN class="h">わ</SPAN></td>
+				<td class="english">michinohidarigawa</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">道の右側</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">の</SPAN><SPAN class="h">み</SPAN><SPAN class="h">ぎ</SPAN><SPAN class="h">が</SPAN><SPAN class="h">わ</SPAN></td>
+				<td class="english">michinomigigawa</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">東</td>
+				<td class="hiragana"><SPAN class="l">ひ</SPAN><SPAN class="hc">が</SPAN><SPAN class="h">し</SPAN></td>
+				<td class="english">higashi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">南</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">な</SPAN><SPAN class="h">み</SPAN></td>
+				<td class="english">minami</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">西</td>
+				<td class="hiragana"><SPAN class="l">に</SPAN><SPAN class="hc">し</SPAN></td>
+				<td class="english">nishi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">北</td>
+				<td class="hiragana"><SPAN class="l m">き</SPAN><SPAN class="hc">た</SPAN></td>
+				<td class="english">kita</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L6</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">家族</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">ぞ</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">kazoku</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お爺さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">じ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">ojiisan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お婆さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ば</SPAN><SPAN class="lc">あ</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">obaasan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お兄さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">に</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">oniisan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お姉さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ね</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">oneesan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">父</td>
+				<td class="hiragana"><SPAN class="l m">ち</SPAN><SPAN class="hc">ち</SPAN></td>
+				<td class="english">chichi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">母</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">は</SPAN></td>
+				<td class="english">haha</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">兄</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">に</SPAN></td>
+				<td class="english">ani</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">姉</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">ね</SPAN></td>
+				<td class="english">ane</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">妹</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">も</SPAN><SPAN class="h">う</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">imouto</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">弟</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">う</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">otouto</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">兄弟</td>
+				<td class="hiragana"><SPAN class="h">き</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">だ</SPAN><SPAN class="l">い</SPAN></td>
+				<td class="english">kyoudai</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">男の人</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">こ</SPAN><SPAN class="h">の</SPAN><SPAN class="h m">ひ</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">otokonohito</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">女の人</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">な</SPAN><SPAN class="h">の</SPAN><SPAN class="h m">ひ</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">onnanohito</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">会社</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゃ</SPAN></td>
+				<td class="english">kaisha</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">食堂</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">く</SPAN><SPAN class="h">ど</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">shokudou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">デパート</td>
+				<td class="hiragana"><SPAN class="l">デ</SPAN><SPAN class="hc">パ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">depaato</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">髪</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">み</SPAN></td>
+				<td class="english">kami</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">口</td>
+				<td class="hiragana"><SPAN class="l m">く</SPAN><SPAN class="hc">ち</SPAN></td>
+				<td class="english">kuchi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">眼</td>
+				<td class="hiragana"><SPAN class="h">め</SPAN></td>
+				<td class="english">me</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">眼鏡</td>
+				<td class="hiragana"><SPAN class="h">め</SPAN><SPAN class="lc">が</SPAN><SPAN class="l">ね</SPAN></td>
+				<td class="english">mekane</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歌</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">た</SPAN></td>
+				<td class="english">uta</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">サークル</td>
+				<td class="hiragana"><SPAN class="h">サ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ク</SPAN><SPAN class="l">ル</SPAN></td>
+				<td class="english">saakuru</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">車</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">る</SPAN><SPAN class="h">ま</SPAN></td>
+				<td class="english">kuruma</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L7</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">長い</td>
+				<td class="hiragana"><SPAN class="l">な</SPAN><SPAN class="hc">が</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">nagai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">短い</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">か</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">mijikai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">速い</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">や</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">hayai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">背が高い</td>
+				<td class="hiragana"><SPAN class="h">せ</SPAN><SPAN class="lc">が</SPAN><SPAN class="l">た</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">segatakai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">背が低い</td>
+				<td class="hiragana"><SPAN class="h">せ</SPAN><SPAN class="lc">が</SPAN><SPAN class="l m">ひ</SPAN><SPAN class="hc">く</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">segahikui</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">頭がいい</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">ま</SPAN><SPAN class="lc">が</SPAN><SPAN class="hc">い</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">atamagaii</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">可愛い</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">わ</SPAN><SPAN class="h">い</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">kawaii</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L7</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">親切</td>
+				<td class="hiragana"><SPAN class="h">し</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">せ</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">shinsetsu</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L7</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">便利</td>
+				<td class="hiragana"><SPAN class="h">べ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">り</SPAN></td>
+				<td class="english">binri</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L7</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歌う</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">utau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">かぶる</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ぶ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">kaburu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">はく</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">く</SPAN></td>
+				<td class="english">haku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">知る</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">る</SPAN></td>
+				<td class="english">shiru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">知っています</td>
+				<td class="hiragana"><SPAN class="l m">し</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">て</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ま</SPAN><SPAN class="lc">す</SPAN></td>
+				<td class="english">shitteimasu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">知りません</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">り</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">せ</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">shirimasen</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">住む</td>
+				<td class="hiragana"><SPAN class="h">す</SPAN><SPAN class="lc">む</SPAN></td>
+				<td class="english">sumu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">働く</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">ら</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">hataraku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">太る</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">と</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">futoru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">太っています</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">と</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">て</SPAN><SPAN class="l">い</SPAN><SPAN class="l">ま</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">futotteimasu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L7</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">かける</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">け</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">kakeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L7</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">着る</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="hc">る</SPAN></td>
+				<td class="english">kiru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L7</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">痩せる</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">せ</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">yaseru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L7</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">痩せています</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">せ</SPAN><SPAN class="h">て</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ま</SPAN><SPAN class="lc">す</SPAN></td>
+				<td class="english">yaseteimasu</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L7</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">結婚する</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">こ</SPAN><SPAN class="h">ん</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">kekkonsuru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L7</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">が</td>
+				<td class="hiragana"><SPAN class="h">が</SPAN></td>
+				<td class="english">ga</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">何も</td>
+				<td class="hiragana"><SPAN class="h">な</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">も</SPAN></td>
+				<td class="english">nanimo</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">人</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">と</SPAN></td>
+				<td class="english">nin</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">一人</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">と</SPAN><SPAN class="lc">り</SPAN></td>
+				<td class="english">hitori</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">二人</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">futari</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">別に</td>
+				<td class="hiragana"><SPAN class="l">べ</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">に</SPAN></td>
+				<td class="english">betsuni</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">もちろん</td>
+				<td class="hiragana"><SPAN class="l">も</SPAN><SPAN class="hc">ち</SPAN><SPAN class="lc">ろ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">mochiron</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">良かったら</td>
+				<td class="hiragana"><SPAN class="h">よ</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">っ</SPAN><SPAN class="l">た</SPAN><SPAN class="l">ら</SPAN></td>
+				<td class="english">yokattara</td>
+				<td class="type">Others</td>
+				<td class="lesson">L7</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お父さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">と</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">odousan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">パパ</td>
+				<td class="hiragana"><SPAN class="h">パ</SPAN><SPAN class="lc">パ</SPAN></td>
+				<td class="english">papa</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お母さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">あ</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">ogaasan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ママ</td>
+				<td class="hiragana"><SPAN class="h">マ</SPAN><SPAN class="lc">マ</SPAN></td>
+				<td class="english">mama</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お兄ちゃん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">あ</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ち</SPAN><SPAN class="h">ゃ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">oniichan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">い姉ちゃん</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">あ</SPAN><SPAN class="h">ね</SPAN><SPAN class="lc">ち</SPAN><SPAN class="l">ゃ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">ineechan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">弟さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">う</SPAN><SPAN class="h">と</SPAN><SPAN class="lc">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">otoutosan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">妹さん</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">も</SPAN><SPAN class="h">う</SPAN><SPAN class="h">と</SPAN><SPAN class="lc">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">imoutosan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ご主人</td>
+				<td class="hiragana"><SPAN class="l">ご</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">じ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">goshujin</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">主人</td>
+				<td class="hiragana"><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">じ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">shujin</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">夫</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">otto</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">だんな</td>
+				<td class="hiragana"><SPAN class="l">ダ</SPAN><SPAN class="hc">ン</SPAN><SPAN class="h">ナ</SPAN></td>
+				<td class="english">danna</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">家の人</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">え</SPAN><SPAN class="h">の</SPAN><SPAN class="h m">ひ</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">uchinohito</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">奥さん</td>
+				<td class="hiragana"><SPAN class="h">お</SPAN><SPAN class="lc m">く</SPAN><SPAN class="l">さ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">okusan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">家内</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">な</SPAN><SPAN class="l">い</SPAN></td>
+				<td class="english">kanai</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">妻</td>
+				<td class="hiragana"><SPAN class="h">つ</SPAN><SPAN class="lc">ま</SPAN></td>
+				<td class="english">tsuma</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">嫁さん</td>
+				<td class="hiragana"><SPAN class="l">よ</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">さ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">yomesan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">祖父</td>
+				<td class="hiragana"><SPAN class="h">そ</SPAN><SPAN class="lc">ふ</SPAN></td>
+				<td class="english">sofu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お爺ちゃん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ち</SPAN><SPAN class="h">ゃ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">ojiichan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">祖母</td>
+				<td class="hiragana"><SPAN class="h">そ</SPAN><SPAN class="lc">ぼ</SPAN></td>
+				<td class="english">sobo</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>76</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お婆ちゃん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ば</SPAN><SPAN class="h">あ</SPAN><SPAN class="h">ち</SPAN><SPAN class="h">ゃ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">obaachan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>77</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お子さん</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">こ</SPAN><SPAN class="h">さ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">okosan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>78</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">家の子</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">え</SPAN><SPAN class="h">の</SPAN><SPAN class="lc">こ</SPAN></td>
+				<td class="english">uchinoko</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L7</td>
+				<td>79</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">眉毛</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">ゆ</SPAN><SPAN class="l">げ</SPAN></td>
+				<td class="english">mayuge</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>80</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">耳</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">み</SPAN></td>
+				<td class="english">mimi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>81</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">鼻</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">な</SPAN></td>
+				<td class="english">hana</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>82</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">指</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">び</SPAN></td>
+				<td class="english">yubi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>83</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">手</td>
+				<td class="hiragana"><SPAN class="h">て</SPAN></td>
+				<td class="english">te</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>84</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歯</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN></td>
+				<td class="english">ha</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>85</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">頭</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">た</SPAN><SPAN class="lc">ま</SPAN></td>
+				<td class="english">atama</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>86</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">背中</td>
+				<td class="hiragana"><SPAN class="l">せ</SPAN><SPAN class="hc">な</SPAN><SPAN class="h">か</SPAN></td>
+				<td class="english">senaka</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>87</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お尻</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">oshiri</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>88</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">顔</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">お</SPAN></td>
+				<td class="english">kao</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>89</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">肩</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">た</SPAN></td>
+				<td class="english">kata</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>90</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">胸</td>
+				<td class="hiragana"><SPAN class="l">む</SPAN><SPAN class="hc">ね</SPAN></td>
+				<td class="english">mune</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>91</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お腹</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">な</SPAN><SPAN class="h">か</SPAN></td>
+				<td class="english">onaka</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>92</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">足</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">し</SPAN></td>
+				<td class="english">ashi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L7</td>
+				<td>93</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">晴れ</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">れ</SPAN></td>
+				<td class="english">hare</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">雨</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">め</SPAN></td>
+				<td class="english">ame</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">曇り</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">も</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">kumori</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">雪</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">き</SPAN></td>
+				<td class="english">yuki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">天気予報</td>
+				<td class="hiragana"><SPAN class="l">て</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">き</SPAN><SPAN class="h">よ</SPAN><SPAN class="lc">ほ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">tenkiyohou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">気温</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="hc">お</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">kion</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">夏</td>
+				<td class="hiragana"><SPAN class="l">な</SPAN><SPAN class="hc">つ</SPAN></td>
+				<td class="english">natsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">冬</td>
+				<td class="hiragana"><SPAN class="l">ふ</SPAN><SPAN class="hc">ゆ</SPAN></td>
+				<td class="english">fuyu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今朝</td>
+				<td class="hiragana"><SPAN class="h">け</SPAN><SPAN class="lc">さ</SPAN></td>
+				<td class="english">kesa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">明後日</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ご</SPAN><SPAN class="lc">に</SPAN><SPAN class="l">ち</SPAN></td>
+				<td class="english">asatte</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">毎週</td>
+				<td class="hiragana"><SPAN class="l">ま</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">maishuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今月</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">げ</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">kongetsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">来月</td>
+				<td class="hiragana"><SPAN class="h">ら</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">げ</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">raigetsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">会社員</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゃ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">kaishain</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">仕事</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">ご</SPAN><SPAN class="h">と</SPAN></td>
+				<td class="english">shigoto</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">カメラ</td>
+				<td class="hiragana"><SPAN class="h">カ</SPAN><SPAN class="lc">メ</SPAN><SPAN class="l">ラ</SPAN></td>
+				<td class="english">kamera</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">カラオケ</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ら</SPAN><SPAN class="h">お</SPAN><SPAN class="h">け</SPAN></td>
+				<td class="english">karaoke</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">所</td>
+				<td class="hiragana"><SPAN class="h">と</SPAN><SPAN class="lc">こ</SPAN><SPAN class="l">ろ</SPAN></td>
+				<td class="english">tokoro</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">トマト</td>
+				<td class="hiragana"><SPAN class="h">ト</SPAN><SPAN class="lc">マ</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">tomato</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">箸</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">し</SPAN></td>
+				<td class="english">hashi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">パーティー</td>
+				<td class="hiragana"><SPAN class="l">パ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">テ</SPAN><SPAN class="h">ィ</SPAN><SPAN class="h">ー</SPAN></td>
+				<td class="english">paatii</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">バーベキュー</td>
+				<td class="hiragana"><SPAN class="l">バ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ベ</SPAN><SPAN class="lc">キ</SPAN><SPAN class="l">ュ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">baabekyuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ホームステイ</td>
+				<td class="hiragana"><SPAN class="l">ホ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ム</SPAN><SPAN class="h m">ス</SPAN><SPAN class="h">テ</SPAN><SPAN class="lc">イ</SPAN></td>
+				<td class="english">hoomusutei</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お風呂</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ふ</SPAN><SPAN class="lc">ろ</SPAN></td>
+				<td class="english">ofuro</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">スペイン</td>
+				<td class="hiragana"><SPAN class="l m">す</SPAN><SPAN class="hc">ぺ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">supein</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">何か</td>
+				<td class="hiragana"><SPAN class="h">な</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">か</SPAN></td>
+				<td class="english">nanika</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L8</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">上手</td>
+				<td class="hiragana"><SPAN class="l">じ</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ず</SPAN></td>
+				<td class="english">jyouzu</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L8</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">下手</td>
+				<td class="hiragana"><SPAN class="l">へ</SPAN><SPAN class="hc">た</SPAN></td>
+				<td class="english">heta</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L8</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">有名</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">め</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">yuumei</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L8</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">洗う</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">ら</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">arau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">言う</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">う</SPAN></td>
+				<td class="english">iu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">いる</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">る</SPAN></td>
+				<td class="english">iru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">遅くなる</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">そ</SPAN><SPAN class="h">く</SPAN><SPAN class="h">な</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">osokunaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お風呂に入る</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ふ</SPAN><SPAN class="h">ろ</SPAN><SPAN class="h">に</SPAN><SPAN class="h">は</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">ofuronihairu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">思う</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">も</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">omou</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">切る</td>
+				<td class="hiragana"><SPAN class="h">き</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">kiru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">作る</td>
+				<td class="hiragana"><SPAN class="l m">つ</SPAN><SPAN class="hc">く</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">tsukuru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">降る</td>
+				<td class="hiragana"><SPAN class="h">ふ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">furu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">持っていく</td>
+				<td class="hiragana"><SPAN class="h">も</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">て</SPAN><SPAN class="l">い</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">motteiku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L8</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">捨てる</td>
+				<td class="hiragana"><SPAN class="l m">す</SPAN><SPAN class="hc">て</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">suteru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L8</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">始める</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">め</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">hajimeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L8</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">運転する</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">て</SPAN><SPAN class="h">ん</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">untensuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L8</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">洗濯する</td>
+				<td class="hiragana"><SPAN class="l">せ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">た</SPAN><SPAN class="h m">く</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">sentakusuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L8</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">掃除する</td>
+				<td class="hiragana"><SPAN class="l">そ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">じ</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">soujisuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L8</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">料理する</td>
+				<td class="hiragana"><SPAN class="h">り</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">り</SPAN><SPAN class="l">す</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">ryourisuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L8</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">うん</td>
+				<td class="hiragana"><SPAN class="h">う</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">un</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ううん</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">uun</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">いつも</td>
+				<td class="hiragana"><SPAN class="h">い</SPAN><SPAN class="lc">つ</SPAN><SPAN class="l">も</SPAN></td>
+				<td class="english">itsumo</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">遅くなる</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">そ</SPAN><SPAN class="h">く</SPAN><SPAN class="h">な</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">osoku</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">乾杯</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ぱ</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">kanpai</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">みんなで</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">な</SPAN><SPAN class="lc">で</SPAN></td>
+				<td class="english">minnade</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">残念</td>
+				<td class="hiragana"><SPAN class="l">ざ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ね</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">zannen</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まだ</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">だ</SPAN></td>
+				<td class="english">mada</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">について</td>
+				<td class="hiragana"><SPAN class="l">に</SPAN><SPAN class="hc">つ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">て</SPAN></td>
+				<td class="english">nitsuite</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ど</td>
+				<td class="hiragana"><SPAN class="h">ど</SPAN></td>
+				<td class="english">do</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どう</td>
+				<td class="hiragana"><SPAN class="h">ど</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">dou</td>
+				<td class="type">Others</td>
+				<td class="lesson">L8</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">カレーライス</td>
+				<td class="hiragana"><SPAN class="l">カ</SPAN><SPAN class="hc">レ</SPAN><SPAN class="h">ー</SPAN><SPAN class="h">ラ</SPAN><SPAN class="lc">イ</SPAN><SPAN class="l">ス</SPAN></td>
+				<td class="english">kareetaisu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">おにぎり</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">に</SPAN><SPAN class="lc">ぎ</SPAN><SPAN class="l">り</SPAN></td>
+				<td class="english">onigiri</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ラーメン</td>
+				<td class="hiragana"><SPAN class="h">ラ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">メ</SPAN><SPAN class="l">ン</SPAN></td>
+				<td class="english">raamen</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">うどん</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">ど</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">udon</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">パスタ</td>
+				<td class="hiragana"><SPAN class="h">パ</SPAN><SPAN class="lc m">ス</SPAN><SPAN class="l">タ</SPAN></td>
+				<td class="english">pasuta</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">餃子</td>
+				<td class="hiragana"><SPAN class="l">ギ</SPAN><SPAN class="l">ョ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ザ</SPAN></td>
+				<td class="english">gyouza</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">牛丼</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ど</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">gyuudon</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ハンバーガ</td>
+				<td class="hiragana"><SPAN class="l">ハ</SPAN><SPAN class="hc">ン</SPAN><SPAN class="h">バ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ガ</SPAN></td>
+				<td class="english">hanbaaga</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">刺身</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">み</SPAN></td>
+				<td class="english">sashimi</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お好み焼き</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">こ</SPAN><SPAN class="h">の</SPAN><SPAN class="h">み</SPAN><SPAN class="h">や</SPAN><SPAN class="h">き</SPAN></td>
+				<td class="english">okonomiyaki</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L8</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">果物</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">だ</SPAN><SPAN class="lc">も</SPAN><SPAN class="l">の</SPAN></td>
+				<td class="english">kudamono</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">苺</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ご</SPAN></td>
+				<td class="english">ichigo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">スイカ</td>
+				<td class="hiragana"><SPAN class="l">す</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">か</SPAN></td>
+				<td class="english">suika</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">蜜柑</td>
+				<td class="hiragana"><SPAN class="h">み</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">mikan</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">林檎</td>
+				<td class="hiragana"><SPAN class="l">り</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ご</SPAN></td>
+				<td class="english">ringo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">桃</td>
+				<td class="hiragana"><SPAN class="l">も</SPAN><SPAN class="hc">も</SPAN></td>
+				<td class="english">momo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">葡萄</td>
+				<td class="hiragana"><SPAN class="l">ぶ</SPAN><SPAN class="hc">ど</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">budou</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">野菜</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">さ</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">yasai</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">にんじん</td>
+				<td class="hiragana"><SPAN class="l">に</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">じ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">ninjin</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">玉ねぎ</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">ま</SPAN><SPAN class="h">ね</SPAN><SPAN class="lc">ぎ</SPAN></td>
+				<td class="english">tamanegi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>76</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">じゃがいも</td>
+				<td class="hiragana"><SPAN class="l">じ</SPAN><SPAN class="l">ゃ</SPAN><SPAN class="hc">が</SPAN><SPAN class="h">い</SPAN><SPAN class="h">も</SPAN></td>
+				<td class="english">jyagaimo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>77</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">茄子</td>
+				<td class="hiragana"><SPAN class="h">な</SPAN><SPAN class="lc">す</SPAN></td>
+				<td class="english">nasu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>78</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">キュウリ</td>
+				<td class="hiragana"><SPAN class="h">き</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">り</SPAN></td>
+				<td class="english">kyuuri</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>79</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">キャべツ</td>
+				<td class="hiragana"><SPAN class="l">キ</SPAN><SPAN class="l">ャ</SPAN><SPAN class="hc">ベ</SPAN><SPAN class="h">ツ</SPAN></td>
+				<td class="english">kyabetsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>80</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">肉</td>
+				<td class="hiragana"><SPAN class="l">に</SPAN><SPAN class="hc">く</SPAN></td>
+				<td class="english">niku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>81</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">牛肉</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">に</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">gyuuniku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>82</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">豚肉</td>
+				<td class="hiragana"><SPAN class="l">ぶ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">に</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">butaniku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>83</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">鶏肉</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">に</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">toriniku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L8</td>
+				<td>84</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">単語</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ご</SPAN></td>
+				<td class="english">tango</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">作文</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">く</SPAN><SPAN class="h">ぶ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">sakubun</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">試験</td>
+				<td class="hiragana"><SPAN class="l m">し</SPAN><SPAN class="hc">け</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">shiken</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">手紙</td>
+				<td class="hiragana"><SPAN class="l">て</SPAN><SPAN class="hc">が</SPAN><SPAN class="h">み</SPAN></td>
+				<td class="english">tegami</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">メール</td>
+				<td class="hiragana"><SPAN class="h">メ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ル</SPAN></td>
+				<td class="english">meeru</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ギター</td>
+				<td class="hiragana"><SPAN class="h">ギ</SPAN><SPAN class="lc">タ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">gitaa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ピアノ</td>
+				<td class="hiragana"><SPAN class="l">ピ</SPAN><SPAN class="hc">ア</SPAN><SPAN class="h">ノ</SPAN></td>
+				<td class="english">piano</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">コンサート</td>
+				<td class="hiragana"><SPAN class="h">コ</SPAN><SPAN class="lc">ン</SPAN><SPAN class="l">サ</SPAN><SPAN class="l">ー</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">konsaato</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">チケット</td>
+				<td class="hiragana"><SPAN class="h m">チ</SPAN><SPAN class="lc">ケ</SPAN><SPAN class="l">ッ</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">chiketto</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歌舞伎</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ぶ</SPAN><SPAN class="h">き</SPAN></td>
+				<td class="english">kabuki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">スキー</td>
+				<td class="hiragana"><SPAN class="l m">ス</SPAN><SPAN class="hc">キ</SPAN><SPAN class="lc">ー</SPAN></td>
+				<td class="english">sukii</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お弁当</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">べ</SPAN><SPAN class="h">ん</SPAN><SPAN class="h">と</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">obentou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ピザ</td>
+				<td class="hiragana"><SPAN class="h">ピ</SPAN><SPAN class="lc">ザ</SPAN></td>
+				<td class="english">piza</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">病気</td>
+				<td class="hiragana"><SPAN class="l">び</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">き</SPAN></td>
+				<td class="english">byouki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">薬</td>
+				<td class="hiragana"><SPAN class="l m">く</SPAN><SPAN class="hc">す</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">kusuri</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">いい子</td>
+				<td class="hiragana"><SPAN class="h">い</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">こ</SPAN></td>
+				<td class="english">iiko</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">色</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">ろ</SPAN></td>
+				<td class="english">iro</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今度</td>
+				<td class="hiragana"><SPAN class="h">こ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">ど</SPAN></td>
+				<td class="english">kondo</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">先月</td>
+				<td class="hiragana"><SPAN class="h">せ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">げ</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">sengetsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">去年</td>
+				<td class="hiragana"><SPAN class="h">き</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">ね</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">kyonen</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L9</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">青い</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">お</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">aoi</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">赤い</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">akai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">黒い</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">ろ</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">kuroi</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">白い</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">ろ</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">shiroi</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">寂しい</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">び</SPAN><SPAN class="h">し</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">sabishii</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">若い</td>
+				<td class="hiragana"><SPAN class="l">わ</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">wakai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L9</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">意地悪</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">あ</SPAN><SPAN class="lc">く</SPAN></td>
+				<td class="english">ijiwaru</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L9</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">踊る</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ど</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">odoru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">終わる</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">わ</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">owaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">薬を飲む</td>
+				<td class="hiragana"><SPAN class="l m">く</SPAN><SPAN class="hc">す</SPAN><SPAN class="h">り</SPAN><SPAN class="h">を</SPAN><SPAN class="h">の</SPAN><SPAN class="lc">む</SPAN></td>
+				<td class="english">kusurionomu</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">人気がある</td>
+				<td class="hiragana"><SPAN class="l">に</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">き</SPAN><SPAN class="h">が</SPAN><SPAN class="h">あ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">ninkigaaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">始まる</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">ま</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">hajimaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">引く</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">く</SPAN></td>
+				<td class="english">hiku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">もらい</td>
+				<td class="hiragana"><SPAN class="l">も</SPAN><SPAN class="hc">ら</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">morai</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L9</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">覚える</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ぼ</SPAN><SPAN class="h">え</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">oboeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L9</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">出る</td>
+				<td class="hiragana"><SPAN class="h">で</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">deru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L9</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">運動する</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ど</SPAN><SPAN class="h">う</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">undousuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L9</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">散歩する</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ぽ</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">sanposuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L9</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">掃除する</td>
+				<td class="hiragana"><SPAN class="l">そ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">じ</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">soujisuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L9</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">から</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">ら</SPAN></td>
+				<td class="english">kara</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まで</td>
+				<td class="hiragana"><SPAN class="l">ま</SPAN><SPAN class="hc">で</SPAN></td>
+				<td class="english">made</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">是非</td>
+				<td class="hiragana"><SPAN class="h">ぜ</SPAN><SPAN class="lc">ひ</SPAN></td>
+				<td class="english">zehi</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どころで</td>
+				<td class="hiragana"><SPAN class="h">ど</SPAN><SPAN class="lc">こ</SPAN><SPAN class="l">ろ</SPAN><SPAN class="l">で</SPAN></td>
+				<td class="english">dokorode</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">みんなで</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">な</SPAN><SPAN class="lc">で</SPAN></td>
+				<td class="english">minnade</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">もう</td>
+				<td class="hiragana"><SPAN class="h">も</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">mou</td>
+				<td class="type">Others</td>
+				<td class="lesson">L9</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">文楽</td>
+				<td class="hiragana"><SPAN class="h">ぶ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">ら</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">bunraku</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">箏</td>
+				<td class="hiragana"><SPAN class="h">そ</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">koto</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">能</td>
+				<td class="hiragana"><SPAN class="h">の</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">nou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">狂言</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">げ</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">kyougen</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">落語</td>
+				<td class="hiragana"><SPAN class="l">ら</SPAN><SPAN class="hc">く</SPAN><SPAN class="h">ご</SPAN></td>
+				<td class="english">rakugo</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">相撲</td>
+				<td class="hiragana"><SPAN class="l">す</SPAN><SPAN class="hc">も</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">sumou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">柔道</td>
+				<td class="hiragana"><SPAN class="h">じ</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">ど</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">jyuudou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">剣道</td>
+				<td class="hiragana"><SPAN class="h">け</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">ど</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">kendou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お茶</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ゃ</SPAN></td>
+				<td class="english">ocha</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">茶道</td>
+				<td class="hiragana"><SPAN class="h">さ</SPAN><SPAN class="lc">ど</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">sadou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">生け花</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">け</SPAN><SPAN class="lc">ば</SPAN><SPAN class="l">な</SPAN></td>
+				<td class="english">ikehana</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">花道</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">な</SPAN><SPAN class="lc">み</SPAN><SPAN class="l">ち</SPAN></td>
+				<td class="english">kadou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">書道</td>
+				<td class="hiragana"><SPAN class="h">し</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">ど</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">shodou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">トースト</td>
+				<td class="hiragana"><SPAN class="h">ト</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l m">ス</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">toosuko</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">スープ</td>
+				<td class="hiragana"><SPAN class="h">ス</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">プ</SPAN></td>
+				<td class="english">suupu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ヨーグルト</td>
+				<td class="hiragana"><SPAN class="l">ヨ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">グ</SPAN><SPAN class="lc">ル</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">yooguruto</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">焼き魚</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">き</SPAN><SPAN class="h">ざ</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">な</SPAN></td>
+				<td class="english">yakisakana</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">卵</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">ま</SPAN><SPAN class="lc">ご</SPAN></td>
+				<td class="english">tamago</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">味噌汁</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">そ</SPAN><SPAN class="h">じ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">misoshiru</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L9</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">黄色い</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">ろ</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">kiiroi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">茶色い</td>
+				<td class="hiragana"><SPAN class="l">ち</SPAN><SPAN class="l">ゃ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">ろ</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">chairoi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">緑</td>
+				<td class="hiragana"><SPAN class="h">み</SPAN><SPAN class="lc">ど</SPAN><SPAN class="l">り</SPAN></td>
+				<td class="english">midori</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">グリーン</td>
+				<td class="hiragana"><SPAN class="l">グ</SPAN><SPAN class="hc">リ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ン</SPAN></td>
+				<td class="english">guriin</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">紺色</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">koniro</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">水色</td>
+				<td class="hiragana"><SPAN class="l">み</SPAN><SPAN class="hc">ず</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">mizuiro</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">銀色</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">giniro</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">シルバー</td>
+				<td class="hiragana"><SPAN class="h">シ</SPAN><SPAN class="lc">ル</SPAN><SPAN class="l">バ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">shirubaa</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">オレンジ</td>
+				<td class="hiragana"><SPAN class="l">オ</SPAN><SPAN class="hc">レ</SPAN><SPAN class="lc">ン</SPAN><SPAN class="l">ジ</SPAN></td>
+				<td class="english">orenji</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">紫</td>
+				<td class="hiragana"><SPAN class="l">む</SPAN><SPAN class="hc">ら</SPAN><SPAN class="lc">さ</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">murasaki</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">灰色</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">haiiro</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">グレー</td>
+				<td class="hiragana"><SPAN class="l">グ</SPAN><SPAN class="hc">レ</SPAN><SPAN class="lc">ー</SPAN></td>
+				<td class="english">guree</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>76</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">金色</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">kiniro</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>77</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ゴールド</td>
+				<td class="hiragana"><SPAN class="h">ゴ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ル</SPAN><SPAN class="l">ド</SPAN></td>
+				<td class="english">goorudo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>78</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ピンク</td>
+				<td class="hiragana"><SPAN class="h">ピ</SPAN><SPAN class="lc">ン</SPAN><SPAN class="l">ク</SPAN></td>
+				<td class="english">pinku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>79</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ベージュ</td>
+				<td class="hiragana"><SPAN class="l">ベ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ジ</SPAN><SPAN class="h">ュ</SPAN></td>
+				<td class="english">beejyu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L9</td>
+				<td>80</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">季節</td>
+				<td class="hiragana"><SPAN class="h m">き</SPAN><SPAN class="lc">せ</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">kisetsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">春</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">haru</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">秋</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">き</SPAN></td>
+				<td class="english">aki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">牛乳</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">に</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">gyuunyuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ケーキ</td>
+				<td class="hiragana"><SPAN class="h">ケ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">キ</SPAN></td>
+				<td class="english">keeki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">寿司</td>
+				<td class="hiragana"><SPAN class="h">す</SPAN><SPAN class="lc">し</SPAN></td>
+				<td class="english">sushi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">天ぷら</td>
+				<td class="hiragana"><SPAN class="l">テ</SPAN><SPAN class="hc">ン</SPAN><SPAN class="h">プ</SPAN><SPAN class="h">ラ</SPAN></td>
+				<td class="english">tenpura</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">林檎</td>
+				<td class="hiragana"><SPAN class="l">り</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ご</SPAN></td>
+				<td class="english">ringo</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">料理する</td>
+				<td class="hiragana"><SPAN class="h">り</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">り</SPAN><SPAN class="l">す</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">ryouri</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">サッカー</td>
+				<td class="hiragana"><SPAN class="h">サ</SPAN><SPAN class="lc">ッ</SPAN><SPAN class="l">カ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">sakkaa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">野球</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">き</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">yakyuu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">医者</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">ゃ</SPAN></td>
+				<td class="english">isha</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お金持ち</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">ね</SPAN><SPAN class="h">も</SPAN><SPAN class="h">ち</SPAN></td>
+				<td class="english">okanemochi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">有名人</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">め</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">じ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">yuumeijin</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">顔</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">お</SPAN></td>
+				<td class="english">kao</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">年上</td>
+				<td class="hiragana"><SPAN class="l">と</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">う</SPAN><SPAN class="h">え</SPAN></td>
+				<td class="english">doshiue</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">駅</td>
+				<td class="hiragana"><SPAN class="h">え</SPAN><SPAN class="lc">き</SPAN></td>
+				<td class="english">eki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">新幹線</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">か</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">せ</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">shinkansen</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">地下鉄</td>
+				<td class="hiragana"><SPAN class="l m">ち</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">て</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">chikatetsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">船</td>
+				<td class="hiragana"><SPAN class="h">ふ</SPAN><SPAN class="lc">ね</SPAN></td>
+				<td class="english">fune</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">飛行機</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">こ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">hikouki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">予約</td>
+				<td class="hiragana"><SPAN class="l">よ</SPAN><SPAN class="hc">や</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">yoyaku</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ツアー</td>
+				<td class="hiragana"><SPAN class="h">ツ</SPAN><SPAN class="lc">ア</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">tsuaa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">動物園</td>
+				<td class="hiragana"><SPAN class="l">ど</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ぶ</SPAN><SPAN class="h">つ</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">doubutsuen</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">時間</td>
+				<td class="hiragana"><SPAN class="l">じ</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">jikan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">世界</td>
+				<td class="hiragana"><SPAN class="h">せ</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">い</SPAN></td>
+				<td class="english">sekai</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">美容院</td>
+				<td class="hiragana"><SPAN class="l">び</SPAN><SPAN class="hc">よ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">い</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">biyouin</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">手袋</td>
+				<td class="hiragana"><SPAN class="l">て</SPAN><SPAN class="hc">ぶ</SPAN><SPAN class="lc">く</SPAN><SPAN class="l">ろ</SPAN></td>
+				<td class="english">tebukuro</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">生活</td>
+				<td class="hiragana"><SPAN class="l">せ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">か</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">seikatsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今年</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">し</SPAN></td>
+				<td class="english">kotoshi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L10</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">暖かい</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">た</SPAN><SPAN class="h">か</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">atatakai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L10</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">涼しい</td>
+				<td class="hiragana"><SPAN class="l">す</SPAN><SPAN class="hc">ず</SPAN><SPAN class="h">し</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">suzushii</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L10</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">冷たい</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">た</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">tsumetai</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L10</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">遅い</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">そ</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">osoi</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L10</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">眠い</td>
+				<td class="hiragana"><SPAN class="l">ね</SPAN><SPAN class="hc">む</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">nemui</td>
+				<td class="type">い adjective</td>
+				<td class="lesson">L10</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">簡単</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">た</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">kantan</td>
+				<td class="type">な adjective</td>
+				<td class="lesson">L10</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">かかる</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">kakaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L10</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">泊まる</td>
+				<td class="hiragana"><SPAN class="l">と</SPAN><SPAN class="hc">ま</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">tomaru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L10</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">なる</td>
+				<td class="hiragana"><SPAN class="h">な</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">naru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L10</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">決める</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">kimeru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L10</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ごろごろする</td>
+				<td class="hiragana"><SPAN class="h">ご</SPAN><SPAN class="lc">ろ</SPAN><SPAN class="l">ご</SPAN><SPAN class="l">ろ</SPAN><SPAN class="l">す</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">gorogorosuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L10</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">旅行する</td>
+				<td class="hiragana"><SPAN class="l">り</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">こ</SPAN><SPAN class="h">う</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">ryokousuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L10</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">練習する</td>
+				<td class="hiragana"><SPAN class="l">れ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">renshuusuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L10</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">一番</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ば</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">ichiban</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どっち</td>
+				<td class="hiragana"><SPAN class="h">ど</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">ち</SPAN></td>
+				<td class="english">docchi</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どちら</td>
+				<td class="hiragana"><SPAN class="l">ど</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ら</SPAN></td>
+				<td class="english">dochira</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">早く</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">や</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">hayaku</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">速く</td>
+				<td class="hiragana"><SPAN class="h">は</SPAN><SPAN class="lc">や</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">hayaku</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歩いて</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">る</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">て</SPAN></td>
+				<td class="english">aruite</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">で</td>
+				<td class="hiragana"><SPAN class="h">で</SPAN></td>
+				<td class="english">de</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どうやって</td>
+				<td class="hiragana"><SPAN class="l">ど</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">や</SPAN><SPAN class="h">っ</SPAN><SPAN class="h">て</SPAN></td>
+				<td class="english">douyatte</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">何のぐらい</td>
+				<td class="hiragana"><SPAN class="l">な</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">の</SPAN><SPAN class="h">ぐ</SPAN><SPAN class="h">ら</SPAN><SPAN class="h">い</SPAN></td>
+				<td class="english">donogurai</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">週間</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">か</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">shuukan</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">か月</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">げ</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">kagetsu</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">年</td>
+				<td class="hiragana"><SPAN class="h">ね</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">nen</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">このごろ</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">の</SPAN><SPAN class="h">ご</SPAN><SPAN class="h">ろ</SPAN></td>
+				<td class="english">konogoro</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">後</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">と</SPAN></td>
+				<td class="english">go</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">か</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN></td>
+				<td class="english">ka</td>
+				<td class="type">Others</td>
+				<td class="lesson">L10</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">交通機関</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">つ</SPAN><SPAN class="h">う</SPAN><SPAN class="h m">き</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">koutsuukikan</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L10</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">普通</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">futsuu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">急行</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">こ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">kyuukou</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">特急</td>
+				<td class="hiragana"><SPAN class="l">と</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">き</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">tokkyuu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">行き</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">き</SPAN></td>
+				<td class="english">iki</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">方面</td>
+				<td class="hiragana"><SPAN class="l">ほ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">め</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">houmen</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">乗車券</td>
+				<td class="hiragana"><SPAN class="l">じ</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゃ</SPAN><SPAN class="lc">け</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">jyoushaken</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">定期券</td>
+				<td class="hiragana"><SPAN class="l">て</SPAN><SPAN class="hc">い</SPAN><SPAN class="h m">き</SPAN><SPAN class="lc">け</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">teikiken</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">学割</td>
+				<td class="hiragana"><SPAN class="l">が</SPAN><SPAN class="hc">く</SPAN><SPAN class="h">わ</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">gakuwari</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">指定席</td>
+				<td class="hiragana"><SPAN class="l m">し</SPAN><SPAN class="hc">て</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">せ</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">shiteiseki</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">自由席</td>
+				<td class="hiragana"><SPAN class="l">じ</SPAN><SPAN class="hc">ゆ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">せ</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">jiyuuseki</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">一号車</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ご</SPAN><SPAN class="h">う</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゃ</SPAN></td>
+				<td class="english">ichigousha</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">往復</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">う</SPAN><SPAN class="h m">ふ</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">oufuku</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">片道</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">み</SPAN><SPAN class="h">ち</SPAN></td>
+				<td class="english">katamichi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">交通系イアシーカード</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">つ</SPAN><SPAN class="h">う</SPAN><SPAN class="h">け</SPAN><SPAN class="h">い</SPAN><SPAN class="h">イ</SPAN><SPAN class="h">ア</SPAN><SPAN class="h">シ</SPAN><SPAN class="h">ー</SPAN><SPAN class="h">カ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ド</SPAN></td>
+				<td class="english">koutsuukeiaishaakaado</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">番線</td>
+				<td class="hiragana"><SPAN class="l">ば</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">せ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">bansen</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">切符売り場</td>
+				<td class="hiragana"><SPAN class="l m">き</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">ぷ</SPAN><SPAN class="h">う</SPAN><SPAN class="lc">り</SPAN><SPAN class="l">ば</SPAN></td>
+				<td class="english">kippuuriba</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">改札</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">さ</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">kaisatsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>76</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ホーム</td>
+				<td class="hiragana"><SPAN class="h">ホ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ム</SPAN></td>
+				<td class="english">hoomu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>77</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">売店</td>
+				<td class="hiragana"><SPAN class="l">ば</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">て</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">baiten</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>78</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">出口</td>
+				<td class="hiragana"><SPAN class="h">で</SPAN><SPAN class="lc">ぐ</SPAN><SPAN class="l">ち</SPAN></td>
+				<td class="english">deguchi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>79</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">入口</td>
+				<td class="hiragana"><SPAN class="l">い</SPAN><SPAN class="hc">り</SPAN><SPAN class="h">ぐ</SPAN><SPAN class="h">ち</SPAN></td>
+				<td class="english">iriguchi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>80</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">階段</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">だ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">kaidan</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>81</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">乗り換え</td>
+				<td class="hiragana"><SPAN class="l">の</SPAN><SPAN class="hc">り</SPAN><SPAN class="h">か</SPAN><SPAN class="h">え</SPAN></td>
+				<td class="english">norikae</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>82</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">次は</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">ぎ</SPAN><SPAN class="lc">は</SPAN></td>
+				<td class="english">tsugiwa</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>83</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">先発</td>
+				<td class="hiragana"><SPAN class="l">せ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ぱ</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">senpatsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>84</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">次発</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">ぎ</SPAN><SPAN class="lc">は</SPAN><SPAN class="l">つ</SPAN></td>
+				<td class="english">jihatsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>85</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">終電</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">で</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">shuuden</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L10</td>
+				<td>86</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">外国</td>
+				<td class="hiragana"><SPAN class="h">が</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">こ</SPAN><SPAN class="l">く</SPAN></td>
+				<td class="english">gaikoku</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>1</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">オーストラリア</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h m">す</SPAN><SPAN class="h">と</SPAN><SPAN class="h">ら</SPAN><SPAN class="lc">り</SPAN><SPAN class="l">あ</SPAN></td>
+				<td class="english">oosutoraria</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>2</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">川</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">わ</SPAN></td>
+				<td class="english">kawa</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>3</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">温泉</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">せ</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">onsen</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>4</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">釣り</td>
+				<td class="hiragana"><SPAN class="l">つ</SPAN><SPAN class="hc">り</SPAN></td>
+				<td class="english">tsuri</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>5</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">湖</td>
+				<td class="hiragana"><SPAN class="h">み</SPAN><SPAN class="h">ず</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">み</SPAN></td>
+				<td class="english">mizuumi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>6</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">山</td>
+				<td class="hiragana"><SPAN class="l">や</SPAN><SPAN class="hc">ま</SPAN></td>
+				<td class="english">yama</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>7</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">キャンプ</td>
+				<td class="hiragana"><SPAN class="h">キ</SPAN><SPAN class="h">ャ</SPAN><SPAN class="lc">ン</SPAN><SPAN class="l">プ</SPAN></td>
+				<td class="english">kyanpu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>8</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ドライブ</td>
+				<td class="hiragana"><SPAN class="l">ド</SPAN><SPAN class="hc">ラ</SPAN><SPAN class="lc">イ</SPAN><SPAN class="l">ブ</SPAN></td>
+				<td class="english">doraibu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>9</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">神社</td>
+				<td class="hiragana"><SPAN class="h">じ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">じ</SPAN><SPAN class="l">ゃ</SPAN></td>
+				<td class="english">jinjya</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>10</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">美術館</td>
+				<td class="hiragana"><SPAN class="l">び</SPAN><SPAN class="hc">じ</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h m">つ</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">bijyutsukan</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>11</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">社長</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ゃ</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ょ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">shachou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>12</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">歌手</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">し</SPAN><SPAN class="l">ゅ</SPAN></td>
+				<td class="english">kashu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>13</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ルームメイト</td>
+				<td class="hiragana"><SPAN class="l">ル</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ム</SPAN><SPAN class="h">メ</SPAN><SPAN class="lc">イ</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">ruumumeito</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>14</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ホストファミリー</td>
+				<td class="hiragana"><SPAN class="l">ホ</SPAN><SPAN class="hc m">ス</SPAN><SPAN class="h">ト</SPAN><SPAN class="h">フ</SPAN><SPAN class="h">ァ</SPAN><SPAN class="lc">ミ</SPAN><SPAN class="l">リ</SPAN><SPAN class="l">ー</SPAN></td>
+				<td class="english">hosutofamirii</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>15</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">将来</td>
+				<td class="hiragana"><SPAN class="h">し</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">ら</SPAN><SPAN class="l">い</SPAN></td>
+				<td class="english">shourai</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>16</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">夢</td>
+				<td class="hiragana"><SPAN class="l">ゆ</SPAN><SPAN class="hc">め</SPAN></td>
+				<td class="english">yume</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>17</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お祭り</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">ま</SPAN><SPAN class="h">つ</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">omatsuri</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>18</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お正月</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">ょ</SPAN><SPAN class="h">う</SPAN><SPAN class="h">が</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">oshougatsu</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>19</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お菓子</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">か</SPAN><SPAN class="lc">し</SPAN></td>
+				<td class="english">okashi</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>20</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ビール</td>
+				<td class="hiragana"><SPAN class="h">ビ</SPAN><SPAN class="lc">ー</SPAN><SPAN class="l">ル</SPAN></td>
+				<td class="english">biiru</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>21</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">玩具</td>
+				<td class="hiragana"><SPAN class="h">が</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">ぐ</SPAN></td>
+				<td class="english">omocha</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>22</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">今学期</td>
+				<td class="hiragana"><SPAN class="h">こ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">が</SPAN><SPAN class="l">っ</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">kongakki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>23</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">来学期</td>
+				<td class="hiragana"><SPAN class="l">ら</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">が</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">き</SPAN></td>
+				<td class="english">raigakki</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>24</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">授業</td>
+				<td class="hiragana"><SPAN class="h">じ</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">ぎ</SPAN><SPAN class="l">ょ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">jyugyou</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>25</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">こちら</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ら</SPAN></td>
+				<td class="english">kochira</td>
+				<td class="type">Noun</td>
+				<td class="lesson">L11</td>
+				<td>26</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">嘘をつく</td>
+				<td class="hiragana"><SPAN class="h">う</SPAN><SPAN class="lc">そ</SPAN><SPAN class="l">を</SPAN><SPAN class="hc m">つ</SPAN><SPAN class="lc">く</SPAN></td>
+				<td class="english">usootsuku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>27</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お腹が空く</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">な</SPAN><SPAN class="h">か</SPAN><SPAN class="h">が</SPAN><SPAN class="h">あ</SPAN><SPAN class="h">く</SPAN></td>
+				<td class="english">onakagasuku</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>28</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">飼う</td>
+				<td class="hiragana"><SPAN class="h">か</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">kau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>29</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">サボる</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">ぼ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">saboru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>30</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">取る</td>
+				<td class="hiragana"><SPAN class="h">と</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">toru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>31</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">習う</td>
+				<td class="hiragana"><SPAN class="l">な</SPAN><SPAN class="hc">ら</SPAN><SPAN class="lc">う</SPAN></td>
+				<td class="english">narau</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>32</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">登る</td>
+				<td class="hiragana"><SPAN class="l">の</SPAN><SPAN class="hc">ぼ</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">noboru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>33</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">走る</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">し</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">hashiru</td>
+				<td class="type">U verb</td>
+				<td class="lesson">L11</td>
+				<td>34</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">疲れる</td>
+				<td class="hiragana"><SPAN class="l m">つ</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">れ</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">tsukareru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L11</td>
+				<td>35</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">止める</td>
+				<td class="hiragana"><SPAN class="l">と</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">yameru</td>
+				<td class="type">Ru verb</td>
+				<td class="lesson">L11</td>
+				<td>36</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">喧嘩する</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">か</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">kenkasuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L11</td>
+				<td>37</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">紹介する</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">か</SPAN><SPAN class="h">い</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">shoukaisuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L11</td>
+				<td>38</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ダイエットする</td>
+				<td class="hiragana"><SPAN class="h">ダ</SPAN><SPAN class="lc">イ</SPAN><SPAN class="l">エ</SPAN><SPAN class="l">ッ</SPAN><SPAN class="l">ト</SPAN><SPAN class="l">す</SPAN><SPAN class="l">る</SPAN></td>
+				<td class="english">daiettosuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L11</td>
+				<td>39</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">遅刻する</td>
+				<td class="hiragana"><SPAN class="l m">ち</SPAN><SPAN class="hc">こ</SPAN><SPAN class="h m">く</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">chikokusuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L11</td>
+				<td>40</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">留学する</td>
+				<td class="hiragana"><SPAN class="l">り</SPAN><SPAN class="l">ゅ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">が</SPAN><SPAN class="h m">く</SPAN><SPAN class="h">す</SPAN><SPAN class="h">る</SPAN></td>
+				<td class="english">ryuugakusuru</td>
+				<td class="type">Irregular verb</td>
+				<td class="lesson">L11</td>
+				<td>41</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">出身</td>
+				<td class="hiragana"><SPAN class="l m">し</SPAN><SPAN class="l m">ゅ</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">shusshin</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>42</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">久しぶり</td>
+				<td class="hiragana"><SPAN class="l m">ひ</SPAN><SPAN class="hc">さ</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ぶ</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">hisashiburi</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>43</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まあまあ</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">あ</SPAN><SPAN class="l">ま</SPAN><SPAN class="l">あ</SPAN></td>
+				<td class="english">maamaa</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>44</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まっと</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">と</SPAN></td>
+				<td class="english">matto</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>45</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">後</td>
+				<td class="hiragana"><SPAN class="h">あ</SPAN><SPAN class="lc">と</SPAN></td>
+				<td class="english">ato</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>46</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">そして</td>
+				<td class="hiragana"><SPAN class="l">そ</SPAN><SPAN class="hc m">し</SPAN><SPAN class="h">て</SPAN></td>
+				<td class="english">soshite</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>47</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">だけ</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">け</SPAN></td>
+				<td class="english">dake</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>48</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">てん</td>
+				<td class="hiragana"><SPAN class="h">て</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">ten</td>
+				<td class="type">Others</td>
+				<td class="lesson">L11</td>
+				<td>49</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">職業</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc m">く</SPAN><SPAN class="lc">ぎ</SPAN><SPAN class="l">ょ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">shokugyou</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>50</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">作家</td>
+				<td class="hiragana"><SPAN class="l">さ</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">か</SPAN></td>
+				<td class="english">sakka</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>51</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ジャーナリスト</td>
+				<td class="hiragana"><SPAN class="l">ジ</SPAN><SPAN class="l">ャ</SPAN><SPAN class="hc">ー</SPAN><SPAN class="h">ナ</SPAN><SPAN class="h">リ</SPAN><SPAN class="lc m">ス</SPAN><SPAN class="l">ト</SPAN></td>
+				<td class="english">jyaanarisuto</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>52</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">警察官</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">さ</SPAN><SPAN class="h m">つ</SPAN><SPAN class="lc">か</SPAN><SPAN class="l">ん</SPAN></td>
+				<td class="english">keisatsukan</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>53</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">消防士</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">ぼ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">し</SPAN></td>
+				<td class="english">shouboushi</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>54</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">教師</td>
+				<td class="hiragana"><SPAN class="h">き</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">し</SPAN></td>
+				<td class="english">kyoushi</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>55</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">研究者</td>
+				<td class="hiragana"><SPAN class="l">け</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">き</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">し</SPAN><SPAN class="l">ゃ</SPAN></td>
+				<td class="english">kenkyuusha</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>56</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">宇宙飛行士</td>
+				<td class="hiragana"><SPAN class="l">う</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN><SPAN class="h m">ひ</SPAN><SPAN class="h">こ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">し</SPAN></td>
+				<td class="english">uchuuhikoushi</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>57</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">スボーツ選手</td>
+				<td class="hiragana"><SPAN class="l">ス</SPAN><SPAN class="hc">ボ</SPAN><SPAN class="h">ー</SPAN><SPAN class="h m">ツ</SPAN><SPAN class="h">せ</SPAN><SPAN class="lc">ん</SPAN><SPAN class="l">し</SPAN><SPAN class="l">ゅ</SPAN></td>
+				<td class="english">subootsusenshu</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>58</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大統領</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">と</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">り</SPAN><SPAN class="l">ょ</SPAN><SPAN class="l">う</SPAN></td>
+				<td class="english">daitouryou</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>59</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">俳優</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">ゆ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">haiyuu</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>60</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">看護師</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ご</SPAN><SPAN class="lc">し</SPAN></td>
+				<td class="english">kangoshi</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>61</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">シェフ</td>
+				<td class="hiragana"><SPAN class="h">シ</SPAN><SPAN class="h">ェ</SPAN><SPAN class="lc">フ</SPAN></td>
+				<td class="english">shefu</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>62</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">漫画家</td>
+				<td class="hiragana"><SPAN class="l">ま</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">が</SPAN><SPAN class="h">か</SPAN></td>
+				<td class="english">mangaka</td>
+				<td class="type">Occupations</td>
+				<td class="lesson">L11</td>
+				<td>63</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">お正月</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">し</SPAN><SPAN class="h">ょ</SPAN><SPAN class="h">う</SPAN><SPAN class="h">が</SPAN><SPAN class="h">つ</SPAN></td>
+				<td class="english">oshougatsu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>64</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大晦日</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">お</SPAN><SPAN class="h">み</SPAN><SPAN class="lc">そ</SPAN><SPAN class="l">か</SPAN></td>
+				<td class="english">oomisoka</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>65</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">年賀状</td>
+				<td class="hiragana"><SPAN class="l">ね</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">が</SPAN><SPAN class="h">じ</SPAN><SPAN class="h">ょ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">nengajyou</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>66</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">年越し蕎麦</td>
+				<td class="hiragana"><SPAN class="l">と</SPAN><SPAN class="hc m">し</SPAN><SPAN class="h">こ</SPAN><SPAN class="h">し</SPAN><SPAN class="h">そ</SPAN><SPAN class="lc">ば</SPAN></td>
+				<td class="english">toshikoshisoba</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>67</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">良いお年を</td>
+				<td class="hiragana"><SPAN class="h">よ</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">お</SPAN><SPAN class="hc">と</SPAN><SPAN class="h">し</SPAN><SPAN class="h">を</SPAN></td>
+				<td class="english">yoiotoshiwo</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>68</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">あけましておめでとうございます</td>
+				<td class="hiragana"><SPAN class="l">あ</SPAN><SPAN class="hc">け</SPAN><SPAN class="h">ま</SPAN><SPAN class="lc m">し</SPAN><SPAN class="l">て</SPAN><SPAN class="l">お</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">で</SPAN><SPAN class="h">と</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">ご</SPAN><SPAN class="l">ざ</SPAN><SPAN class="l">い</SPAN><SPAN class="l">ま</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">akemashiteomedetougozaimasu</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>69</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">初詣</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">も</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">で</SPAN></td>
+				<td class="english">hatsumoude</td>
+				<td class="type">Culture notes</td>
+				<td class="lesson">L11</td>
+				<td>70</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">どちらでもいいです</td>
+				<td class="hiragana"><SPAN class="l">ど</SPAN><SPAN class="hc">ち</SPAN><SPAN class="h">ら</SPAN><SPAN class="h">で</SPAN><SPAN class="h">も</SPAN><SPAN class="h">い</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">で</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">dochirademoiidesu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>71</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">同じです</td>
+				<td class="hiragana"><SPAN class="l">お</SPAN><SPAN class="hc">な</SPAN><SPAN class="h">じ</SPAN><SPAN class="h">で</SPAN><SPAN class="lc">す</SPAN></td>
+				<td class="english">onajidesu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>72</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">大体同じです</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">た</SPAN><SPAN class="h">い</SPAN><SPAN class="h">お</SPAN><SPAN class="lc">な</SPAN><SPAN class="l">じ</SPAN><SPAN class="l">で</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">daitaionajidesu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>73</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ちょっと違います</td>
+				<td class="hiragana"><SPAN class="h">ち</SPAN><SPAN class="h">ょ</SPAN><SPAN class="lc">っ</SPAN><SPAN class="l">と</SPAN><SPAN class="l">ち</SPAN><SPAN class="hc">が</SPAN><SPAN class="h">い</SPAN><SPAN class="h">ま</SPAN><SPAN class="lc">す</SPAN></td>
+				<td class="english">chottochigaimasu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>74</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">だめです</td>
+				<td class="hiragana"><SPAN class="l">だ</SPAN><SPAN class="hc">め</SPAN><SPAN class="lc">で</SPAN><SPAN class="l">す</SPAN></td>
+				<td class="english">damedesu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>75</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">締め切り</td>
+				<td class="hiragana"><SPAN class="l">し</SPAN><SPAN class="hc">め</SPAN><SPAN class="h">き</SPAN><SPAN class="h">り</SPAN></td>
+				<td class="english">shimekeri</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>76</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">練習</td>
+				<td class="hiragana"><SPAN class="l">れ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">し</SPAN><SPAN class="h">ゅ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">renshuu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>77</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">意味</td>
+				<td class="hiragana"><SPAN class="h">い</SPAN><SPAN class="lc">み</SPAN></td>
+				<td class="english">imi</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>78</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">発音</td>
+				<td class="hiragana"><SPAN class="l">は</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">お</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">hatsuon</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>79</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">文法</td>
+				<td class="hiragana"><SPAN class="l">ぶ</SPAN><SPAN class="hc">ん</SPAN><SPAN class="h">ぽ</SPAN><SPAN class="h">う</SPAN></td>
+				<td class="english">bunpou</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>80</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">質問</td>
+				<td class="hiragana"><SPAN class="l m">し</SPAN><SPAN class="hc">つ</SPAN><SPAN class="h">も</SPAN><SPAN class="h">ん</SPAN></td>
+				<td class="english">shitsumon</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>81</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">答</td>
+				<td class="hiragana"><SPAN class="l">こ</SPAN><SPAN class="hc">た</SPAN><SPAN class="lc">え</SPAN></td>
+				<td class="english">kotae</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>82</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">例</td>
+				<td class="hiragana"><SPAN class="h">れ</SPAN><SPAN class="lc">い</SPAN></td>
+				<td class="english">rei</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>83</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">かっこ</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">っ</SPAN><SPAN class="h">こ</SPAN></td>
+				<td class="english">kakko</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>84</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">まる</td>
+				<td class="hiragana"><SPAN class="h">ま</SPAN><SPAN class="lc">る</SPAN></td>
+				<td class="english">maru</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>85</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">ばつ</td>
+				<td class="hiragana"><SPAN class="h">ば</SPAN><SPAN class="lc">つ</SPAN></td>
+				<td class="english">batsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>86</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">砕けた言い方</td>
+				<td class="hiragana"><SPAN class="l">く</SPAN><SPAN class="hc">だ</SPAN><SPAN class="lc">け</SPAN><SPAN class="l">た</SPAN><SPAN class="l">い</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">か</SPAN><SPAN class="h">た</SPAN></td>
+				<td class="english">kudaketaiikata</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>87</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">硬い言い方</td>
+				<td class="hiragana"><SPAN class="l">か</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">い</SPAN><SPAN class="lc">い</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">か</SPAN><SPAN class="h">た</SPAN></td>
+				<td class="english">kataiiikata</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>88</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">丁寧な言い方</td>
+				<td class="hiragana"><SPAN class="h">て</SPAN><SPAN class="lc">い</SPAN><SPAN class="l">ね</SPAN><SPAN class="l">い</SPAN><SPAN class="l">な</SPAN><SPAN class="l">い</SPAN><SPAN class="hc">い</SPAN><SPAN class="h">か</SPAN><SPAN class="h">た</SPAN></td>
+				<td class="english">teineinaiikata</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>89</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">方言</td>
+				<td class="hiragana"><SPAN class="l">ほ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">げ</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">hougen</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>90</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">共通語</td>
+				<td class="hiragana"><SPAN class="l">き</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">つ</SPAN><SPAN class="lc">う</SPAN><SPAN class="l">ご</SPAN></td>
+				<td class="english">kyoutsuugo</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>91</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">例えば</td>
+				<td class="hiragana"><SPAN class="l">た</SPAN><SPAN class="hc">と</SPAN><SPAN class="lc">え</SPAN><SPAN class="l">ば</SPAN></td>
+				<td class="english">tatoeba</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>92</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">他に</td>
+				<td class="hiragana"><SPAN class="l">ほ</SPAN><SPAN class="hc">か</SPAN><SPAN class="h">に</SPAN></td>
+				<td class="english">hokani</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>93</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">番</td>
+				<td class="hiragana"><SPAN class="h">ば</SPAN><SPAN class="lc">ん</SPAN></td>
+				<td class="english">ban</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>94</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">行目</td>
+				<td class="hiragana"><SPAN class="l">ぎ</SPAN><SPAN class="l">ょ</SPAN><SPAN class="hc">う</SPAN><SPAN class="h">め</SPAN></td>
+				<td class="english">gyoume</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>95</td>
+			</tr>
+			<tr class="vocab">
+				<td class="japanese">二人ずつ</td>
+				<td class="hiragana"><SPAN class="l m">ふ</SPAN><SPAN class="hc">た</SPAN><SPAN class="h">り</SPAN><SPAN class="h">ず</SPAN><SPAN class="lc">つ</SPAN></td>
+				<td class="english">futarizutsu</td>
+				<td class="type">Useful expression</td>
+				<td class="lesson">L11</td>
+				<td>96</td>
+			</tr>
+		</tbody>
+	</table>
 </body>
 </html>
