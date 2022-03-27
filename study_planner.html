@@ -1,0 +1,182 @@
+<html>
+<head>
+	<title>CORNE・ちは - Fibonacci Study Planner</title>
+
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script> <!-- Selector dropdown -->
+	<script type="text/javascript" src="js//date.js" ></script> <!-- Date picker -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.min.js"></script> <!-- Date picker -->
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script> <!-- Selector dropdown -->
+	
+	<link rel="stylesheet" href="css/all.css"> <!-- Fontawesome -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css"> <!-- Selector dropdown -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker3.css"/> <!-- Date picker -->
+	<link rel="stylesheet" href="css/style.css">
+	
+
+	<script type="text/javascript">
+		$(document).ready(function() {
+			// 1、 1、 2、 3、 5、 8、 13、 21、 34、 55、 89、 144、 233、 377、 610、 987
+			const fibonacci_list = [
+				{"sessionText": "Session #1 - Day 1", "interval": 0, "daysLaterText":"Today"},
+				{"sessionText": "Session #2 - Day 2", "interval": 1, "daysLaterText":"1 day later"},
+				{"sessionText": "Session #3 - Day 4", "interval": 2, "daysLaterText":"2 days later"},
+				{"sessionText": "Session #4 - Day 7", "interval": 3, "daysLaterText":"3 days later"},
+				{"sessionText": "Session #5 - Day 12", "interval": 5, "daysLaterText":"5 days later"},
+				{"sessionText": "Session #6 - Day 20", "interval": 8, "daysLaterText":"8 days later"},
+				{"sessionText": "Session #7 - Day 33", "interval": 13, "daysLaterText":"13 days later"},
+				{"sessionText": "Session #8 - Day 54", "interval": 21, "daysLaterText":"21 days later"},
+				{"sessionText": "Session #9 - Day 88", "interval": 34, "daysLaterText":"34 days later"},
+				{"sessionText": "Session #10 - Day 143", "interval": 55, "daysLaterText":"55 days later"},
+			]
+			const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+			var start_date = new Date();
+			var start_session = 0;
+			
+			$('#current_session_num').change(function(){
+				start_session = $(this).children(':selected').val();
+				updatePlanner();
+			});
+
+			$('#current_session_date').datepicker({
+				showOn: 'button',
+            	buttonImageOnly: true,
+            	buttonImage: 'images/calendar.gif',
+				defaultDate: new Date(),
+				format: "M d, yyyy",
+				defaultDate: 0,
+				autoclose: true,
+    			todayHighlight: true,
+    			todayBtn: "linked",
+    			onSelect: function () {
+		            selectedDate = $.datepicker.formatDate("M d, yyyy", $(this).datepicker('getDate'));
+		        }
+			}).on('changeDate', function(){
+		    	start_date = $(this).datepicker('getDate');
+				updatePlanner();
+		    });
+
+		    $('#datetimepicker1').datepicker();
+
+		    $('.date-withicon').datepicker({
+		     	format: 'mm-dd-yyyy'
+		    });
+
+		    $("#reset").click(resetCurrentSession);
+
+		    resetCurrentSession();
+
+		    function resetCurrentSession() {
+		    	$('#current_session_num').val(1);
+				$('#current_session_num').selectpicker('refresh')
+				$('#current_session_date').datepicker("setDate", new Date);
+				start_date = new Date();
+				start_session = 0;
+				updatePlanner();
+		    }
+
+			function updatePlanner() {
+				$("#planner-list").empty()
+				for (let i = start_session; i < fibonacci_list.length; i++) {
+					var $new_session = $('<div class="list-group-item list-group-item-action"></div>');
+					var $new_details = $('<div class="d-flex w-100 justify-content-between"></div>');
+					var $new_date = $('<h5 class="mb-1"></h5>');
+					var $new_daysLaterText = $('<small></small>');
+					var $new_sessionText = $('<small class="text-muted"></small>');
+
+					var session_date = new Date();
+					session_date.setDate(start_date.getDate() + fibonacci_list[i]["interval"]);
+					$new_date.append(months[session_date.getMonth()] + ' ' + session_date.getDate());
+					$new_daysLaterText.append(fibonacci_list[i]["sessionText"]);
+					$new_sessionText.append(fibonacci_list[i]["daysLaterText"]);
+
+					$new_details.append($new_date);
+					$new_details.append($new_daysLaterText);
+					$new_session.append($new_details);
+					$new_session.append($new_sessionText);
+					$("#planner-list").append($new_session);
+					$("#planner-list").append($new_session);
+					$("#planner-list").append($new_session);
+				}
+			}
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="index.html">CORNE・ちは</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="study_planner.html">Study Planner</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Vocabularies
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="genki_vocab.html">げんき</a>
+							<a class="dropdown-item" href="#">Drops</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container px-4 px-lg-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<br>
+				<h2 class="font-weight-bold text-center">Fibonacci Study Planner</h2>
+				<hr class="divider" />
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-6">
+				<center>
+				<h4>Plan my schedule:</h4>
+				<br>
+				<h5>with</h5>
+				<select class="selectpicker" id="current_session_num">
+					<option value="1">Session 1</option>
+					<option value="2">Session 2</option>
+					<option value="3">Session 3</option>
+					<option value="4">Session 4</option>
+					<option value="5">Session 5</option>
+					<option value="6">Session 6</option>
+					<option value="7">Session 7</option>
+					<option value="8">Session 8</option>
+					<option value="9">Session 9</option>
+					<option value="10">Session 10</option>
+				</select>
+				<br><br>
+				<h5>on</h5>
+	            <div class="form-group row">
+	            	<div class="col-md-3">
+	            	</div>
+	                <div class="col-md-6">
+	                    <input type="text" class="form-control" name="date" id="current_session_date" />
+	                    <i class="fa fa-calendar" aria-hidden="true"></i>
+	                </div>
+	            </div>
+	            <br>
+				<button type="button" class="btn btn-dark" id="reset">Reset</button>
+				<br>
+				<br>
+				</center>
+			</div>
+			<div class="col-lg-6">
+				<div class="list-group" id="planner-list">
+					<!-- 1、 1、 2、 3、 5、 8、 13、 21、 34、 55、 89、 144、 233、 377、 610、 987 -->
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

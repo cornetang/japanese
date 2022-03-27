@@ -1,0 +1,19 @@
+span.l {border-bottom: 1px solid red;}
+span.h {border-top: 1px solid red;}
+span.lc {border: solid red;border-width: 0 0 1px 1px;}
+span.hc {border: solid red; border-width: 1px 0 0 1px;}
+span.m { background-color:#DCDCDC; }
+
+#keywords          { overflow: auto; height: 100px; }
+#keywords thead th { position: sticky; top: 0; z-index: 1; }
+
+.fa {
+    position: absolute;
+    right: 25px;
+    top: 11px;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
