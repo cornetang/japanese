@@ -104,10 +104,18 @@
 			}
 
 			function downloadCsv() {
-			    var vocabs = $('#vocab').val().trim().split(/[\s,]+/);
+			    var vocabs = $('#vocab').val().trim().split(/,+/);
+
+			    // filename for CSV
+			    var filename = "schedule_" 
+					+ start_date.getFullYear() 
+					+ ("0" + (start_date.getMonth()+1)).slice(-2)
+					+ ("0" + start_date.getDate()).slice(-2)
+					+ "_S" + String(start_session+1);
 			    
-			    // content
+			    // content for CSV
 			    var csvRows = [];
+			    csvRows.push(['TYPE', 'CONTENT', 'PRIORITY', 'INDENT', 'DATE', 'DATE_LANG']);
 				for (const vocab of vocabs) {
 					// header
 					var vocabOutput = vocab.charAt(0).toUpperCase() + vocab.slice(1).toLowerCase();
@@ -121,6 +129,14 @@
 						var date = months[session_date.getMonth()] + ' ' + session_date.getDate();
 						csvRows.push(['task', content, '4', '2', date, 'en']);
 					}
+
+					// filename
+					filename = filename + "_";
+					var topics = vocab.split(/\s+/);
+					for (const topic of topics) {
+						filename = filename + topic.charAt(0).toUpperCase() + topic.slice(1).toLowerCase();
+					}
+					
 				}
 
 				// generate CSV
@@ -133,7 +149,7 @@
 				// download CSV
 				var link = document.createElement("a");
 				link.setAttribute("href", encodedUri);
-				link.setAttribute("download", "downloadSchedule.csv");
+				link.setAttribute("download", filename + ".csv");
 				document.body.appendChild(link);
 				link.click();
 			}
@@ -148,6 +164,9 @@
 				<ul class="navbar-nav mr-auto">
 					<li class="nav-item">
 						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="japanese_synthesis.html">Japanese Sysnthesis</a>
 					</li>
 					<li class="nav-item active">
 						<a class="nav-link" href="study_planner.html">Study Planner</a>

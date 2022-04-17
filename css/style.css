@@ -17,3 +17,15 @@ span.m { background-color:#DCDCDC; }
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+
+.slidecontainer {
+    width: 50%; /* Width of the outside container */
+}
+
+.slider {
+    width: 100%; /* Full-width */
+}
+
+[type='radio'] {
+    display: none; 
+}

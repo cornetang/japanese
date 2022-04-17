@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  	<meta charset="UTF-8">
+  	<title>CORNE・ちは - Japanese Synthesis</title>
+  	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script> <!-- Selector dropdown -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script> <!-- Selector dropdown -->
+	<script type="text/javascript" src="js/bootstrap4-toggle.min.js"></script> <!-- Toggle -->
+	<script type="text/javascript" src="js/cornechiwa_japanese_synthesis.js"></script>
+
+  	<link rel="stylesheet" href="css/all.css">
+  	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css"> <!-- Selector dropdown -->
+	<link rel="stylesheet" href="css/bootstrap4-toggle.min.css"> <!-- Toggle -->
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="index.html">CORNE・ちは</a>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item active">
+						<a class="nav-link" href="japanese_synthesis.html">Japanese Sysnthesis</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="study_planner.html">Study Planner</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Vocabularies
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="genki_vocab.html">げんき</a>
+							<a class="dropdown-item" href="#">Drops</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div class="container px-4 px-lg-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<h2 class="font-weight-bold text-center">Japanese Speech Synthesis</h2>
+						<hr class="divider" />
+					</div>
+				</div>
+				<div id="page-wrapper">
+					<div class="row">
+						<div class="col-lg-12">
+							<center><p id="msg"></p></center>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-6">
+							<center>
+								<!-- Voice control panel -->
+								<h5>Read by</h5>
+								<div class="option">
+									<select name="voice" id="voice" class="selectpicker"></select>
+								</div>
+								<br>
+
+								<!-- Speed control panel -->
+								<h5 id="rateText">Speed</h5>
+								<div id="rateButtons" class="btn-group" data-toggle="buttons">
+								  	<label class="btn btn-outline-secondary">
+								    	<input type="radio" name="0.5" checked>Slow
+								  	</label>
+								  	<label class="btn btn-outline-secondary active">
+								    	<input type="radio" name="1" id="rateDefault">Normal
+								  	</label>
+								  	<label class="btn btn-outline-secondary">
+								    	<input type="radio" name="1.5">Fast
+								  	</label>
+								</div>
+								<br><br>
+
+								<!-- Volume control panel -->
+								<h5 id="volumeText">Volume at 100%</h5>
+								<div class="option slidecontainer">
+									<input type="range" class="slider" min="0" max="1" step="0.1" name="volume" id="volume" value="1">
+								</div>
+								<br>
+								
+								<!-- Content control panel -->
+								<h5>
+									English words
+									<input type="checkbox" checked data-toggle="toggle" data-on="Included" data-off="Excluded" id="englishButton">
+								</h5>
+								<br>
+
+								<!-- Play control panel -->
+								<button type="button" class="btn btn-dark" id="speakButton">
+									<i class="fa-solid fa-play"></i>
+								</button>
+								<button type="button" class="btn btn-dark" id="pauseButton">
+									<i class="fa-solid fa-pause"></i>
+								</button>
+								<button type="button" class="btn btn-dark" id="cancelButton">
+									<i class="fa-solid fa-stop"></i>
+								</button>
+								<button type="button" class="btn btn-dark" id="resetButton">
+									Reset
+								</button>
+							</center>
+						</div>
+						<div class="col-lg-6">
+							<div class="input-group">
+							  	<div class="input-group-prepend">
+							  		<span class="input-group-text">
+							  			<i class="fa-solid fa-comment-dots"></i>
+							  		</span>
+							  	</div>
+							  	<textarea class="form-control" aria-label="With textarea" type="text" name="speech-msg" id="speech-msg" x-webkit-speech></textarea>
+							</div>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
