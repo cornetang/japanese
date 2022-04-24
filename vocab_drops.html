@@ -24,20 +24,17 @@
 				$("#keywords td.lesson:not(:contains('" + $('#filter_lesson').val() + "'))").parent().hide();
 			}
 
-			var missingVocabLog = [];
-
-			$.getJSON("https://cornetang.github.io/japanese/json/drops_content.json", function(json) {
-				// console.log( "JSON Data: " + json);
-		  		$.each(json, function(key, val) {
-		  			var title = val["title"];
-		  			var subtitle;
-		  			var vocabList = val["vocabList"];
-
-
-		  			for(var i = 0; i < vocabList.length; i++) {
-		  				subtitle = vocabList[i]["subtitle"];
-		  				$.getJSON("https://cornetang.github.io/japanese/json/" + vocabList[i]["path"], function(json) {
-							$.each(json, function(key, val) {
+			fetch("https://cornetang.github.io/japanese/json/drops_content.json")
+			.then(response => response.json())
+			.then(data => {
+				for (const vocabLists of data) {
+					for (const vocabList of vocabLists["vocabList"]) {
+						fetch("https://cornetang.github.io/japanese/json/" + vocabList)
+						.then(response => response.json())
+						.then(data => {
+							var title = data["title"];
+							var subtitle = data["subtitle"];
+							for (const vocab of data["vocab"]) {
 								var $new_row = $('<tr class="vocab"></tr>');
 								var $new_topic = $('<td class="type"></td>');
 								var $new_subtopic = $('<td class="lesson"></td>');
@@ -47,9 +44,9 @@
 
 								$new_topic.append(title);
 								$new_subtopic.append(subtitle);
-								$new_english.append(val["english"]);
-								$new_japanese.append(val["japanese"]);
-								$new_hiragana.append(val["romanji"]);
+								$new_english.append(vocab["english"]);
+								$new_japanese.append(vocab["japanese"]);
+								$new_hiragana.append(vocab["romanji"]);
 
 								$new_row.append($new_topic);
 								$new_row.append($new_subtopic);
@@ -58,19 +55,11 @@
 								$new_row.append($new_hiragana);
 								
 								$("#vocab_tbody").append($new_row);
-							});
-						}).fail(function(jqXHR, textStatus, errorThrown) {
-							// console.log(title, " ", subtitle);
-							// var missingVocab = {
-							// 	"title": title,
-							// 	"subtitle": subtitle
-							// };
-							// missingVocabLog.push(missingVocab);
-						});
+							}
+						})
 					}
-			 	});
-			});
-			console.log(missingVocabLog)
+				}
+			})
 	    });
 	</script>
 </head>

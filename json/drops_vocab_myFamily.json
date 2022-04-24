@@ -1,0 +1,106 @@
+{
+  "title": "Foundation",
+  "subtitle": "My family",
+  "vocab": [
+    {
+      "english": "my family",
+      "romanji": "かぞく",
+      "japanese": "家族"
+    },
+    {
+      "english": "mother",
+      "romanji": "はは",
+      "japanese": "母"
+    },
+    {
+      "english": "father",
+      "romanji": "ちち",
+      "japanese": "父"
+    },
+    {
+      "english": "son",
+      "romanji": "むすこ",
+      "japanese": "息子"
+    },
+    {
+      "english": "daughter",
+      "romanji": "むすめ",
+      "japanese": "娘"
+    },
+    {
+      "english": "children",
+      "romanji": "こども",
+      "japanese": "子供"
+    },
+    {
+      "english": "younger sister",
+      "romanji": "いもうと",
+      "japanese": "妹"
+    },
+    {
+      "english": "elder sister",
+      "romanji": "あね",
+      "japanese": "姉"
+    },
+    {
+      "english": "younger brother",
+      "romanji": "おとうと",
+      "japanese": "弟"
+    },
+    {
+      "english": "elder brother",
+      "romanji": "あに",
+      "japanese": "兄"
+    },
+    {
+      "english": "grandfather",
+      "romanji": "おじいさん",
+      "japanese": "お爺さん"
+    },
+    {
+      "english": "grandmother",
+      "romanji": "おばあさま",
+      "japanese": "お婆さん"
+    },
+    {
+      "english": "husband",
+      "romanji": "おっと",
+      "japanese": "夫"
+    },
+    {
+      "english": "wife",
+      "romanji": "つま",
+      "japanese": "妻"
+    },
+    {
+      "english": "girlfriend",
+      "romanji": "かのじょ",
+      "japanese": "彼女"
+    },
+    {
+      "english": "boyfriend",
+      "romanji": "かれし",
+      "japanese": "彼氏"
+    },
+    {
+      "english": "friend",
+      "romanji": "ともだち",
+      "japanese": "友達"
+    },
+    {
+      "english": "parents",
+      "romanji": "りょうしん",
+      "japanese": "両親"
+    },
+    {
+      "english": "I love you!",
+      "romanji": "あいしてる！",
+      "japanese": "愛してる！"
+    },
+    {
+      "english": "hug",
+      "romanji": "ほうよう",
+      "japanese": "法要"
+    }
+  ]
+}

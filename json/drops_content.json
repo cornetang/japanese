@@ -34,5 +34,23 @@
       "drops_vocab_spicesAndSweets.json",
       "drops_vocab_herbs.json"
     ]
+  },
+  {
+    "title": "People and Relationships",
+    "vocabList" : [
+      "drops_vocab_myFamily.json",
+      "drops_vocab_familyTree.json",
+      "drops_vocab_hearbreak.json",
+      "drops_vocab_weMetOnline.json",
+      "drops_vocab_firstDate.json",
+      "drops_vocab_wereEngaged.json",
+      "drops_vocab_weddingDay.json",
+      "drops_vocab_flatmates.json",
+      "drops_vocab_weWorkTogether.json",
+      "drops_vocab_baby.json",
+      "drops_vocab_moreBaby.json",
+      "drops_vocab_adoptionAndFostering.json",
+      "drops_vocab_feelings.json"
+    ]
   }
 ]

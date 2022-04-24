@@ -1,0 +1,81 @@
+{
+  "title": "Foundation",
+  "subtitle": "Colours",
+  "vocab": [
+    {
+      "english": "feelings",
+      "romanji": "かんじょう",
+      "japanese": "感情"
+    },
+    {
+      "english": "scared",
+      "romanji": "こわい",
+      "japanese": "怖い"
+    },
+    {
+      "english": "brave",
+      "romanji": "ゆうきがある",
+      "japanese": "勇気がある"
+    },
+    {
+      "english": "embarrassed",
+      "romanji": "きまりがわるい",
+      "japanese": "きまりが悪い"
+    },
+    {
+      "english": "smug",
+      "romanji": "じこまんぞくする",
+      "japanese": "自己満足する"
+    },
+    {
+      "english": "shy",
+      "romanji": "はずかしがる",
+      "japanese": "恥ずかしがる"
+    },
+    {
+      "english": "empowered",
+      "romanji": "じしんがある",
+      "japanese": "自信がある"
+    },
+    {
+      "english": "optimistic",
+      "romanji": "らっかんてきな",
+      "japanese": "楽観的な"
+    },
+    {
+      "english": "pessimistic",
+      "romanji": "ひかんてきな",
+      "japanese": "悲観的な"
+    },
+    {
+      "english": "careless",
+      "romanji": "ふちゅういな",
+      "japanese": "不注意な"
+    },
+    {
+      "english": "cautious",
+      "romanji": "しんちょうな",
+      "japanese": "慎重な"
+    },
+    {
+      "english": "kind",
+      "romanji": "しんせつな",
+      "japanese": "親切な"
+    },
+    {
+      "english": "jealous",
+      "romanji": "うらやむ",
+      "japanese": "羨む"
+    },
+    {
+      "english": "triumphant",
+      "romanji": "しょうりをよろこぶ",
+      "japanese": "勝利を喜ぶ"
+    },
+    {
+      "english": "exhausted",
+      "romanji": "つかれきった",
+      "japanese": "疲れ切った"
+    }
+  ]
+}

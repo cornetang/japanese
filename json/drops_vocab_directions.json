@@ -3,74 +3,79 @@
   "subtitle": "Directions",
   "vocab": [
     {
-      "up": "down",
-      "うえ": "した",
-      "上": "下"
+      "english": "up",
+      "romanji": "うえ",
+      "japanese": "上"
     },
     {
-      "up": "around",
-      "うえ": "まわり",
-      "上": "周り"
+      "english": "down",
+      "romanji": "した",
+      "japanese": "下"
     },
     {
-      "up": "under",
-      "うえ": "した",
-      "上": "下"
+      "english": "around",
+      "romanji": "まわり",
+      "japanese": "周り"
     },
     {
-      "up": "among",
-      "うえ": "あいだ",
-      "上": "間"
+      "english": "under",
+      "romanji": "した",
+      "japanese": "下"
     },
     {
-      "up": "forward",
-      "うえ": "まえ",
-      "上": "前"
+      "english": "among",
+      "romanji": "あいだ",
+      "japanese": "間"
     },
     {
-      "up": "inside",
-      "うえ": "なか",
-      "上": "中"
+      "english": "forward",
+      "romanji": "まえ",
+      "japanese": "前"
     },
     {
-      "up": "middle",
-      "うえ": "まんなか",
-      "上": "真ん中"
+      "english": "inside",
+      "romanji": "なか",
+      "japanese": "中"
     },
     {
-      "up": "previous",
-      "うえ": "まえ",
-      "上": "前"
+      "english": "middle",
+      "romanji": "まんなか",
+      "japanese": "真ん中"
     },
     {
-      "up": "straight",
-      "うえ": "まっすぐ",
-      "上": "真っ直ぐ"
+      "english": "previous",
+      "romanji": "まえ",
+      "japanese": "前"
     },
     {
-      "up": "close",
-      "うえ": "ちかい",
-      "上": "近い"
+      "english": "straight",
+      "romanji": "まっすぐ",
+      "japanese": "真っ直ぐ"
     },
     {
-      "up": "bottom",
-      "うえ": "そこ",
-      "上": "底"
+      "english": "close",
+      "romanji": "ちかい",
+      "japanese": "近い"
     },
     {
-      "up": "huge",
-      "うえ": "おおきい",
-      "上": "大きい"
+      "english": "bottom",
+      "romanji": "そこ",
+      "japanese": "底"
     },
     {
-      "up": "tiny",
-      "うえ": "ちいさい",
-      "上": "小さい"
+      "english": "huge",
+      "romanji": "おおきい",
+      "japanese": "大きい"
     },
     {
-      "up": "size",
-      "うえ": "サイズ",
-      "上": "サイズ"
+      "english": "tiny",
+      "romanji": "ちいさい",
+      "japanese": "小さい"
+    },
+    {
+      "english": "size",
+      "romanji": "サイズ",
+      "japanese": "サイズ"
     }
   ]
 }

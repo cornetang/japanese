@@ -1,0 +1,81 @@
+{
+	"title": "Foundation",
+	"subtitle": "Family Tree",
+	"vocab": [
+		{
+			"english": "family tree",
+			"romanji": "かけいず",
+			"japanese": "家系図"
+		},
+		{
+			"english": "genes",
+			"romanji": "いでんし",
+			"japanese": "遺伝子"
+		},
+		{
+			"english": "niece",
+			"romanji": "めい",
+			"japanese": "姪"
+		},
+		{
+			"english": "nephew",
+			"romanji": "おい",
+			"japanese": "甥"
+		},
+		{
+			"english": "brother-in-law",
+			"romanji": "ぎりのきょうだい",
+			"japanese": "義理の兄弟"
+		},
+		{
+			"english": "sister-in-law",
+			"romanji": "ぎりのしまい",
+			"japanese": "義理の姉妹"
+		},
+		{
+			"english": "mother-in-law",
+			"romanji": "ぎりのはは",
+			"japanese": "義理の母"
+		},
+		{
+			"english": "father-in-law",
+			"romanji": "ぎりのちち",
+			"japanese": "義理の父"
+		},
+		{
+			"english": "godmother",
+			"romanji": "ゴッドマザー",
+			"japanese": "ゴッドマザー"
+		},
+		{
+			"english": "godfather",
+			"romanji": "なおや",
+			"japanese": "名親"
+		},
+		{
+			"english": "uncle",
+			"romanji": "おじ",
+			"japanese": "叔父"
+		},
+		{
+			"english": "aunt",
+			"romanji": "おば",
+			"japanese": "叔母"
+		},
+		{
+			"english": "stepmother",
+			"romanji": "ままはは",
+			"japanese": "継母"
+		},
+		{
+			"english": "stepfather",
+			"romanji": "ままちち",
+			"japanese": "継父"
+		},
+		{
+			"english": "cousin",
+			"romanji": "いとこ",
+			"japanese": "従兄弟"
+		}
+	]
+}
