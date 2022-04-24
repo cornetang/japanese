@@ -5,6 +5,38 @@
       {
         "subtitle": "Essentials",
         "path": "drops_vocab_essentials.json"
+      },
+      {
+        "subtitle": "Colours",
+        "path": "drops_vocab_colours.json"
+      },
+      {
+        "subtitle": "Directions",
+        "path": "drops_vocab_directions.json"
+      },
+      {
+        "subtitle": "Pronouns",
+        "path": "drops_vocab_pronouns.json"
+      },
+      {
+        "subtitle": "Numbers",
+        "path": "drops_vocab_numbers.json"
+      },
+      {
+        "subtitle": "More numbers",
+        "path": "drops_vocab_moreNumbers.json"
+      },
+      {
+        "subtitle": "Counting",
+        "path": "drops_vocab_counting.json"
+      },
+      {
+        "subtitle": "Counting 2",
+        "path": "drops_vocab_counting2.json"
+      },
+      { 
+        "subtitle": "Weather",
+        "path": "drops_vocab_weather.json"
       }
     ]
   },
