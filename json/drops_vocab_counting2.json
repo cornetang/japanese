@@ -1,0 +1,62 @@
+[
+  {
+    "english": "two hundred",
+    "romanji": "にひゃく",
+    "japanese": "二百"
+  },
+  {
+    "english": "three hundred",
+    "romanji": "さんびゃく",
+    "japanese": "三百"
+  },
+  {
+    "english": "four hundred",
+    "romanji": "よんひゃく",
+    "japanese": "四百"
+  },
+  {
+    "english": "give hundred",
+    "romanji": "ごひゃく",
+    "japanese": "五百"
+  },
+  {
+    "english": "two thousand",
+    "romanji": "にせん",
+    "japanese": "二千"
+  },
+  {
+    "english": "three thousand",
+    "romanji": "さんぜん",
+    "japanese": "三千"
+  },
+  {
+    "english": "four thousand",
+    "romanji": "よんせん",
+    "japanese": "四千"
+  },
+  {
+    "english": "five thousand",
+    "romanji": "ごせん",
+    "japanese": "五千"
+  },
+  {
+    "english": "ten thousand",
+    "romanji": "いちまん",
+    "japanese": "一万"
+  },
+  {
+    "english": "fifty thousand",
+    "romanji": "ごまん",
+    "japanese": "五万"
+  },
+  {
+    "english": "one hundred thousand",
+    "romanji": "じゅうまん",
+    "japanese": "十万"
+  },
+  {
+    "english": "one million",
+    "romanji": "ひゃくまん",
+    "japanese": "百万"
+  }
+]

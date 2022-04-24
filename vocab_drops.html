@@ -1,0 +1,92 @@
+<html>
+<head>
+	<title>Genki Vocab</title>
+	<link href="css/mottie_tablesorter.css" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script> 
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+	        $("#keywords").tablesorter();
+			$('#filter_japanese').change(function() { updateFilter() });
+			$('#filter_hiragana').change(function() { updateFilter() });
+			$('#filter_english').change(function() { updateFilter() });
+			$('#filter_type').change(function() { updateFilter() });
+			$('#filter_lesson').change(function() { updateFilter() });
+
+			function updateFilter() {
+				$("#keywords tr").show();
+				$("#keywords td.japanese:not(:contains('" + $('#filter_japanese').val() + "'))").parent().hide();
+				$("#keywords td.hiragana:not(:contains('" + $('#filter_hiragana').val() + "'))").parent().hide();
+				$("#keywords td.english:not(:contains('" + $('#filter_english').val() + "'))").parent().hide();
+				$("#keywords td.type:not(:contains('" + $('#filter_type').val() + "'))").parent().hide();
+				$("#keywords td.lesson:not(:contains('" + $('#filter_lesson').val() + "'))").parent().hide();
+			}
+
+			var missingVocabLog = [];
+
+			$.getJSON("https://cornetang.github.io/japanese/json/drops_content.json", function(json) {
+				// console.log( "JSON Data: " + json);
+		  		$.each(json, function(key, val) {
+		  			var title = val["title"];
+		  			var subtitle;
+		  			var vocabList = val["vocabList"];
+
+
+		  			for(var i = 0; i < vocabList.length; i++) {
+		  				subtitle = vocabList[i]["subtitle"];
+		  				$.getJSON("https://cornetang.github.io/japanese/json/" + vocabList[i]["path"], function(json) {
+							$.each(json, function(key, val) {
+								var $new_row = $('<tr class="vocab"></tr>');
+								var $new_topic = $('<td class="type"></td>');
+								var $new_subtopic = $('<td class="lesson"></td>');
+								var $new_english = $('<td class="english"></td>');
+								var $new_japanese = $('<td class="japanese"></td>');
+								var $new_hiragana = $('<td class="hiragana"></td>');
+
+								$new_topic.append(title);
+								$new_subtopic.append(subtitle);
+								$new_english.append(val["english"]);
+								$new_japanese.append(val["japanese"]);
+								$new_hiragana.append(val["romanji"]);
+
+								$new_row.append($new_topic);
+								$new_row.append($new_subtopic);
+								$new_row.append($new_english);
+								$new_row.append($new_japanese);
+								$new_row.append($new_hiragana);
+								
+								$("#vocab_tbody").append($new_row);
+							});
+						}).fail(function(jqXHR, textStatus, errorThrown) {
+							// console.log(title, " ", subtitle);
+							// var missingVocab = {
+							// 	"title": title,
+							// 	"subtitle": subtitle
+							// };
+							// missingVocabLog.push(missingVocab);
+						});
+					}
+			 	});
+			});
+			console.log(missingVocabLog)
+	    });
+	</script>
+</head>
+<body>
+	<table id="keywords">
+		<thead>
+			<tr>
+				<th><span>Type</span><br><input type="text" id="filter_type"/></th>
+				<th><span>Lesson</span><br><input type="text" id="filter_lesson"/></th>
+				<th><span>English</span><br><input type="text" id="filter_english"></th>
+				<th><span>Japanese</span><br><input type="text" id="filter_japanese"/></th>
+				<th><span>Hiragana</span><br><input type="text" id="filter_hiragana"/></th>
+			</tr>
+		</thead>
+		<tbody id="vocab_tbody">
+		</tbody>
+	</table>
+</body>
+</html>

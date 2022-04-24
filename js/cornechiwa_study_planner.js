@@ -107,7 +107,7 @@ $(document).ready(function() {
 		  		var session_date = new Date(start_date.getTime());;
 		  		session_date.setDate(start_date.getDate() + fibonacci_list[i]["daysLater"] - fibonacci_list[start_session]["daysLater"]);
 		  		var content = vocabOutput + " " + fibonacci_list[i]["taskName"];
-		  		var date = months[session_date.getMonth()] + ' ' + session_date.getDate();
+		  		var date = months[session_date.getMonth()] + ' ' + session_date.getDate() + ' ' + (session_date.getYear()+1900);
 		  		csvRows.push(['task', content, '4', '2', date, 'en']);
 		  	}
 

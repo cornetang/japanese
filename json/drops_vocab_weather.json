@@ -1,0 +1,82 @@
+[
+  {
+    "english": "fog",
+    "romanji": "きり",
+    "japanese": "霧"
+  },
+  {
+    "english": "rain",
+    "romanji": "あめ",
+    "japanese": "雨"
+  },
+  {
+    "english": "snow",
+    "romanji": "ゆき",
+    "japanese": "雪"
+  },
+  {
+    "english": "sun",
+    "romanji": "たいよう",
+    "japanese": "太陽"
+  },
+  {
+    "english": "temperature",
+    "romanji": "おんど",
+    "japanese": "温度"
+  },
+  {
+    "english": "weather forecast",
+    "romanji": "てんきよほう",
+    "japanese": "天気予報"
+  },
+  {
+    "english": "wind",
+    "romanji": "かぜ",
+    "japanese": "風"
+  },
+  {
+    "english": "umbrella",
+    "romanji": "かさ",
+    "japanese": "傘"
+  },
+  {
+    "english": "rainboat",
+    "romanji": "レインコート",
+    "japanese": "レインコート"
+  },
+  {
+    "english": "winter",
+    "romanji": "ふゆ",
+    "japanese": "冬"
+  },
+  {
+    "english": "summer",
+    "romanji": "なつ",
+    "japanese": "夏"
+  },
+  {
+    "english": "autumn",
+    "romanji": "あき",
+    "japanese": "秋"
+  },
+  {
+    "english": "spring",
+    "romanji": "はる",
+    "japanese": "春"
+  },
+  {
+    "english": "ice",
+    "romanji": "こおり",
+    "japanese": "氷"
+  },
+  {
+    "english": "storm",
+    "romanji": "あらし",
+    "japanese": "嵐"
+  },
+  {
+    "english": "it snows",
+    "romanji": "ゆきがふる",
+    "japanese": "雪が降る"
+  }
+]
