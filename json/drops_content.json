@@ -10,7 +10,7 @@
       "drops_vocab_moreNumbers.json",
       "drops_vocab_counting.json",
       "drops_vocab_counting2.json",
-      "drops_vocab_weather.json",
+      "drops_vocab_weather.json"
     ]
   },
   {
@@ -32,7 +32,7 @@
       "drops_vocab_drinks.json",
       "drops_vocab_teaAndCoffee.json",
       "drops_vocab_spicesAndSweets.json",
-      "drops_vocab_herbs.json",
+      "drops_vocab_herbs.json"
     ]
   }
 ]
