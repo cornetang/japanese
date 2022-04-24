@@ -1,0 +1,87 @@
+[
+  {
+    "english": "hello",
+    "romanji": "こんにちは",
+    "japanese": "こんにちは"
+  },
+  {
+    "english": "bye",
+    "romanji": "さようなら",
+    "japanese": "さようなら"
+  },
+  {
+    "english": "please",
+    "romanji": "おねがいします",
+    "japanese": "お願いします"
+  },
+  {
+    "english": "thank you",
+    "romanji": "ありがとうございます",
+    "japanese": "ありがとうございます"
+  },
+  {
+    "english": "yes",
+    "romanji": "はい",
+    "japanese": "はい"
+  },
+  {
+    "english": "no",
+    "romanji": "いいえ",
+    "japanese": "いいえ"
+  },
+  {
+    "english": "ok",
+    "romanji": "オーケー",
+    "japanese": "オーケー"
+  },
+  {
+    "english": "woman",
+    "romanji": "じょせい",
+    "japanese": "女性"
+  },
+  {
+    "english": "man",
+    "romanji": "だんせい",
+    "japanese": "男性"
+  },
+  {
+    "english": "girl",
+    "romanji": "おんなのこ",
+    "japanese": "女のこ"
+  },
+  {
+    "english": "boy",
+    "romanji": "おとこのこ",
+    "japanese": "男の子"
+  },
+  {
+    "english": "I",
+    "romanji": "わたし",
+    "japanese": "私"
+  },
+  {
+    "english": "I like",
+    "romanji": "すき",
+    "japanese": "好き"
+  },
+  {
+    "english": "I meet",
+    "romanji": "あう",
+    "japanese": "会う"
+  },
+  {
+    "english": "and",
+    "romanji": "と",
+    "japanese": "と"
+  },
+  {
+    "english": "or",
+    "romanji": "または",
+    "japanese": "または"
+  },
+  {
+    "english": "this",
+    "romanji": "これ",
+    "japanese": "これ"
+  }
+]

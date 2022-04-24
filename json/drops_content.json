@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Foundation",
+    "vocabList" : [
+      {
+        "subtitle": "Essentials",
+        "path": "drops_vocab_essnetials.json"
+      }
+    ]
+  },
+  {
+    "title": "Food & Drinks",
+    "vocabList" : [
+      {
+        "subtitle": "Food",
+        "path": "drops_vocab_food.json"
+      }
+    ]
+  }
+]
