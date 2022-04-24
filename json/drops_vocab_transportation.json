@@ -1,0 +1,81 @@
+{
+  "title": "Transportaion & Vehicles",
+  "subtitle": "Transportation",
+  "vocab": [
+    {
+      "english": "car",
+      "romanji": "くるま",
+      "japanese": "車"
+    },
+    {
+      "english": "bike",
+      "romanji": "じてんしゃ",
+      "japanese": "自転車"
+    },
+    {
+      "english": "truck",
+      "romanji": "トラック",
+      "japanese": "トラック"
+    },
+    {
+      "english": "van",
+      "romanji": "バン",
+      "japanese": "バン"
+    },
+    {
+      "english": "motorcycle",
+      "romanji": "バイク",
+      "japanese": "バイク"
+    },
+    {
+      "english": "scooter",
+      "romanji": "げんつき",
+      "japanese": "原付"
+    },
+    {
+      "english": "boat",
+      "romanji": "ボート",
+      "japanese": "ボート"
+    },
+    {
+      "english": "ship",
+      "romanji": "ふね",
+      "japanese": "船"
+    },
+    {
+      "english": "bus",
+      "romanji": "バス",
+      "japanese": "バス"
+    },
+    {
+      "english": "train",
+      "romanji": "でんしゃ",
+      "japanese": "電車"
+    },
+    {
+      "english": "tram",
+      "romanji": "ろめんでんしゃ",
+      "japanese": "路面電車"
+    },
+    {
+      "english": "underground",
+      "romanji": "ちか",
+      "japanese": "地下"
+    },
+    {
+      "english": "helicopter",
+      "romanji": "ヘリコプター",
+      "japanese": "ヘリコプター"
+    },
+    {
+      "english": "I ride a bicycle",
+      "romanji": "じてんしゃにのる",
+      "japanese": "自転車に乗る"
+    },
+    {
+      "english": "traffice jam",
+      "romanji": "こうつうじゅうたい",
+      "japanese": "交通渋滞"
+    }
+  ]
+}

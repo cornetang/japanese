@@ -1,0 +1,81 @@
+{
+  "title": "Japanese Specific Words",
+  "subtitle": "Japanese Cooking",
+  "vocab": [
+    {
+      "english": "soy sauce",
+      "romanji": "しょうゆ",
+      "japanese": "醤油"
+    },
+    {
+      "english": "sushi rice",
+      "romanji": "すしめし",
+      "japanese": "寿司飯"
+    },
+    {
+      "english": "Japanese horseradish",
+      "romanji": "わさび",
+      "japanese": "山葵"
+    },
+    {
+      "english": "nori laver seaweed",
+      "romanji": "のり",
+      "japanese": "海苔"
+    },
+    {
+      "english": "dried fish flakes",
+      "romanji": "かつおぶし",
+      "japanese": "鰹節"
+    },
+    {
+      "english": "dashi soup stock",
+      "romanji": "だし",
+      "japanese": "出汁"
+    },
+    {
+      "english": "flaked rice seasoning",
+      "romanji": "ふりかけ",
+      "japanese": ""
+    },
+    {
+      "english": "miso",
+      "romanji": "みそ",
+      "japanese": "味噌"
+    },
+    {
+      "english": "soybean",
+      "romanji": "だいず",
+      "japanese": "大豆"
+    },
+    {
+      "english": "chestnut",
+      "romanji": "くり",
+      "japanese": "栗"
+    },
+    {
+      "english": "daikon radish",
+      "romanji": "だいこん",
+      "japanese": "大根"
+    },
+    {
+      "english": "kombu kelp",
+      "romanji": "こんぶ",
+      "japanese": "昆布"
+    },
+    {
+      "english": "deep-fried tofu",
+      "romanji": "あぶらあげ",
+      "japanese": "油揚げ"
+    },
+    {
+      "english": "yuzu citrus",
+      "romanji": "ゆず",
+      "japanese": "柚子"
+    },
+    {
+      "english": "bread crumbs",
+      "romanji": "バンこ",
+      "japanese": "バン粉"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Transportaion & Vehicles",
+  "subtitle": "Railway",
+  "vocab": [
+    {
+      "english": "timetable",
+      "romanji": "じこくひゅう",
+      "japanese": "時刻表"
+    },
+    {
+      "english": "platform",
+      "romanji": "プラットホーム",
+      "japanese": "プラットホーム"
+    },
+    {
+      "english": "train tracks",
+      "romanji": "せんろ",
+      "japanese": "線路"
+    },
+    {
+      "english": "train conductor",
+      "romanji": "しゃしょう",
+      "japanese": "車掌"
+    },
+    {
+      "english": "steam engine",
+      "romanji": "じょうきエンジン",
+      "japanese": "蒸気エンジン"
+    },
+    {
+      "english": "freight train",
+      "romanji": "かもつれっしゃ",
+      "japanese": "貨物列車"
+    },
+    {
+      "english": "dining car",
+      "romanji": "しょくどうしゃ",
+      "japanese": "食堂車"
+    },
+    {
+      "english": "junction",
+      "romanji": "ごうりゅう",
+      "japanese": "合流"
+    },
+    {
+      "english": "junction",
+      "romanji": "ぶんきてん",
+      "japanese": "分岐点"
+    },
+    {
+      "english": "pull cord",
+      "romanji": "つりかわ",
+      "japanese": "つり革"
+    },
+    {
+      "english": "interrail",
+      "romanji": "インターレール",
+      "japanese": "インターレール"
+    },
+    {
+      "english": "luggage rack",
+      "romanji": "あみだな",
+      "japanese": "網棚"
+    },
+    {
+      "english": "information board",
+      "romanji": "でんこうけいじばん",
+      "japanese": "電光掲示板"
+    },
+    {
+      "english": "viaduct",
+      "romanji": "こうかきょう",
+      "japanese": "高架橋"
+    },
+    {
+      "english": "underground crossing",
+      "romanji": "ちかどう",
+      "japanese": "地下道"
+    },
+    {
+      "english": "stowaway",
+      "romanji": "みっこうしゃ",
+      "japanese": "密航者"
+    },
+    {
+      "english": "handhold",
+      "romanji": "てすり",
+      "japanese": "手すり"
+    },
+    {
+      "english": "it derails",
+      "romanji": "だっせんする",
+      "japanese": "脱線する"
+    }
+  ]
+}

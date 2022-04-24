@@ -1,0 +1,81 @@
+{
+  "title": "Japanese Specific Words",
+  "subtitle": "Traditional Culture",
+  "vocab": [
+    {
+      "english": "kabuki",
+      "romanji": "かぶき",
+      "japanese": "歌舞伎"
+    },
+    {
+      "english": "woodblock paintings",
+      "romanji": "うきよえ",
+      "japanese": "浮世絵"
+    },
+    {
+      "english": "Japanese flower arranging",
+      "romanji": "いけばな",
+      "japanese": "生け花"
+    },
+    {
+      "english": "samurai",
+      "romanji": "さむらい",
+      "japanese": "侍"
+    },
+    {
+      "english": "kimono",
+      "romanji": "きもの",
+      "japanese": "きもの"
+    },
+    {
+      "english": "wooden clogs",
+      "romanji": "げた",
+      "japanese": "下駄"
+    },
+    {
+      "english": "koto",
+      "romanji": "こと",
+      "japanese": "琴"
+    },
+    {
+      "english": "thermal spa",
+      "romanji": "おんせん",
+      "japanese": "温泉"
+    },
+    {
+      "english": "geisha",
+      "romanji": "げいしゃ",
+      "japanese": "芸者"
+    },
+    {
+      "english": "haiku",
+      "romanji": "はいく",
+      "japanese": "俳句"
+    },
+    {
+      "english": "Japanese readings of kanji",
+      "romanji": "くんよみ",
+      "japanese": "訓読み"
+    },
+    {
+      "english": "Chinese readings of kanji",
+      "romanji": "おんよみ",
+      "japanese": "音読み"
+    },
+    {
+      "english": "zen",
+      "romanji": "ぜん",
+      "japanese": "禅"
+    },
+    {
+      "english": "Japanese tea ceremony",
+      "romanji": "さどう",
+      "japanese": "茶道"
+    },
+    {
+      "english": "foldable fan",
+      "romanji": "せんす",
+      "japanese": "扇子"
+    }
+  ]
+}

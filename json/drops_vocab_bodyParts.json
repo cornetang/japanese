@@ -1,0 +1,91 @@
+{
+  "title": "Health & Wellness",
+  "subtitle": "Body Parts",
+  "vocab": [
+    {
+      "english": "ankle",
+      "romanji": "あしくび",
+      "japanese": "足首"
+    },
+    {
+      "english": "arm",
+      "romanji": "うで",
+      "japanese": "腕"
+    },
+    {
+      "english": "beard",
+      "romanji": "ひげ",
+      "japanese": "髭"
+    },
+    {
+      "english": "bone",
+      "romanji": "ほね",
+      "japanese": "骨"
+    },
+    {
+      "english": "brain",
+      "romanji": "のう",
+      "japanese": "脳"
+    },
+    {
+      "english": "elbow",
+      "romanji": "ひじ",
+      "japanese": "肘"
+    },
+    {
+      "english": "heart",
+      "romanji": "しんぞう",
+      "japanese": "心臓"
+    },
+    {
+      "english": "heel",
+      "romanji": "かかと",
+      "japanese": "かかと"
+    },
+    {
+      "english": "knee",
+      "romanji": "ひざ",
+      "japanese": "膝"
+    },
+    {
+      "english": "leg",
+      "romanji": "あし",
+      "japanese": "足"
+    },
+    {
+      "english": "moustache",
+      "romanji": "くちひげ",
+      "japanese": "口ひげ"
+    },
+    {
+      "english": "muscle",
+      "romanji": "きんいく",
+      "japanese": "筋肉"
+    },
+    {
+      "english": "skeleton",
+      "romanji": "こっかく",
+      "japanese": "骨格"
+    },
+    {
+      "english": "skin",
+      "romanji": "はだ",
+      "japanese": "肌"
+    },
+    {
+      "english": "spine",
+      "romanji": "せきつい",
+      "japanese": "脊椎"
+    },
+    {
+      "english": "stomach",
+      "romanji": "い",
+      "japanese": "胃"
+    },
+    {
+      "english": "I bleed",
+      "romanji": "ちがでる",
+      "japanese": "血が出る"
+    }
+  ]
+}

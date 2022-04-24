@@ -1,0 +1,86 @@
+{
+  "title": "Health & Wellness",
+  "subtitle": "Body",
+  "vocab": [
+    {
+      "english": "body",
+      "romanji": "からだ",
+      "japanese": "体"
+    },
+    {
+      "english": "head",
+      "romanji": "あたま",
+      "japanese": "頭"
+    },
+    {
+      "english": "hair",
+      "romanji": "かみ",
+      "japanese": "髪"
+    },
+    {
+      "english": "face",
+      "romanji": "かお",
+      "japanese": "顔"
+    },
+    {
+      "english": "ears",
+      "romanji": "みみ",
+      "japanese": "耳"
+    },
+    {
+      "english": "eyes",
+      "romanji": "め",
+      "japanese": "目"
+    },
+    {
+      "english": "nose",
+      "romanji": "はな",
+      "japanese": "鼻"
+    },
+    {
+      "english": "mouth",
+      "romanji": "くち",
+      "japanese": "口"
+    },
+    {
+      "english": "tooth",
+      "romanji": "は",
+      "japanese": "歯"
+    },
+    {
+      "english": "lips",
+      "romanji": "くちびる",
+      "japanese": "唇"
+    },
+    {
+      "english": "hand",
+      "romanji": "て",
+      "japanese": "手"
+    },
+    {
+      "english": "finger",
+      "romanji": "ゆび",
+      "japanese": "指"
+    },
+    {
+      "english": "nail",
+      "romanji": "つめ",
+      "japanese": "爪"
+    },
+    {
+      "english": "foot",
+      "romanji": "あし",
+      "japanese": "足"
+    },
+    {
+      "english": "I jump",
+      "romanji": "ジャンプする",
+      "japanese": "ジャンプする"
+    },
+    {
+      "english": "I run",
+      "romanji": "はしる",
+      "japanese": "走る"
+    }
+  ]
+}
