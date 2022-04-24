@@ -1,0 +1,91 @@
+{
+  "title": "Food & Drinks",
+  "subtitle": "Fruits",
+  "vocab": [
+    {
+      "english": "plum",
+      "romanji": "うめ",
+      "japanese": "梅"
+    },
+    {
+      "english": "kiwi",
+      "romanji": "キウイ",
+      "japanese": "キウイ"
+    },
+    {
+      "english": "blackberry",
+      "romanji": "ブラックベリー",
+      "japanese": "ブラックベリー"
+    },
+    {
+      "english": "honeydew melon",
+      "romanji": "ハネデューメロン",
+      "japanese": "ハネデューメロン"
+    },
+    {
+      "english": "peach",
+      "romanji": "もも",
+      "japanese": "桃"
+    },
+    {
+      "english": "cherry",
+      "romanji": "さくらんぼ",
+      "japanese": "桜桃"
+    },
+    {
+      "english": "blueberry",
+      "romanji": "ブルーベリー",
+      "japanese": "ブルーベリー"
+    },
+    {
+      "english": "apple",
+      "romanji": "りんご",
+      "japanese": "林檎"
+    },
+    {
+      "english": "olive",
+      "romanji": "オリーブ",
+      "japanese": "オリーブ"
+    },
+    {
+      "english": "pineapple",
+      "romanji": "パイナップル",
+      "japanese": "パイナップル"
+    },
+    {
+      "english": "strawberry",
+      "romanji": "イチゴ",
+      "japanese": "イチゴ"
+    },
+    {
+      "english": "raspberry",
+      "romanji": "ラズベリー",
+      "japanese": "ラズベリー"
+    },
+    {
+      "english": "grape",
+      "romanji": "ぶどう",
+      "japanese": "葡萄"
+    },
+    {
+      "english": "watermelon",
+      "romanji": "スイカ",
+      "japanese": "スイカ"
+    },
+    {
+      "english": "pear",
+      "romanji": "なし",
+      "japanese": "梨"
+    },
+    {
+      "english": "banana",
+      "romanji": "バナナ",
+      "japanese": "バナナ"
+    },
+    {
+      "english": "I pick",
+      "romanji": "つみとる",
+      "japanese": "摘み取る"
+    }
+  ]
+}

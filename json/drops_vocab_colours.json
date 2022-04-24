@@ -1,87 +1,91 @@
-[
-  {
-    "english": "black",
-    "romanji": "くろ",
-    "japanese": "黒"
-  },
-  {
-    "english": "blue",
-    "romanji": "あお",
-    "japanese": "青"
-  },
-  {
-    "english": "brown",
-    "romanji": "ちゃ",
-    "japanese": "茶"
-  },
-  {
-    "english": "gold",
-    "romanji": "きん",
-    "japanese": "金"
-  },
-  {
-    "english": "green",
-    "romanji": "みどり",
-    "japanese": "緑"
-  },
-  {
-    "english": "grey",
-    "romanji": "はい",
-    "japanese": "灰"
-  },
-  {
-    "english": "orange",
-    "romanji": "オレンジ",
-    "japanese": "オレンジ"
-  },
-  {
-    "english": "pink",
-    "romanji": "ピンク",
-    "japanese": "ピンク"
-  },
-  {
-    "english": "purple",
-    "romanji": "むらさき",
-    "japanese": "紫"
-  },
-  {
-    "english": "red",
-    "romanji": "あか",
-    "japanese": "赤"
-  },
-  {
-    "english": "silver",
-    "romanji": "ぎん",
-    "japanese": "銀"
-  },
-  {
-    "english": "white",
-    "romanji": "しろ",
-    "japanese": "白"
-  },
-  {
-    "english": "yellow",
-    "romanji": "き",
-    "japanese": "黄"
-  },
-  {
-    "english": "rainbow",
-    "romanji": "にじ",
-    "japanese": "虹"
-  },
-  {
-    "english": "I play",
-    "romanji": "あそぶ",
-    "japanese": "遊ぶ"
-  },
-  {
-    "english": "I paint",
-    "romanji": "ぬる",
-    "japanese": "塗る"
-  },
-  {
-    "english": "I write",
-    "romanji": "かく",
-    "japanese": "書く"
-  }
-]
+{
+  "title": "Foundation",
+  "subtitle": "Colours",
+  "vocab": [
+    {
+      "english": "black",
+      "romanji": "くろ",
+      "japanese": "黒"
+    },
+    {
+      "english": "blue",
+      "romanji": "あお",
+      "japanese": "青"
+    },
+    {
+      "english": "brown",
+      "romanji": "ちゃ",
+      "japanese": "茶"
+    },
+    {
+      "english": "gold",
+      "romanji": "きん",
+      "japanese": "金"
+    },
+    {
+      "english": "green",
+      "romanji": "みどり",
+      "japanese": "緑"
+    },
+    {
+      "english": "grey",
+      "romanji": "はい",
+      "japanese": "灰"
+    },
+    {
+      "english": "orange",
+      "romanji": "オレンジ",
+      "japanese": "オレンジ"
+    },
+    {
+      "english": "pink",
+      "romanji": "ピンク",
+      "japanese": "ピンク"
+    },
+    {
+      "english": "purple",
+      "romanji": "むらさき",
+      "japanese": "紫"
+    },
+    {
+      "english": "red",
+      "romanji": "あか",
+      "japanese": "赤"
+    },
+    {
+      "english": "silver",
+      "romanji": "ぎん",
+      "japanese": "銀"
+    },
+    {
+      "english": "white",
+      "romanji": "しろ",
+      "japanese": "白"
+    },
+    {
+      "english": "yellow",
+      "romanji": "き",
+      "japanese": "黄"
+    },
+    {
+      "english": "rainbow",
+      "romanji": "にじ",
+      "japanese": "虹"
+    },
+    {
+      "english": "I play",
+      "romanji": "あそぶ",
+      "japanese": "遊ぶ"
+    },
+    {
+      "english": "I paint",
+      "romanji": "ぬる",
+      "japanese": "塗る"
+    },
+    {
+      "english": "I write",
+      "romanji": "かく",
+      "japanese": "書く"
+    }
+  ]
+}

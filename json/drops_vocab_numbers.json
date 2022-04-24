@@ -1,87 +1,91 @@
-[
-  {
-    "english": "zero",
-    "romanji": "セロ",
-    "japanese": "セロ"
-  },
-  {
-    "english": "one",
-    "romanji": "いち",
-    "japanese": "一"
-  },
-  {
-    "english": "two",
-    "romanji": "に",
-    "japanese": "二"
-  },
-  {
-    "english": "three",
-    "romanji": "さん",
-    "japanese": "三"
-  },
-  {
-    "english": "four",
-    "romanji": "よん",
-    "japanese": "四"
-  },
-  {
-    "english": "five",
-    "romanji": "ご",
-    "japanese": "五"
-  },
-  {
-    "english": "six",
-    "romanji": "ろく",
-    "japanese": "六"
-  },
-  {
-    "english": "seven",
-    "romanji": "なな",
-    "japanese": "七"
-  },
-  {
-    "english": "eight",
-    "romanji": "はち",
-    "japanese": "八"
-  },
-  {
-    "english": "nine",
-    "romanji": "きゅう",
-    "japanese": "九"
-  },
-  {
-    "english": "ten",
-    "romanji": "じゅう",
-    "japanese": "十"
-  },
-  {
-    "english": "eleven",
-    "romanji": "じゅういち",
-    "japanese": "十一"
-  },
-  {
-    "english": "twelve",
-    "romanji": "じゅうに",
-    "japanese": "十二"
-  },
-  {
-    "english": "twenty",
-    "romanji": "にじゅう",
-    "japanese": "二十"
-  },
-  {
-    "english": "hundred",
-    "romanji": "ひゃく",
-    "japanese": "百"
-  },
-  {
-    "english": "I think",
-    "romanji": "かんがえる",
-    "japanese": "考える"
-  },
-  {
-    "english": "I count",
-    "romanji": "かぞえる",
-    "japanese": "数える"
-  }
-]
+{
+  "title": "Foundation",
+  "subtitle": "Numbers",
+  "vocab": [
+    {
+      "english": "zero",
+      "romanji": "セロ",
+      "japanese": "セロ"
+    },
+    {
+      "english": "one",
+      "romanji": "いち",
+      "japanese": "一"
+    },
+    {
+      "english": "two",
+      "romanji": "に",
+      "japanese": "二"
+    },
+    {
+      "english": "three",
+      "romanji": "さん",
+      "japanese": "三"
+    },
+    {
+      "english": "four",
+      "romanji": "よん",
+      "japanese": "四"
+    },
+    {
+      "english": "five",
+      "romanji": "ご",
+      "japanese": "五"
+    },
+    {
+      "english": "six",
+      "romanji": "ろく",
+      "japanese": "六"
+    },
+    {
+      "english": "seven",
+      "romanji": "なな",
+      "japanese": "七"
+    },
+    {
+      "english": "eight",
+      "romanji": "はち",
+      "japanese": "八"
+    },
+    {
+      "english": "nine",
+      "romanji": "きゅう",
+      "japanese": "九"
+    },
+    {
+      "english": "ten",
+      "romanji": "じゅう",
+      "japanese": "十"
+    },
+    {
+      "english": "eleven",
+      "romanji": "じゅういち",
+      "japanese": "十一"
+    },
+    {
+      "english": "twelve",
+      "romanji": "じゅうに",
+      "japanese": "十二"
+    },
+    {
+      "english": "twenty",
+      "romanji": "にじゅう",
+      "japanese": "二十"
+    },
+    {
+      "english": "hundred",
+      "romanji": "ひゃく",
+      "japanese": "百"
+    },
+    {
+      "english": "I think",
+      "romanji": "かんがえる",
+      "japanese": "考える"
+    },
+    {
+      "english": "I count",
+      "romanji": "かぞえる",
+      "japanese": "数える"
+    }
+  ]
+}

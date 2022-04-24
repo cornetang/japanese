@@ -1,92 +1,96 @@
-[
-  {
-    "english": "you",
-    "romanji": "あなた",
-    "japanese": "貴方"
-  },
-  {
-    "english": "he",
-    "romanji": "かれ",
-    "japanese": "彼"
-  },
-  {
-    "english": "she",
-    "romanji": "かのじょ",
-    "japanese": "彼女"
-  },
-  {
-    "english": "it",
-    "romanji": "それ",
-    "japanese": "それ"
-  },
-  {
-    "english": "we",
-    "romanji": "わたしたち",
-    "japanese": "私たち"
-  },
-  {
-    "english": "you",
-    "romanji": "あなた",
-    "japanese": "貴方"
-  },
-  {
-    "english": "they",
-    "romanji": "かれら",
-    "japanese": "彼ら"
-  },
-  {
-    "english": "my",
-    "romanji": "わたしの",
-    "japanese": "私の"
-  },
-  {
-    "english": "your",
-    "romanji": "あなたの",
-    "japanese": "貴方の"
-  },
-  {
-    "english": "his",
-    "romanji": "かれの",
-    "japanese": "彼の"
-  },
-  {
-    "english": "her",
-    "romanji": "かのじょの",
-    "japanese": "彼女の"
-  },
-  {
-    "english": "its",
-    "romanji": "それの",
-    "japanese": "それの"
-  },
-  {
-    "english": "their",
-    "romanji": "かれらの",
-    "japanese": "彼らの"
-  },
-  {
-    "english": "everybody",
-    "romanji": "みんな",
-    "japanese": "皆"
-  },
-  {
-    "english": "nobody",
-    "romanji": "だれも〜ない",
-    "japanese": "誰も〜ない"
-  },
-  {
-    "english": "I call",
-    "romanji": "でんわする",
-    "japanese": "でんわする"
-  },
-  {
-    "english": "I introduce",
-    "romanji": "しょうかいする",
-    "japanese": "紹介する"
-  },
-  {
-    "english": "I speak",
-    "romanji": "はなす",
-    "japanese": "話す"
-  }
-]
+{
+  "title": "Foundation",
+  "subtitle": "Pronouns",
+  "vocab": [
+    {
+      "english": "you",
+      "romanji": "あなた",
+      "japanese": "貴方"
+    },
+    {
+      "english": "he",
+      "romanji": "かれ",
+      "japanese": "彼"
+    },
+    {
+      "english": "she",
+      "romanji": "かのじょ",
+      "japanese": "彼女"
+    },
+    {
+      "english": "it",
+      "romanji": "それ",
+      "japanese": "それ"
+    },
+    {
+      "english": "we",
+      "romanji": "わたしたち",
+      "japanese": "私たち"
+    },
+    {
+      "english": "you",
+      "romanji": "あなた",
+      "japanese": "貴方"
+    },
+    {
+      "english": "they",
+      "romanji": "かれら",
+      "japanese": "彼ら"
+    },
+    {
+      "english": "my",
+      "romanji": "わたしの",
+      "japanese": "私の"
+    },
+    {
+      "english": "your",
+      "romanji": "あなたの",
+      "japanese": "貴方の"
+    },
+    {
+      "english": "his",
+      "romanji": "かれの",
+      "japanese": "彼の"
+    },
+    {
+      "english": "her",
+      "romanji": "かのじょの",
+      "japanese": "彼女の"
+    },
+    {
+      "english": "its",
+      "romanji": "それの",
+      "japanese": "それの"
+    },
+    {
+      "english": "their",
+      "romanji": "かれらの",
+      "japanese": "彼らの"
+    },
+    {
+      "english": "everybody",
+      "romanji": "みんな",
+      "japanese": "皆"
+    },
+    {
+      "english": "nobody",
+      "romanji": "だれも〜ない",
+      "japanese": "誰も〜ない"
+    },
+    {
+      "english": "I call",
+      "romanji": "でんわする",
+      "japanese": "でんわする"
+    },
+    {
+      "english": "I introduce",
+      "romanji": "しょうかいする",
+      "japanese": "紹介する"
+    },
+    {
+      "english": "I speak",
+      "romanji": "はなす",
+      "japanese": "話す"
+    }
+  ]
+}

@@ -1,87 +1,91 @@
-[
-  {
-    "english": "twenty one",
-    "romanji": "にじゅういち",
-    "japanese": "二十一"
-  },
-  {
-    "english": "twenty two",
-    "romanji": "にじゅうに",
-    "japanese": "二十二"
-  },
-  {
-    "english": "thirty",
-    "romanji": "さんじゅう",
-    "japanese": "三十"
-  },
-  {
-    "english": "forty",
-    "romanji": "よんじゅう",
-    "japanese": "四十"
-  },
-  {
-    "english": "fifty",
-    "romanji": "ごじゅう",
-    "japanese": "五十"
-  },
-  {
-    "english": "sixty",
-    "romanji": "ろくじゅう",
-    "japanese": "六十"
-  },
-  {
-    "english": "seventy",
-    "romanji": "ななじゅう",
-    "japanese": "七十"
-  },
-  {
-    "english": "eighty",
-    "romanji": "はちじゅう",
-    "japanese": "八十"
-  },
-  {
-    "english": "ninety",
-    "romanji": "きゅうじゅう",
-    "japanese": "九十"
-  },
-  {
-    "english": "thousand",
-    "romanji": "せん",
-    "japanese": "千"
-  },
-  {
-    "english": "million",
-    "romanji": "ひゃくまん",
-    "japanese": "百万"
-  },
-  {
-    "english": "first",
-    "romanji": "だいいち",
-    "japanese": "第一"
-  },
-  {
-    "english": "second",
-    "romanji": "だいに",
-    "japanese": "第二"
-  },
-  {
-    "english": "third",
-    "romanji": "だいさん",
-    "japanese": "第三"
-  },
-  {
-    "english": "fourth",
-    "romanji": "だいよん",
-    "japanese": "第四"
-  },
-  {
-    "english": "fifth",
-    "romanji": "だいご",
-    "japanese": "第五"
-  },
-  {
-    "english": "sixth",
-    "romanji": "だいろく",
-    "japanese": "第六"
-  }
-]
+{
+  "title": "Foundation",
+  "subtitle": "More Numbers",
+  "vocab": [
+    {
+      "english": "twenty one",
+      "romanji": "にじゅういち",
+      "japanese": "二十一"
+    },
+    {
+      "english": "twenty two",
+      "romanji": "にじゅうに",
+      "japanese": "二十二"
+    },
+    {
+      "english": "thirty",
+      "romanji": "さんじゅう",
+      "japanese": "三十"
+    },
+    {
+      "english": "forty",
+      "romanji": "よんじゅう",
+      "japanese": "四十"
+    },
+    {
+      "english": "fifty",
+      "romanji": "ごじゅう",
+      "japanese": "五十"
+    },
+    {
+      "english": "sixty",
+      "romanji": "ろくじゅう",
+      "japanese": "六十"
+    },
+    {
+      "english": "seventy",
+      "romanji": "ななじゅう",
+      "japanese": "七十"
+    },
+    {
+      "english": "eighty",
+      "romanji": "はちじゅう",
+      "japanese": "八十"
+    },
+    {
+      "english": "ninety",
+      "romanji": "きゅうじゅう",
+      "japanese": "九十"
+    },
+    {
+      "english": "thousand",
+      "romanji": "せん",
+      "japanese": "千"
+    },
+    {
+      "english": "million",
+      "romanji": "ひゃくまん",
+      "japanese": "百万"
+    },
+    {
+      "english": "first",
+      "romanji": "だいいち",
+      "japanese": "第一"
+    },
+    {
+      "english": "second",
+      "romanji": "だいに",
+      "japanese": "第二"
+    },
+    {
+      "english": "third",
+      "romanji": "だいさん",
+      "japanese": "第三"
+    },
+    {
+      "english": "fourth",
+      "romanji": "だいよん",
+      "japanese": "第四"
+    },
+    {
+      "english": "fifth",
+      "romanji": "だいご",
+      "japanese": "第五"
+    },
+    {
+      "english": "sixth",
+      "romanji": "だいろく",
+      "japanese": "第六"
+    }
+  ]
+}

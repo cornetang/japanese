@@ -1,87 +1,91 @@
-[
-  {
-    "english": "bread",
-    "romanji": "パン",
-    "japanese": "パン"
-  },
-  {
-    "english": "breakfast",
-    "romanji": "あさごはん",
-    "japanese": "朝ご飯"
-  },
-  {
-    "english": "fruits",
-    "romanji": "くだもの",
-    "japanese": "果物"
-  },
-  {
-    "english": "cheese",
-    "romanji": "チーズ",
-    "japanese": "チーズ"
-  },
-  {
-    "english": "egg",
-    "romanji": "たまご",
-    "japanese": "卵"
-  },
-  {
-    "english": "fish",
-    "romanji": "さかな",
-    "japanese": "魚"
-  },
-  {
-    "english": "fork",
-    "romanji": "フォーク",
-    "japanese": "フォーク"
-  },
-  {
-    "english": "soup",
-    "romanji": "スープ",
-    "japanese": "スープ"
-  },
-  {
-    "english": "mushroom",
-    "romanji": "きのこ",
-    "japanese": "きのこ"
-  },
-  {
-    "english": "knife",
-    "romanji": "ナイフ",
-    "japanese": "ナイフ"
-  },
-  {
-    "english": "lemon",
-    "romanji": "レモン",
-    "japanese": "レモン"
-  },
-  {
-    "english": "meat",
-    "romanji": "にく",
-    "japanese": "肉"
-  },
-  {
-    "english": "spoon",
-    "romanji": "スプーン",
-    "japanese": "スプーン"
-  },
-  {
-    "english": "sugar",
-    "romanji": "さとう",
-    "japanese": "砂糖"
-  },
-  {
-    "english": "salad",
-    "romanji": "サラダ",
-    "japanese": "サラダ"
-  },
-  {
-    "english": "I eat",
-    "romanji": "たべる",
-    "japanese": "食べる"
-  },
-  {
-    "english": "I cook",
-    "romanji": "りゅうりする",
-    "japanese": "料理する"
-  }
-]
+{
+  "title": "Food & Drinks",
+  "subtitle": "Food",
+  "vocab": [
+    {
+      "english": "bread",
+      "romanji": "パン",
+      "japanese": "パン"
+    },
+    {
+      "english": "breakfast",
+      "romanji": "あさごはん",
+      "japanese": "朝ご飯"
+    },
+    {
+      "english": "fruits",
+      "romanji": "くだもの",
+      "japanese": "果物"
+    },
+    {
+      "english": "cheese",
+      "romanji": "チーズ",
+      "japanese": "チーズ"
+    },
+    {
+      "english": "egg",
+      "romanji": "たまご",
+      "japanese": "卵"
+    },
+    {
+      "english": "fish",
+      "romanji": "さかな",
+      "japanese": "魚"
+    },
+    {
+      "english": "fork",
+      "romanji": "フォーク",
+      "japanese": "フォーク"
+    },
+    {
+      "english": "soup",
+      "romanji": "スープ",
+      "japanese": "スープ"
+    },
+    {
+      "english": "mushroom",
+      "romanji": "きのこ",
+      "japanese": "きのこ"
+    },
+    {
+      "english": "knife",
+      "romanji": "ナイフ",
+      "japanese": "ナイフ"
+    },
+    {
+      "english": "lemon",
+      "romanji": "レモン",
+      "japanese": "レモン"
+    },
+    {
+      "english": "meat",
+      "romanji": "にく",
+      "japanese": "肉"
+    },
+    {
+      "english": "spoon",
+      "romanji": "スプーン",
+      "japanese": "スプーン"
+    },
+    {
+      "english": "sugar",
+      "romanji": "さとう",
+      "japanese": "砂糖"
+    },
+    {
+      "english": "salad",
+      "romanji": "サラダ",
+      "japanese": "サラダ"
+    },
+    {
+      "english": "I eat",
+      "romanji": "たべる",
+      "japanese": "食べる"
+    },
+    {
+      "english": "I cook",
+      "romanji": "りゅうりする",
+      "japanese": "料理する"
+    }
+  ]
+}

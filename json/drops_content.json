@@ -2,51 +2,37 @@
   {
     "title": "Foundation",
     "vocabList" : [
-      {
-        "subtitle": "Essentials",
-        "path": "drops_vocab_essentials.json"
-      },
-      {
-        "subtitle": "Colours",
-        "path": "drops_vocab_colours.json"
-      },
-      {
-        "subtitle": "Directions",
-        "path": "drops_vocab_directions.json"
-      },
-      {
-        "subtitle": "Pronouns",
-        "path": "drops_vocab_pronouns.json"
-      },
-      {
-        "subtitle": "Numbers",
-        "path": "drops_vocab_numbers.json"
-      },
-      {
-        "subtitle": "More numbers",
-        "path": "drops_vocab_moreNumbers.json"
-      },
-      {
-        "subtitle": "Counting",
-        "path": "drops_vocab_counting.json"
-      },
-      {
-        "subtitle": "Counting 2",
-        "path": "drops_vocab_counting2.json"
-      },
-      { 
-        "subtitle": "Weather",
-        "path": "drops_vocab_weather.json"
-      }
+      "drops_vocab_essentials.json",
+      "drops_vocab_colours.json",
+      "drops_vocab_directions.json",
+      "drops_vocab_pronouns.json",
+      "drops_vocab_numbers.json",
+      "drops_vocab_moreNumbers.json",
+      "drops_vocab_counting.json",
+      "drops_vocab_counting2.json",
+      "drops_vocab_weather.json",
     ]
   },
   {
     "title": "Food & Drinks",
     "vocabList" : [
-      {
-        "subtitle": "Food",
-        "path": "drops_vocab_food.json"
-      }
+      "drops_vocab_food.json",
+      "drops_vocab_moreFoods.json",
+      "drops_vocab_foodie.json",
+      "drops_vocab_breakfastFoods.json",
+      "drops_vocab_fruits.json",
+      "drops_vocab_vegetables.json",      
+      "drops_vocab_moreVegetables.json",
+      "drops_vocab_exoticFruits.json",      
+      "drops_vocab_snacks.json",
+      "drops_vocab_cooking.json",
+      "drops_vocab_evenMoreCooking.json",
+      "drops_vocab_restaurant.json",
+      "drops_vocab_pastries.json",
+      "drops_vocab_drinks.json",
+      "drops_vocab_teaAndCoffee.json",
+      "drops_vocab_spicesAndSweets.json",
+      "drops_vocab_herbs.json",
     ]
   }
 ]
