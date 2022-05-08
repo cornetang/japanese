@@ -1,0 +1,91 @@
+{
+  "title": "Home & Garden",
+  "subtitle": "Furniture",
+  "vocab": [
+    {
+      "english": "armchair",
+      "romanji": "アームチェア",
+      "japanese": "アームチェア"
+    },
+    {
+      "english": "bookshelf",
+      "romanji": "本棚",
+      "japanese": "ほんだな"
+    },
+    {
+      "english": "cabinet",
+      "romanji": "キャビネット",
+      "japanese": "キャビネット"
+    },
+    {
+      "english": "carpet",
+      "romanji": "じゅうたん",
+      "japanese": "絨毯"
+    },
+    {
+      "english": "dishwasher",
+      "romanji": "しょっきあらいき",
+      "japanese": "食器洗いき"
+    },
+    {
+      "english": "door handle",
+      "romanji": "ドアノブ",
+      "japanese": "ドアノブ"
+    },
+    {
+      "english": "door lock",
+      "romanji": "ドアのかぎ",
+      "japanese": "ドアの鍵"
+    },
+    {
+      "english": "light switch",
+      "romanji": "でんきのスイッチ",
+      "japanese": "電気のスイッチ"
+    },
+    {
+      "english": "mirror",
+      "romanji": "かがみ",
+      "japanese": "鏡"
+    },
+    {
+      "english": "office chair",
+      "romanji": "オフィスチェア",
+      "japanese": "オフィスチェア"
+    },
+    {
+      "english": "pillow",
+      "romanji": "まくら",
+      "japanese": "枕"
+    },
+    {
+      "english": "radiator",
+      "romanji": "ヒーター",
+      "japanese": "ヒーター"
+    },
+    {
+      "english": "sofa",
+      "romanji": "ソファ",
+      "japanese": "ソファ"
+    },
+    {
+      "english": "wall",
+      "romanji": "かべ",
+      "japanese": "壁"
+    },
+    {
+      "english": "wardrobe",
+      "romanji": "ようふくだんす",
+      "japanese": "洋服ダンス"
+    },
+    {
+      "english": "washing machine",
+      "romanji": "せんたくき",
+      "japanese": "洗濯機"
+    },
+    {
+      "english": "window",
+      "romanji": "まど",
+      "japanese": "窓"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "Transportation & Vehicles",
+  "subtitle": "Airport",
+  "vocab": [
+    {
+      "english": "airport",
+      "romanji": "くうこう",
+      "japanese": "空港"
+    },
+    {
+      "english": "aeroplane",
+      "romanji": "ひこうき",
+      "japanese": "飛行機"
+    },
+    {
+      "english": "check-in",
+      "romanji": "チェックイン",
+      "japanese": "チェックイン"
+    },
+    {
+      "english": "flight ticket",
+      "romanji": "こうくうけん",
+      "japanese": "航空券"
+    },
+    {
+      "english": "scale",
+      "romanji": "はかり",
+      "japanese": "秤"
+    },
+    {
+      "english": "destination",
+      "romanji": "いきさき",
+      "japanese": "行先"
+    },
+    {
+      "english": "excess baggage",
+      "romanji": "ちょうかてにもつ",
+      "japanese": "超過手荷物"
+    },
+    {
+      "english": "arrival",
+      "romanji": "とうちゃく",
+      "japanese": "到着"
+    },
+    {
+      "english": "departure",
+      "romanji": "しゅっぱつ",
+      "japanese": "出発"
+    },
+    {
+      "english": "stewardess",
+      "romanji": "きゃくしつじょうむいん",
+      "japanese": "客室乗務員"
+    },
+    {
+      "english": "passenger",
+      "romanji": "じょうきゃく",
+      "japanese": "乗客"
+    },
+    {
+      "english": "suitcase",
+      "romanji": "スーツケース",
+      "japanese": "スーツケース"
+    },
+    {
+      "english": "passport control",
+      "romanji": "にゅうこくしんさ",
+      "japanese": "入国審査"
+    },
+    {
+      "english": "luggage trolley",
+      "romanji": "てにもつようカート",
+      "japanese": "手荷物用カート"
+    },
+    {
+      "english": "baggage claim",
+      "romanji": "てにもつうけとりじょ",
+      "japanese": "手荷物受取所"
+    },
+    {
+      "english": "I travel",
+      "romanji": "りょこうする",
+      "japanese": "旅行する"
+    },
+    {
+      "english": "I take off",
+      "romanji": "りりくする",
+      "japanese": "離陸する"
+    },
+    {
+      "english": "I land",
+      "romanji": "ちゃくりくする",
+      "japanese": "着陸する"
+    }
+  ]
+}

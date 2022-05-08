@@ -1,0 +1,41 @@
+{
+  "title": "Time & Date",
+  "subtitle": "Days of the Week",
+  "vocab": [
+    {
+      "english": "Monday",
+      "romanji": "げつようび",
+      "japanese": "月曜日"
+    },
+    {
+      "english": "Tuesday",
+      "romanji": "かようび",
+      "japanese": "火曜日"
+    },
+    {
+      "english": "Wednesday",
+      "romanji": "すいようび",
+      "japanese": "水曜日"
+    },
+    {
+      "english": "Thursday",
+      "romanji": "もくようび",
+      "japanese": "木曜日"
+    },
+    {
+      "english": "Friday",
+      "romanji": "きんようび",
+      "japanese": "金曜日"
+    },
+    {
+      "english": "Saturday",
+      "romanji": "どようび",
+      "japanese": "土曜日"
+    },
+    {
+      "english": "Sunday",
+      "romanji": "にちようび",
+      "japanese": "日曜日"
+    }
+  ]
+}

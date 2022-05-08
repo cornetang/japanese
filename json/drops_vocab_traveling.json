@@ -1,0 +1,86 @@
+{
+  "title": "Transportation & Vehicles",
+  "subtitle": "Traveling",
+  "vocab": [
+    {
+      "english": "backpacker",
+      "romanji": "バックパッカー",
+      "japanese": "バックパッカー"
+    },
+    {
+      "english": "bullet train",
+      "romanji": "しんかんせん",
+      "japanese": "新幹線"
+    },
+    {
+      "english": "cruise",
+      "romanji": "クルージング",
+      "japanese": "クルージング"
+    },
+    {
+      "english": "turnstile",
+      "romanji": "かいさつぐち",
+      "japanese": "改札口"
+    },
+    {
+      "english": "hiker",
+      "romanji": "ハイカー",
+      "japanese": "ハイカー"
+    },
+    {
+      "english": "hitchhiking",
+      "romanji": "ヒッチハイク",
+      "japanese": "ヒッチハイク"
+    },
+    {
+      "english": "rail crossing",
+      "romanji": "ふみきり",
+      "japanese": "踏切"
+    },
+    {
+      "english": "train ticket",
+      "romanji": "きっぷ",
+      "japanese": "切符"
+    },
+    {
+      "english": "train carriage",
+      "romanji": "しゃりょう",
+      "japanese": "車両"
+    },
+    {
+      "english": "ticket machine",
+      "romanji": "けんばいき",
+      "japanese": "券売機"
+    },
+    {
+      "english": "tour guide",
+      "romanji": "ツアーガイド",
+      "japanese": "ツアーガイド"
+    },
+    {
+      "english": "tourist",
+      "romanji": "かんこうきゃく",
+      "japanese": "観光客"
+    },
+    {
+      "english": "travel",
+      "romanji": "りょこう",
+      "japanese": "旅行"
+    },
+    {
+      "english": "wagon",
+      "romanji": "ワゴン",
+      "japanese": "ワゴン"
+    },
+    {
+      "english": "I pack",
+      "romanji": "にづくりをする",
+      "japanese": "荷造りをする"
+    },
+    {
+      "english": "I slip",
+      "romanji": "すべる",
+      "japanese": "滑る"
+    }
+  ]
+}

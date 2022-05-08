@@ -1,0 +1,91 @@
+{
+  "title": "City & Shops",
+  "subtitle": "City",
+  "vocab": [
+    {
+      "english": "bakery",
+      "romanji": "パンや",
+      "japanese": "パン屋"
+    },
+    {
+      "english": "barber",
+      "romanji": "どこや",
+      "japanese": "床屋"
+    },
+    {
+      "english": "beatury salon",
+      "romanji": "びよういん",
+      "japanese": "美容院"
+    },
+    {
+      "english": "bike shop",
+      "romanji": "バイクや",
+      "japanese": "バイク屋"
+    },
+    {
+      "english": "book shop",
+      "romanji": "ほにゃ",
+      "japanese": "本屋"
+    },
+    {
+      "english": "confectionery",
+      "romanji": "おかしや",
+      "japanese": "お菓子屋"
+    },
+    {
+      "english": "department store",
+      "romanji": "デパート",
+      "japanese": "デパート"
+    },
+    {
+      "english": "fishmonger",
+      "romanji": "さかなや",
+      "japanese": "魚屋"
+    },
+    {
+      "english": "florist",
+      "romanji": "はなや",
+      "japanese": "花屋"
+    },
+    {
+      "english": "greengrocery",
+      "romanji": "やおや",
+      "japanese": "八百屋"
+    },
+    {
+      "english": "hairdresser",
+      "romanji": "びようし",
+      "japanese": "美容師"
+    },
+    {
+      "english": "jewelry",
+      "romanji": "ほうしょくひん",
+      "japanese": "宝飾品"
+    },
+    {
+      "english": "locksmith",
+      "romanji": "かぎや",
+      "japanese": "鍵屋"
+    },
+    {
+      "english": "optician",
+      "romanji": "めがねや",
+      "japanese": "眼鏡屋"
+    },
+    {
+      "english": "tailor",
+      "romanji": "したてや",
+      "japanese": "仕立てや"
+    },
+    {
+      "english": "tobacco shop",
+      "romanji": "たぼこや",
+      "japanese": "煙草屋"
+    },
+    {
+      "english": "I open",
+      "romanji": "あける",
+      "japanese": "開ける"
+    }
+  ]
+}

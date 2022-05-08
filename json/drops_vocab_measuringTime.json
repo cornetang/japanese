@@ -1,0 +1,81 @@
+{
+  "title": "Time & Date",
+  "subtitle": "Measuring Time",
+  "vocab": [
+    {
+      "english": "second",
+      "romanji": "びょう",
+      "japanese": "秒"
+    },
+    {
+      "english": "minute",
+      "romanji": "ふん",
+      "japanese": "分"
+    },
+    {
+      "english": "hour",
+      "romanji": "じかん",
+      "japanese": "時間"
+    },
+    {
+      "english": "day",
+      "romanji": "ひ",
+      "japanese": "日"
+    },
+    {
+      "english": "week",
+      "romanji": "しゅう",
+      "japanese": "週"
+    },
+    {
+      "english": "month",
+      "romanji": "つき",
+      "japanese": "月"
+    },
+    {
+      "english": "year",
+      "romanji": "とし",
+      "japanese": "年"
+    },
+    {
+      "english": "decade",
+      "romanji": "じゅうねん",
+      "japanese": "十年"
+    },
+    {
+      "english": "century",
+      "romanji": "せいき",
+      "japanese": "世紀"
+    },
+    {
+      "english": "millennium",
+      "romanji": "せんねんかん",
+      "japanese": "千年間"
+    },
+    {
+      "english": "today",
+      "romanji": "きょう",
+      "japanese": "今日"
+    },
+    {
+      "english": "tomorrow",
+      "romanji": "あした",
+      "japanese": "明日"
+    },
+    {
+      "english": "yesterday",
+      "romanji": "きのう",
+      "japanese": "昨日"
+    },
+    {
+      "english": "now",
+      "romanji": "いま",
+      "japanese": "今"
+    },
+    {
+      "english": "later",
+      "romanji": "あとで",
+      "japanese": "後で"
+    }
+  ]
+}

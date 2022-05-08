@@ -1,0 +1,96 @@
+{
+  "title": "Home & Garden",
+  "subtitle": "House",
+  "vocab": [
+    {
+      "english": "house",
+      "romanji": "いえ",
+      "japanese": "家"
+    },
+    {
+      "english": "door",
+      "romanji": "ドア",
+      "japanese": "ドア"
+    },
+    {
+      "english": "dining room",
+      "romanji": "ダイニングルーム",
+      "japanese": "ダイニングルーム"
+    },
+    {
+      "english": "table",
+      "romanji": "テーブル",
+      "japanese": "テーブル"
+    },
+    {
+      "english": "chair",
+      "romanji": "いす",
+      "japanese": "椅子"
+    },
+    {
+      "english": "kitchen",
+      "romanji": "だいどころ",
+      "japanese": "台所"
+    },
+    {
+      "english": "oven",
+      "romanji": "オーブン",
+      "japanese": "オーブン"
+    },
+    {
+      "english": "fridge",
+      "romanji": "れいぞうこ",
+      "japanese": "冷蔵庫"
+    },
+    {
+      "english": "bedroom",
+      "romanji": "しんしつ",
+      "japanese": "寝室"
+    },
+    {
+      "english": "bed",
+      "romanji": "ベッド",
+      "japanese": "ベッド"
+    },
+    {
+      "english": "lamp",
+      "romanji": "あかり",
+      "japanese": "明かり"
+    },
+    {
+      "english": "bathroom",
+      "romanji": "よくしつ",
+      "japanese": "浴室"
+    },
+    {
+      "english": "office",
+      "romanji": "じむしょ",
+      "japanese": "事務所"
+    },
+    {
+      "english": "garden",
+      "romanji": "にわ",
+      "japanese": "庭"
+    },
+    {
+      "english": "neighbour",
+      "romanji": "きんじょのひと",
+      "japanese": "近所の人"
+    },
+    {
+      "english": "I vaccum",
+      "romanji": "そうじきをかける",
+      "japanese": "掃除機をかける"
+    },
+    {
+      "english": "I wash the dishes",
+      "romanji": "おさらをあらう",
+      "japanese": "お皿を洗う"
+    },
+    {
+      "english": "I put down",
+      "romanji": "したにおく",
+      "japanese": "下に置く"
+    }
+  ]
+}

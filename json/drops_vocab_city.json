@@ -1,0 +1,96 @@
+{
+  "title": "City & Shops",
+  "subtitle": "City",
+  "vocab": [
+    {
+      "english": "bank",
+      "romanji": "ぎんこう",
+      "japanese": "銀行"
+    },
+    {
+      "english": "bar",
+      "romanji": "バー",
+      "japanese": "バー"
+    },
+    {
+      "english": "bridge",
+      "romanji": "はし",
+      "japanese": "橋"
+    },
+    {
+      "english": "bus stop",
+      "romanji": "ばすてい",
+      "japanese": "バス停"
+    },
+    {
+      "english": "castle",
+      "romanji": "おしろ",
+      "japanese": "お城"
+    },
+    {
+      "english": "graveyard",
+      "romanji": "ぼち",
+      "japanese": "墓地"
+    },
+    {
+      "english": "disco",
+      "romanji": "ディスコ",
+      "japanese": "ディスコ"
+    },
+    {
+      "english": "pedestrian crossing",
+      "romanji": "おうだんほどう",
+      "japanese": "横断歩道"
+    },
+    {
+      "english": "junction",
+      "romanji": "こうさてん",
+      "japanese": "交差点"
+    },
+    {
+      "english": "laundry",
+      "romanji": "せんたく",
+      "japanese": "洗濯"
+    },
+    {
+      "english": "park",
+      "romanji": "こうえん",
+      "japanese": "公園"
+    },
+    {
+      "english": "traffic light",
+      "romanji": "しんごう",
+      "japanese": "信号"
+    },
+    {
+      "english": "train station",
+      "romanji": "えき",
+      "japanese": "駅"
+    },
+    {
+      "english": "fountain",
+      "romanji": "ふんすい",
+      "japanese": "噴水"
+    },
+    {
+      "english": "cathedral",
+      "romanji": "だいせいどう",
+      "japanese": "大聖堂"
+    },
+    {
+      "english": "I spit",
+      "romanji": "はきだす",
+      "japanese": "吐き出す"
+    },
+    {
+      "english": "I cut",
+      "romanji": "きる",
+      "japanese": "切る"
+    },
+    {
+      "english": "I walk",
+      "romanji": "あるく",
+      "japanese": "歩く"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "title": "Japanese Specific Words",
+  "subtitle": "Measure Words",
+  "vocab": [
+    {
+      "english": "one (unit)",
+      "romanji": "ひとつ",
+      "japanese": "一つ"
+    },
+    {
+      "english": "two ",
+      "romanji": "ふたつ",
+      "japanese": "二つ"
+    },
+    {
+      "english": "three",
+      "romanji": "みっつ",
+      "japanese": "三つ"
+    },
+    {
+      "english": "four",
+      "romanji": "よっつ",
+      "japanese": "四つ"
+    },
+    {
+      "english": "five",
+      "romanji": "いつつ",
+      "japanese": "五つ"
+    },
+    {
+      "english": "six",
+      "romanji": "むっつ",
+      "japanese": "六つ"
+    },
+    {
+      "english": "seven",
+      "romanji": "ななつ",
+      "japanese": "七つ"
+    },
+    {
+      "english": "eight",
+      "romanji": "やっつ",
+      "japanese": "八つ"
+    },
+    {
+      "english": "nine",
+      "romanji": "ここのつ",
+      "japanese": "九つ"
+    },
+    {
+      "english": "ten",
+      "romanji": "とお",
+      "japanese": "十"
+    },
+    {
+      "english": "measure words for machines",
+      "romanji": "だい",
+      "japanese": "台"
+    },
+    {
+      "english": "measure word for small items",
+      "romanji": "こ",
+      "japanese": "個"
+    },
+    {
+      "english": "measure word for time",
+      "romanji": "かい",
+      "japanese": "回"
+    },
+    {
+      "english": "measure word for flat objects",
+      "romanji": "まい",
+      "japanese": "枚"
+    },
+    {
+      "english": "measure word for books",
+      "romanji": "さつ",
+      "japanese": "冊"
+    }
+  ]
+}

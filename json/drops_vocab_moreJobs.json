@@ -1,0 +1,91 @@
+{
+  "title": "Business & Tech",
+  "subtitle": "More Jobs",
+  "vocab": [
+    {
+      "english": "accountant",
+      "romanji": "かいけいし",
+      "japanese": "会計士"
+    },
+    {
+      "english": "architect",
+      "romanji": "せっけいし",
+      "japanese": "設計士"
+    },
+    {
+      "english": "blacksmith",
+      "romanji": "かじや",
+      "japanese": "鍛冶屋"
+    },
+    {
+      "english": "car mechanic",
+      "romanji": "じどうしゃせいびし",
+      "japanese": "自動車整備士"
+    },
+    {
+      "english": "carpenter",
+      "romanji": "だいく",
+      "japanese": "大工"
+    },
+    {
+      "english": "chemist",
+      "romanji": "かがくしゃ",
+      "japanese": "科学者"
+    },
+    {
+      "english": "firefighter",
+      "romanji": "しょうぼうし",
+      "japanese": "消防士"
+    },
+    {
+      "english": "fisherman",
+      "romanji": "りょうし",
+      "japanese": "漁師"
+    },
+    {
+      "english": "gardener",
+      "romanji": "にわし",
+      "japanese": "庭師"
+    },
+    {
+      "english": "nurse",
+      "romanji": "かんごし",
+      "japanese": "看護師"
+    },
+    {
+      "english": "painter",
+      "romanji": "とそうこう",
+      "japanese": "塗装工"
+    },
+    {
+      "english": "plumber",
+      "romanji": "はいかんこう",
+      "japanese": "配管工"
+    },
+    {
+      "english": "policeman",
+      "romanji": "けいさつかん",
+      "japanese": "警察官"
+    },
+    {
+      "english": "psychologist",
+      "romanji": "しんりがくしゃ",
+      "japanese": "心理学者"
+    },
+    {
+      "english": "taxi driver",
+      "romanji": "タクシーうんてんしゅ",
+      "japanese": "タクシー運転手"
+    },
+    {
+      "english": "vet",
+      "romanji": "じゅうい",
+      "japanese": "獣医"
+    },
+    {
+      "english": "writer",
+      "romanji": "さっか",
+      "japanese": "作家"
+    }
+  ]
+}

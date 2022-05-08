@@ -1,0 +1,81 @@
+{
+  "title": "Business & Tech",
+  "subtitle": "Jobs",
+  "vocab": [
+    {
+      "english": "office worker",
+      "romanji": "じむいん",
+      "japanese": "事務員"
+    },
+    {
+      "english": "teacher",
+      "romanji": "せんせい",
+      "japanese": "先生"
+    },
+    {
+      "english": "student",
+      "romanji": "がくせい",
+      "japanese": "学生"
+    },
+    {
+      "english": "programmer",
+      "romanji": "プログラムー",
+      "japanese": "プログラムー"
+    },
+    {
+      "english": "scientist",
+      "romanji": "かがくしゃ",
+      "japanese": "科学者"
+    },
+    {
+      "english": "doctor",
+      "romanji": "いしゃ",
+      "japanese": "医者"
+    },
+    {
+      "english": "journalist",
+      "romanji": "ジャーナリスト",
+      "japanese": "ジャーナリスト"
+    },
+    {
+      "english": "solicitor",
+      "romanji": "べんごし",
+      "japanese": "弁護士"
+    },
+    {
+      "english": "cook",
+      "romanji": "りょうりにん",
+      "japanese": "料理人"
+    },
+    {
+      "english": "mechanic",
+      "romanji": "せいびし",
+      "japanese": "整備士"
+    },
+    {
+      "english": "waiter",
+      "romanji": "ウェイター",
+      "japanese": "ウェイター"
+    },
+    {
+      "english": "secretary",
+      "romanji": "ひしょ",
+      "japanese": "秘書"
+    },
+    {
+      "english": "athlete",
+      "romanji": "スボーツせんしゅ",
+      "japanese": "スボーツ選手"
+    },
+    {
+      "english": "musician",
+      "romanji": "おんがくか",
+      "japanese": "音楽家"
+    },
+    {
+      "english": "I work",
+      "romanji": "はたらく",
+      "japanese": "働く"
+    }
+  ]
+}

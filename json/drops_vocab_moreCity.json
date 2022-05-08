@@ -1,0 +1,91 @@
+{
+  "title": "City & Shops",
+  "subtitle": "City",
+  "vocab": [
+    {
+      "english": "car accident",
+      "romanji": "じどうしゃじこ",
+      "japanese": "自動車事故"
+    },
+    {
+      "english": "bench",
+      "romanji": "ベンチ",
+      "japanese": "ベンチ"
+    },
+    {
+      "english": "bike parking",
+      "romanji": "ちゅうりんじょう",
+      "japanese": "駐輪場"
+    },
+    {
+      "english": "billboard",
+      "romanji": "かんばん",
+      "japanese": "看板"
+    },
+    {
+      "english": "dentist",
+      "romanji": "はいしゃ",
+      "japanese": "歯医者"
+    },
+    {
+      "english": "fence",
+      "romanji": "さく",
+      "japanese": "柵"
+    },
+    {
+      "english": "fire service",
+      "romanji": "しょうぼうしょ",
+      "japanese": "消防署"
+    },
+    {
+      "english": "gym",
+      "romanji": "ジム",
+      "japanese": "ジム"
+    },
+    {
+      "english": "hostel",
+      "romanji": "かんいしゅくはくじょ",
+      "japanese": "簡易宿泊所"
+    },
+    {
+      "english": "parking meter",
+      "romanji": "パーキングメーター",
+      "japanese": "パーキングメーター"
+    },
+    {
+      "english": "jail",
+      "romanji": "けいむしょ",
+      "japanese": "刑務所"
+    },
+    {
+      "english": "statue",
+      "romanji": "ぞう",
+      "japanese": "象"
+    },
+    {
+      "english": "tourist information",
+      "romanji": "かんこうあんあい",
+      "japanese": "観光案内"
+    },
+    {
+      "english": "town hall",
+      "romanji": "まちやくば",
+      "japanese": "町役場"
+    },
+    {
+      "english": "university",
+      "romanji": "だいがく",
+      "japanese": "大学"
+    },
+    {
+      "english": "zoo",
+      "romanji": "どうぶつえん",
+      "japanese": "動物園"
+    },
+    {
+      "english": "I shout",
+      "romanji": "さけぶ",
+      "japanese": "叫ぶ"
+    }
+  ]
+}

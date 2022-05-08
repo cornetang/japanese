@@ -1,0 +1,71 @@
+{
+  "title": "Time & Date",
+  "subtitle": "Parts of the Day",
+  "vocab": [
+    {
+      "english": "sunrise",
+      "romanji": "ひので",
+      "japanese": "日の出"
+    },
+    {
+      "english": "morning",
+      "romanji": "あさ",
+      "japanese": "朝"
+    },
+    {
+      "english": "noon",
+      "romanji": "ひる",
+      "japanese": "昼"
+    },
+    {
+      "english": "afternoon",
+      "romanji": "ごご",
+      "japanese": "午後"
+    },
+    {
+      "english": "sunset",
+      "romanji": "ゆうひ",
+      "japanese": "夕陽"
+    },
+    {
+      "english": "evening",
+      "romanji": "ばん",
+      "japanese": "晩"
+    },
+    {
+      "english": "night",
+      "romanji": "よる",
+      "japanese": "夜"
+    },
+    {
+      "english": "midnight",
+      "romanji": "まよなか",
+      "japanese": "真夜中"
+    },
+    {
+      "english": "middle of the night",
+      "romanji": "よなか",
+      "japanese": "夜中"
+    },
+    {
+      "english": "winter",
+      "romanji": "ふゆ",
+      "japanese": "冬"
+    },
+    {
+      "english": "summer",
+      "romanji": "なつ",
+      "japanese": "夏"
+    },
+    {
+      "english": "autumn",
+      "romanji": "あき",
+      "japanese": "秋"
+    },
+    {
+      "english": "spring",
+      "romanji": "はる",
+      "japanese": "春"
+    }
+  ]
+}

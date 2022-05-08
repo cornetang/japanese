@@ -36,6 +36,51 @@
     ]
   },
   {
+    "title": "Travel Talk",
+    "vocabList" : [
+      "drops_vocab_essentials01daytripper.json",
+      "drops_vocab_essentials02sightseer.json",
+      "drops_vocab_essentials03nomad.json",
+      "drops_vocab_essentials04globetrotter.json",
+      "drops_vocab_meetAndGreet.json",
+      "drops_vocab_meetTheLocals.json",
+      "drops_vocab_essentialProducts.json",
+      "drops_vocab_buyAndBargain.json",
+      "drops_vocab_eatAndDrink.json"
+    ]
+  }
+  {
+    "title": "Workplace Talk",
+    "vocabList" : [
+      "drops_vocab_givingPresentations.json",
+      "drops_vocab_talkingOnThePhone.json",
+      "drops_vocab_virtualCall.json",
+      "drops_vocab_phrasesForMeetings.json",
+      "drops_vocab_coffeeBreakChats.json",
+      "drops_vocab_writingEmails.json",
+      "drops_vocab_jobInterview.json"
+    ]
+  },
+  {
+    "title": "Nature & Animals",
+    "vocabList" : [
+      "drops_vocab_babyAnimals.json",
+      "drops_vocab_outdoor.json",
+      "drops_vocab_animals.json",
+      "drops_vocab_wildAnimals.json",
+      "drops_vocab_moreWildAnimals.json",
+      "drops_vocab_birds.json",
+      "drops_vocab_insects.json",
+      "drops_vocab_pets.json",
+      "drops_vocab_animalSounds.json",
+      "drops_vocab_seaLife.json",
+      "drops_vocab_moreSeaAnimals.json",
+      "drops_vocab_plants.json",
+      "drops_vocab_air.json",
+      "drops_vocab_beach.json"
+    ]
+  },
+  {
     "title": "People and Relationships",
     "vocabList" : [
       "drops_vocab_myFamily.json",
@@ -127,6 +172,156 @@
       "drops_vocab_inCaseOfFire.json",
       "drops_vocab_shelters.json",
       "drops_vocab_containers.json"
+    ]
+  },
+  {
+    "title": "City & Shops",
+    "vocabList" : [
+      "drops_vocab_shopping.json",
+      "drops_vocab_shops.json",
+      "drops_vocab_supermarket.json",
+      "drops_vocab_city.json",
+      "drops_vocab_moreCity.json",
+      "drops_vocab_buildings.json",
+      "drops_vocab_moreBuildings.json",
+      "drops_vocab_hotel.json",
+      "drops_vocab_postOffice.json",
+      "drops_vocab_hospital.json",
+      "drops_vocab_signs.json",
+      "drops_vocab_navigation.json"
+    ]
+  },
+  {
+    "title": "Business & Tech",
+    "vocabList" : [
+      "drops_vocab_jobs.json",
+      "drops_vocab_moreJobs.json",
+      "drops_vocab_media.json",
+      "drops_vocab_workspace.json",
+      "drops_vocab_success.json",
+      "drops_vocab_computers.json",
+      "drops_vocab_moreComputers.json",
+      "drops_vocab_dotCom.json",
+      "drops_vocab_business.json",
+      "drops_vocab_etiquette.json",
+      "drops_vocab_agriculture.json"
+    ]
+  },
+  {
+    "title": "Fashion & Clothing",
+    "vocabList" : [
+      "drops_vocab_clothes.json",
+      "drops_vocab_moreClothes.json",
+      "drops_vocab_evenMoreClothes.json",
+      "drops_vocab_headwear.json",
+      "drops_vocab_makeup.json",
+      "drops_vocab_beautySalon.json",
+      "drops_vocab_jewelleryAndAccessories.json",
+      "drops_vocab_luxury.json"
+    ]
+  },
+  {
+    "title": "Fun & Recreation",
+    "vocabList" : [
+      "drops_vocab_fun.json",
+      "drops_vocab_toys.json",
+      "drops_vocab_hobbies.json",
+      "drops_vocab_music.json",
+      "drops_vocab_musicalInstruments.json",
+      "drops_vocab_sound.json",
+      "drops_vocab_festivals.json",
+      "drops_vocab_camping.json",
+      "drops_vocab_fishingAndHunting.json",
+      "drops_vocab_library.json",
+      "drops_vocab_reading.json",
+      "drops_vocab_punctuation.json",
+      "drops_vocab_magicAndFantasy.json",
+      "drops_vocab_tales.json"
+    ]
+  },
+  {
+    "title": "Science & Wisdom",
+    "vocabList" : [
+      "drops_vocab_school.json",
+      "drops_vocab_geography.json",
+      "drops_vocab_moreGeography.json",
+      "drops_vocab_biology.json",
+      "drops_vocab_ecology.json",
+      "drops_vocab_mathematics.json",
+      "drops_vocab_astronomy.json"
+    ]
+  },
+  {
+    "title": "Sports & Fitness",
+    "vocabList" : [
+      "drops_vocab_sports.json",
+      "drops_vocab_moreSports.json",
+      "drops_vocab_extremeSports.json",
+      "drops_vocab_sportsEquipment.json",
+      "drops_vocab_athletics.json",
+      "drops_vocab_swimming.json",
+      "drops_vocab_gym.json",
+      "drops_vocab_soccerAndBasketball.json",
+      "drops_vocab_skiingAndIceHockey.json",
+      "drops_vocab_bicycle.json"
+    ]
+  },
+  {
+    "title": "Society & Politics",
+    "vocabList" : [
+      "drops_vocab_leaders.json",
+      "drops_vocab_society.json",
+      "drops_vocab_community.json",
+      "drops_vocab_politics.json",
+      "drops_vocab_crime.json",
+      "drops_vocab_prison.json"
+    ]
+  },
+  {
+    "title": "Time & Date",
+    "vocabList" : [
+      "drops_vocab_daysOfTheWeek.json",
+      "drops_vocab_monthsOfTheYear.json",
+      "drops_vocab_measuringTime.json",
+      "drops_vocab_partsOfTheDay.json",
+      "drops_vocab_talkingAboutTime.json",
+      "drops_vocab_winter.json",
+      "drops_vocab_spring.json",
+      "drops_vocab_summer.json",
+      "drops_vocab_autumn.json"
+    ]
+  },
+  {
+    "title": "Climate Awareness",
+    "vocabList" : [
+      "drops_vocab_motherNature.json",
+      "drops_vocab_climateCrisis.json",
+      "drops_vocab_makingAnImpact.json",
+      "drops_vocab_ecology.json",
+      "drops_vocab_naturalDisasters.json"
+    ]
+  },
+  {
+    "title": "Verb & Phrases",
+    "vocabList" : [
+      "drops_vocab_asAHumanI.json",
+      "drops_vocab_howIMove.json",
+      "drops_vocab_howIAct.json",
+      "drops_vocab_whatIDo.json",
+      "drops_vocab_basicPhrases.json",
+      "drops_vocab_moreBasicPhrases.json",
+      "drops_vocab_challengingPhrases.json",
+      "drops_vocab_moreChallengingPhrases.json",
+    ]
+  },
+  {
+    "title": "Holidays",
+    "vocabList" : [
+      "drops_vocab_newYearsjson",
+      "drops_vocab_lunarNewYear.json",
+      "drops_vocab_valentinesDay.json",
+      "drops_vocab_halloween.json",
+      "drops_vocab_winterHolidays.json"
     ]
   }
 ]

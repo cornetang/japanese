@@ -1,0 +1,66 @@
+{
+  "title": "Time & Date",
+  "subtitle": "Months of the Year",
+  "vocab": [
+    {
+      "english": "January",
+      "romanji": "いちげつ",
+      "japanese": "一月"
+    },
+    {
+      "english": "February",
+      "romanji": "にげつ",
+      "japanese": "二月"
+    },
+    {
+      "english": "March",
+      "romanji": "さんげつ",
+      "japanese": "三月"
+    },
+    {
+      "english": "April",
+      "romanji": "しげつ",
+      "japanese": "四月"
+    },
+    {
+      "english": "May",
+      "romanji": "ごげつ",
+      "japanese": "五月"
+    },
+    {
+      "english": "June",
+      "romanji": "ろくげつ",
+      "japanese": "六月"
+    },
+    {
+      "english": "July",
+      "romanji": "しちげつ",
+      "japanese": "七月"
+    },
+    {
+      "english": "August",
+      "romanji": "はちげつ",
+      "japanese": "八月"
+    },
+    {
+      "english": "September",
+      "romanji": "くげつ",
+      "japanese": "九月"
+    },
+    {
+      "english": "October",
+      "romanji": "じゅうげつ",
+      "japanese": "十月"
+    },
+    {
+      "english": "November",
+      "romanji": "じゅういちげつ",
+      "japanese": "十一月"
+    },
+    {
+      "english": "December",
+      "romanji": "じゅうにげつ",
+      "japanese": "十二月"
+    }
+  ]
+}

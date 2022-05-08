@@ -1,0 +1,149 @@
+<html>
+<head>
+	<title>CORNE・ちは</title>
+	
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/popper.min.js"></script> <!-- Selector dropdown -->
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-select.min.js"></script> <!-- Selector dropdown -->
+	
+	<link rel="stylesheet" href="css/all.css"> <!-- Fontawesome -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-select.min.css"> <!-- Selector dropdown -->
+	<link rel="stylesheet" href="css/style.css">
+	
+
+	<script type="text/javascript">
+		$(function() {    
+			fetch("https://cornetang.github.io/japanese/json/drops_content.json")
+			.then(response => response.json())
+			.then(data => {
+				for (const vocabLists of data) {
+					var $new_topic = $('<div class="col-lg-4"></div>');
+					var $new_padding = $('<h1></h1>');
+					var $new_topic_title = $('<h5 class="font-weight-bold text-center"></h5>')
+					var $new_divider = $('<hr class="divider" />')
+					var $new_subtopic_list = $('<div class="list-group"></div')
+					
+					$new_topic_title.append(vocabLists["title"]);
+					$new_topic.append($new_padding);
+					$new_topic.append($new_topic_title);
+					$new_topic.append($new_divider);
+					
+					for (const vocabList of vocabLists["vocabList"]) {
+						var $new_subtopic = $('<a href="" class="list-group-item list-group-item-action disabled"></a>')
+						$new_subtopic.attr('id', vocabList.split('.')[0]);
+						$new_subtopic.append(vocabList);
+						$new_subtopic_list.append($new_subtopic);
+						$new_topic.append($new_subtopic_list);
+						
+						fetch("https://cornetang.github.io/japanese/json/" + vocabList)
+						.catch(e => console.log('Connection error', e))
+						.then(response => response.json())
+						.then(data => {
+							$("#" + vocabList.split('.')[0]).text(data["subtitle"]);
+							$("#" + vocabList.split('.')[0]).removeClass("disabled");
+						})
+					}
+					$("#vocabList").append($new_topic);
+				}
+			})
+
+			$("#speakButton").click(function() {
+			    var speechMsg = $("#speech-msg").val();
+			    if (!includeEnglish) speechMsg = speechMsg.replace(/[a-z]/gi, '');
+			    if (speechMsg.length > 0) {
+			      if (window.speechSynthesis.paused && window.speechSynthesis.speaking) {
+			        window.speechSynthesis.resume();
+			      }
+			      else {
+			        var msg = new SpeechSynthesisUtterance();
+			        msg.text = speechMsg;
+			        msg.volume = volumeInput;
+			        msg.rate = rateInput;
+			        msg.lang = 'ja-JP';
+			        msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voiceSelect.value; })[0];
+			        // console.log("volumn: " + msg.volume + ", rate: " + msg.rate + ", voice: " + msg.voice.name);
+
+			        window.speechSynthesis.speak(msg);
+			        $("#speech-msg").prop('disabled', true);
+			        msg.addEventListener('end', function () {
+			        　$("#speech-msg").prop('disabled', false);
+			        })
+			      }
+			    }
+			});
+		});
+	</script>
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+		<div class="container px-4 px-lg-5">
+			<a class="navbar-brand" href="index.html">CORNE・ちは</a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="japanese_synthesis.html">Japanese Sysnthesis</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="study_planner.html">Study Planner</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							Vocabularies
+						</a>
+						<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<a class="dropdown-item" href="vocab_genki.html">げんき</a>
+							<a class="dropdown-item" href="vocab_drops_content.html">Drops</a>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container px-4 px-lg-5">
+		<div class="row">
+			<div class="col-lg-12">
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<h2 class="font-weight-bold text-center">Drops Vocab List</h2>
+						<hr class="divider" />
+						<center>
+							<a href="vocab_drops.html" class="btn btn-dark btn-lg" role="button">
+								View full list 
+								<i class="fa-solid fa-list"></i>
+							</a>
+						</center>
+						<br>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-12">
+						<br>
+						<h3 class="font-weight-bold text-center">Content</h3>
+						<hr class="divider" />
+					</div>
+				</div>
+				<div id="page-wrapper">
+					<div class="row" id="vocabList">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="text-center text-lg-start bg-light text-muted">
+  		<font size="3">Small daily improvements over time lead to stunning results.</font>
+		<br>
+		<font size="1">Works best on Chrome with Mac. (Please don't judge if anything breaks <i class="fa-solid fa-heart-crack"></i>, cheers)</font>
+	</footer>
+</body>
+</html>
