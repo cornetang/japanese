@@ -14,10 +14,12 @@
 	
 
 	<script type="text/javascript">
-		$(function() {    
+		$(function() {
+			alert("fetch begins");
 			fetch("https://cornetang.github.io/japanese/json/drops_content.json")
 			.then(response => response.json())
 			.then(data => {
+				alert("fetched");
 				for (const vocabLists of data) {
 					var $new_topic = $('<div class="col-lg-4"></div>');
 					var $new_padding = $('<h1></h1>');
