@@ -1,0 +1,96 @@
+{
+  "title": "Health & Wellness",
+  "subtitle": "Daily Routines",
+  "vocab": [
+    {
+      "english": "earache",
+      "romanji": "じつう",
+      "japanese": "じつう"
+    },
+    {
+      "english": "stomach ache",
+      "romanji": "ふくつう",
+      "japanese": "腹痛"
+    },
+    {
+      "english": "backache",
+      "romanji": "ようつう",
+      "japanese": "腰痛"
+    },
+    {
+      "english": "bruise",
+      "romanji": "だぼく",
+      "japanese": "打撲"
+    },
+    {
+      "english": "blurry vision",
+      "romanji": "めのかすみ",
+      "japanese": "目のかすみ"
+    },
+    {
+      "english": "stiff neck",
+      "romanji": "かたこり",
+      "japanese": "肩こり"
+    },
+    {
+      "english": "blister",
+      "romanji": "まめ",
+      "japanese": "まめ"
+    },
+    {
+      "english": "chapped lips",
+      "romanji": "くちびるのあれ",
+      "japanese": "唇の荒れ"
+    },
+    {
+      "english": "sunburn",
+      "romanji": "ひやけ",
+      "japanese": "日焼け"
+    },
+    {
+      "english": "dizzy",
+      "romanji": "あまい",
+      "japanese": "あまい"
+    },
+    {
+      "english": "nauseous",
+      "romanji": "はきけ",
+      "japanese": "吐き気"
+    },
+    {
+      "english": "insect bite",
+      "romanji": "むしさされ",
+      "japanese": "虫刺され"
+    },
+    {
+      "english": "pain",
+      "romanji": "いたみ",
+      "japanese": "痛み"
+    },
+    {
+      "english": "bone fracture",
+      "romanji": "こっせつ",
+      "japanese": "骨折"
+    },
+    {
+      "english": "muscle strain",
+      "romanji": "きんにくのはり",
+      "japanese": "筋肉の張り"
+    },
+    {
+      "english": "cramp",
+      "romanji": "けいれん",
+      "japanese": "けいれん"
+    },
+    {
+      "english": "it hurts",
+      "romanji": "いたい",
+      "japanese": "痛い"
+    },
+    {
+      "english": "I care",
+      "romanji": "きにかける",
+      "japanese": "気にかける"
+    }
+  ]
+}

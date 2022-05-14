@@ -1,0 +1,66 @@
+{
+  "title": "Food & Drinks",
+  "subtitle": "Drinks",
+  "vocab": [
+    {
+      "english": "coffee",
+      "romanji": "コーヒー",
+      "japanese": "コーヒー"
+    },
+    {
+      "english": "coke",
+      "romanji": "コーラ",
+      "japanese": "コーラ"
+    },
+    {
+      "english": "hot chocolate",
+      "romanji": "ホットチョコレート",
+      "japanese": "ホットチョコレート"
+    },
+    {
+      "english": "drink",
+      "romanji": "のみもの",
+      "japanese": "飲み物"
+    },
+    {
+      "english": "milk",
+      "romanji": "ぎゅうにゅう",
+      "japanese": "牛乳"
+    },
+    {
+      "english": "mineral water",
+      "romanji": "ミネラルウォーター",
+      "japanese": "ミネラルウォーター"
+    },
+    {
+      "english": "orange juice",
+      "romanji": "オレンジジュース",
+      "japanese": "オレンジジュース"
+    },
+    {
+      "english": "soft drink",
+      "romanji": "たんさんいんりょう",
+      "japanese": "炭酸飲料"
+    },
+    {
+      "english": "tea",
+      "romanji": "おちゃ",
+      "japanese": "お茶"
+    },
+    {
+      "english": "water",
+      "romanji": "みず",
+      "japanese": "水"
+    },
+    {
+      "english": "I drink",
+      "romanji": "のむ",
+      "japanese": "飲む"
+    },
+    {
+      "english": "I dislike",
+      "romanji": "きらい",
+      "japanese": "嫌い"
+    }
+  ]
+}

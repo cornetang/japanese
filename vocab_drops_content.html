@@ -15,11 +15,9 @@
 
 	<script type="text/javascript">
 		$(function() {
-			alert("fetch begins");
 			fetch("https://cornetang.github.io/japanese/json/drops_content.json")
 			.then(response => response.json())
 			.then(data => {
-				alert("fetched");
 				for (const vocabLists of data) {
 					var $new_topic = $('<div class="col-lg-4"></div>');
 					var $new_padding = $('<h1></h1>');
@@ -50,31 +48,6 @@
 					$("#vocabList").append($new_topic);
 				}
 			})
-
-			$("#speakButton").click(function() {
-			    var speechMsg = $("#speech-msg").val();
-			    if (!includeEnglish) speechMsg = speechMsg.replace(/[a-z]/gi, '');
-			    if (speechMsg.length > 0) {
-			      if (window.speechSynthesis.paused && window.speechSynthesis.speaking) {
-			        window.speechSynthesis.resume();
-			      }
-			      else {
-			        var msg = new SpeechSynthesisUtterance();
-			        msg.text = speechMsg;
-			        msg.volume = volumeInput;
-			        msg.rate = rateInput;
-			        msg.lang = 'ja-JP';
-			        msg.voice = speechSynthesis.getVoices().filter(function(voice) { return voice.name == voiceSelect.value; })[0];
-			        // console.log("volumn: " + msg.volume + ", rate: " + msg.rate + ", voice: " + msg.voice.name);
-
-			        window.speechSynthesis.speak(msg);
-			        $("#speech-msg").prop('disabled', true);
-			        msg.addEventListener('end', function () {
-			        　$("#speech-msg").prop('disabled', false);
-			        })
-			      }
-			    }
-			});
 		});
 	</script>
 </head>

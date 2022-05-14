@@ -1,0 +1,81 @@
+{
+  "title": "Health & Wellness",
+  "subtitle": "Daily Routines",
+  "vocab": [
+    {
+      "english": "I comb my hair",
+      "romanji": "かみをとく",
+      "japanese": "髪をとく"
+    },
+    {
+      "english": "I set an alarm",
+      "romanji": "アラームをせっていする",
+      "japanese": "アラームを設定する"
+    },
+    {
+      "english": "I wake up",
+      "romanji": "めをさます",
+      "japanese": "目を覚ます"
+    },
+    {
+      "english": "I go to bed",
+      "romanji": "ねる",
+      "japanese": "寝る"
+    },
+    {
+      "english": "I wash my face",
+      "romanji": "かおをあらう",
+      "japanese": "顔を洗う"
+    },
+    {
+      "english": "I go to work",
+      "romanji": "しごとにいく",
+      "japanese": "仕事に行く"
+    },
+    {
+      "english": "I have lunch",
+      "romanji": "ちょうしょくをたべる",
+      "japanese": "朝食を食べる"
+    },
+    {
+      "english": "I return home",
+      "romanji": "いえにかえる",
+      "japanese": "家に帰る"
+    },
+    {
+      "english": "I finish",
+      "romanji": "おえる",
+      "japanese": "終える"
+    },
+    {
+      "english": "I take the bins out",
+      "romanji": "ゴミをだす",
+      "japanese": "ゴミを出す"
+    },
+    {
+      "english": "I dry my hair",
+      "romanji": "かみをかわかす",
+      "japanese": "髪を乾かす"
+    },
+    {
+      "english": "I surf the net",
+      "romanji": "ネットサーフィンする",
+      "japanese": "ネットサーフィンする"
+    },
+    {
+      "english": "I commute",
+      "romanji": "つうきんする",
+      "japanese": "通勤する"
+    },
+    {
+      "english": "I make coffee",
+      "romanji": "コーヒーをつくる",
+      "japanese": "コーヒーを作る"
+    },
+    {
+      "english": "I shave",
+      "romanji": "ひげをそる",
+      "japanese": "髭を剃る"
+    }
+  ]
+}

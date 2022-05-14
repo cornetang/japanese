@@ -1,0 +1,91 @@
+{
+  "title": "Food & Drinks",
+  "subtitle": "Vegetables",
+    "vocab": [
+    {
+      "english": "avocado",
+      "romanji": "アボカド",
+      "japanese": "アボカド"
+    },
+    {
+      "english": "bean",
+      "romanji": "まめ",
+      "japanese": "豆"
+    },
+    {
+      "english": "broccoli",
+      "romanji": "ブロッコリ",
+      "japanese": "ブロッコリ"
+    },
+    {
+      "english": "cabbage",
+      "romanji": "キャベツ",
+      "japanese": "キャベツ"
+    },
+    {
+      "english": "carrot",
+      "romanji": "ニンジン",
+      "japanese": "ニンジン/人参"
+    },
+    {
+      "english": "cauliflower",
+      "romanji": "カリフラワー",
+      "japanese": "カリフラワー"
+    },
+    {
+      "english": "corn",
+      "romanji": "トウモロコシ",
+      "japanese": "トウモロコシ/玉蜀黍"
+    },
+    {
+      "english": "cucumber",
+      "romanji": "キュウり",
+      "japanese": "キュウり/胡瓜"
+    },
+    {
+      "english": "garlic",
+      "romanji": "ニンニク",
+      "japanese": "ニンニク/大蒜"
+    },
+    {
+      "english": "lettuce",
+      "romanji": "レタス",
+      "japanese": "レタス"
+    },
+    {
+      "english": "onion",
+      "romanji": "たまねぎ",
+      "japanese": "玉ねぎ"
+    },
+    {
+      "english": "parsley",
+      "romanji": "パセリ",
+      "japanese": "パセリ"
+    },
+    {
+      "english": "potato",
+      "romanji": "じゃがいも",
+      "japanese": "じゃがいも/じゃが芋"
+    },
+    {
+      "english": "pumpkin",
+      "romanji": "カボチャ",
+      "japanese": "カボチャ/南瓜"
+    },
+    {
+      "english": "radish",
+      "romanji": "かぶ",
+      "japanese": "蕪"
+    },
+    {
+      "english": "rice",
+      "romanji": "こめ",
+      "japanese": "米"
+    },
+    {
+      "english": "tomato",
+      "romanji": "トマト",
+      "japanese": "トマト"
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "title": "Foundation",
+  "subtitle": "Shapes",
+  "vocab": [
+    {
+      "english": "arch",
+      "romanji": "ゆみがた",
+      "japanese": "弓型"
+    },
+    {
+      "english": "circle",
+      "romanji": "えんけい",
+      "japanese": "円形"
+    },
+    {
+      "english": "cone",
+      "romanji": "えんすい",
+      "japanese": "円錐"
+    },
+    {
+      "english": "cube",
+      "romanji": "りっぽうたい",
+      "japanese": "立方体"
+    },
+    {
+      "english": "cylinder",
+      "romanji": "えんちゅうけい",
+      "japanese": "円柱形"
+    },
+    {
+      "english": "octagon",
+      "romanji": "はっかっけい",
+      "japanese": "八角形"
+    },
+    {
+      "english": "oval",
+      "romanji": "だえんけい",
+      "japanese": "楕円形"
+    },
+    {
+      "english": "pentagon",
+      "romanji": "ごかっけい",
+      "japanese": "五角形"
+    },
+    {
+      "english": "pyramid",
+      "romanji": "かくすい",
+      "japanese": "角錐"
+    },
+    {
+      "english": "rectangle",
+      "romanji": "ちょうほうけい",
+      "japanese": "長方形"
+    },
+    {
+      "english": "hexagon",
+      "romanji": "ろっかっけい",
+      "japanese": "六角形"
+    },
+    {
+      "english": "ring",
+      "romanji": "わ",
+      "japanese": "輪"
+    },
+    {
+      "english": "sphere",
+      "romanji": "きゅうたい",
+      "japanese": "球体"
+    },
+    {
+      "english": "square",
+      "romanji": "しかっけい",
+      "japanese": "四角形"
+    },
+    {
+      "english": "triangle",
+      "romanji": "さんかっけい",
+      "japanese": "三角形"
+    },
+    {
+      "english": "wedge",
+      "romanji": "ドアストッパー",
+      "japanese": "ドアストッパー"
+    }
+  ]
+}

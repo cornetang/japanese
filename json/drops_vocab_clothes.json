@@ -1,0 +1,76 @@
+{
+  "title": "Fashion & Clothing",
+  "subtitle": "Clothes",
+  "vocab": [
+    {
+      "english": "shirt",
+      "romanji": "シャツ",
+      "japanese": "シャツ"
+    },
+    {
+      "english": "jeans",
+      "romanji": "ジーンズ",
+      "japanese": "ジーンズ"
+    },
+    {
+      "english": "dress",
+      "romanji": "ドレス",
+      "japanese": "ドレス"
+    },
+    {
+      "english": "skirt",
+      "romanji": "スカート",
+      "japanese": "スカート"
+    },
+    {
+      "english": "coat",
+      "romanji": "コート",
+      "japanese": "コート"
+    },
+    {
+      "english": "suit",
+      "romanji": "スーツ",
+      "japanese": "スーツ"
+    },
+    {
+      "english": "blazer",
+      "romanji": "ブレザー",
+      "japanese": "ブレザー"
+    },
+    {
+      "english": "trousers",
+      "romanji": "ズボン",
+      "japanese": "ズボン"
+    },
+    {
+      "english": "tie",
+      "romanji": "ネクタイ",
+      "japanese": "ネクタイ"
+    },
+    {
+      "english": "bowtie",
+      "romanji": "ちょうネクタイ",
+      "japanese": "蝶ネクタイ"
+    },
+    {
+      "english": "belt",
+      "romanji": "ベルト",
+      "japanese": "ベルト"
+    },
+    {
+      "english": "raincoat",
+      "romanji": "レインコート",
+      "japanese": "レインコート"
+    },
+    {
+      "english": "I get dressed",
+      "romanji": "ふくをきる",
+      "japanese": "服を着る"
+    },
+    {
+      "english": "I undress",
+      "romanji": "ふくをぬぐ",
+      "japanese": "服を脱ぐ"
+    }
+  ]
+}

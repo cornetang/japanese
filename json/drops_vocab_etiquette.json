@@ -1,0 +1,81 @@
+{
+  "title": "Japanese Specific Words",
+  "subtitle": "Etiquette",
+  "vocab": [
+    {
+      "english": "words said before meals",
+      "romanji": "いただきます",
+      "japanese": "いただきます"
+    },
+    {
+      "english": "wet hand towel",
+      "romanji": "おしぼり",
+      "japanese": "おしぼり"
+    },
+    {
+      "english": "no shoes inside",
+      "romanji": "くつをぬぐ",
+      "japanese": "靴を脱ぐ"
+    },
+    {
+      "english": "bow",
+      "romanji": "お辞儀",
+      "japanese": "お辞儀"
+    },
+    {
+      "english": "I'll be back",
+      "romanji": "いってきます",
+      "japanese": "いってきます"
+    },
+    {
+      "english": "mudroom",
+      "romanji": "げんかん",
+      "japanese": "玄関"
+    },
+    {
+      "english": "indoor shoes",
+      "romanji": "うわばき",
+      "japanese": "上履き"
+    },
+    {
+      "english": "lettimg them know you're listening",
+      "romanji": "あいづち",
+      "japanese": "相槌"
+    },
+    {
+      "english": "seat of honor",
+      "romanji": "かみざ",
+      "japanese": "上座"
+    },
+    {
+      "english": "informal cotton kimono",
+      "romanji": "ゆかた",
+      "japanese": "浴衣"
+    },
+    {
+      "english": "thank you for hosting me",
+      "romanji": "おじゃまします",
+      "japanese": "おじゃまします"
+    },
+    {
+      "english": "self-introduction",
+      "romanji": "じこしょうかい",
+      "japanese": "自己紹介"
+    },
+    {
+      "english": "honorific speech",
+      "romanji": "けいご",
+      "japanese": "敬語"
+    },
+    {
+      "english": "thank you for the meal",
+      "romanji": "ごちぞうさまでした",
+      "japanese": "ごちぞうさまでした"
+    },
+    {
+      "english": "souvenir",
+      "romanji": "おみやげ",
+      "japanese": "お土産"
+    }
+  ]
+}

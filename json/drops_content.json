@@ -3,14 +3,19 @@
     "title": "Foundation",
     "vocabList" : [
       "drops_vocab_essentials.json",
-      "drops_vocab_colours.json",
-      "drops_vocab_directions.json",
-      "drops_vocab_pronouns.json",
       "drops_vocab_numbers.json",
       "drops_vocab_moreNumbers.json",
+      "drops_vocab_colours.json",
+      "drops_vocab_shapes.json",
+      "drops_vocab_directions.json",
+      "drops_vocab_pronouns.json",
+      "drops_vocab_countries.json",
+      "drops_vocab_moreCountries.json",
+      "drops_vocab_weather.json",
+      "drops_vocab_nationalities.json",
+      "drops_vocab_moreNationalities.json",
       "drops_vocab_counting.json",
-      "drops_vocab_counting2.json",
-      "drops_vocab_weather.json"
+      "drops_vocab_counting2.json"
     ]
   },
   {
