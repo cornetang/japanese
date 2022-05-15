@@ -1,0 +1,91 @@
+{
+  "title": "Nature & Animals",
+  "subtitle": "Animals",
+  "vocab": [
+    {
+      "english": "dog",
+      "romanji": "いぬ",
+      "japanese": "犬"
+    },
+    {
+      "english": "cat",
+      "romanji": "ねこ",
+      "japanese": "猫"
+    },
+    {
+      "english": "bird",
+      "romanji": "とり",
+      "japanese": "鳥"
+    },
+    {
+      "english": "horse",
+      "romanji": "うま",
+      "japanese": "馬"
+    },
+    {
+      "english": "mouse",
+      "romanji": "ネズミ",
+      "japanese": "ネズミ/鼠"
+    },
+    {
+      "english": "rabbit",
+      "romanji": "ウサギ",
+      "japanese": "ウサギ/兎"
+    },
+    {
+      "english": "pig",
+      "romanji": "ぶた",
+      "japanese": "豚"
+    },
+    {
+      "english": "chicken",
+      "romanji": "にわとり",
+      "japanese": "鶏"
+    },
+    {
+      "english": "cow",
+      "romanji": "うし",
+      "japanese": "牛"
+    },
+    {
+      "english": "bull",
+      "romanji": "おうし",
+      "japanese": "雄牛"
+    },
+    {
+      "english": "donkey",
+      "romanji": "ロバ",
+      "japanese": "ロバ"
+    },
+    {
+      "english": "duck",
+      "romanji": "アヒル",
+      "japanese": "アヒル/鴨"
+    },
+    {
+      "english": "goat",
+      "romanji": "ヤギ",
+      "japanese": "ヤギ/山羊"
+    },
+    {
+      "english": "sheep",
+      "romanji": "ひつじ",
+      "japanese": "羊"
+    },
+    {
+      "english": "turkey",
+      "romanji": "しちめんちょう",
+      "japanese": "七面鳥"
+    },
+    {
+      "english": "pigeon",
+      "romanji": "はと",
+      "japanese": "鳩"
+    },
+    {
+      "english": "I feed",
+      "romanji": "たべものをあたえる",
+      "japanese": "食べ物を与える"
+    }
+  ]
+}

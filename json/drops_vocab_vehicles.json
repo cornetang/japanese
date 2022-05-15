@@ -1,0 +1,86 @@
+{
+  "title": "Transportation & Vehicles",
+  "subtitle": "Vehicles",
+  "vocab": [
+    {
+      "english": "fire engine",
+      "romanji": "しょうぼうしゃ",
+      "japanese": "消防車"
+    },
+    {
+      "english": "pickup truck",
+      "romanji": "ピックアプトラック",
+      "japanese": "ピックアプトラック"
+    },
+    {
+      "english": "police car",
+      "romanji": "パトカー",
+      "japanese": "パトカー"
+    },
+    {
+      "english": "electic car",
+      "romanji": "でんきじどうしゃ",
+      "japanese": "電気自動車"
+    },
+    {
+      "english": "SUV",
+      "romanji": "エスユーヴィー",
+      "japanese": "エスユーヴィー"
+    },
+    {
+      "english": "convertible",
+      "romanji": "オープンカー",
+      "japanese": "オープンカー"
+    },
+    {
+      "english": "rickshaw",
+      "romanji": "じんりきしゃ",
+      "japanese": "人力車"
+    },
+    {
+      "english": "minivan",
+      "romanji": "ミニバン",
+      "japanese": "ミニバン"
+    },
+    {
+      "english": "bulldozer",
+      "romanji": "ブルドーザー",
+      "japanese": "ブルドーザー"
+    },
+    {
+      "english": "auto transporter",
+      "romanji": "キャリアカー",
+      "japanese": "キャリアカー"
+    },
+    {
+      "english": "dump truck",
+      "romanji": "ダンプトラック",
+      "japanese": "ダンプトラック"
+    },
+    {
+      "english": "glider",
+      "romanji": "グライダー",
+      "japanese": "グライダー"
+    },
+    {
+      "english": "rocket",
+      "romanji": "ロケット",
+      "japanese": "ロケット"
+    },
+    {
+      "english": "drone",
+      "romanji": "ドローン",
+      "japanese": "ドローン"
+    },
+    {
+      "english": "I accelerate",
+      "romanji": "かそくする",
+      "japanese": "加速する"
+    },
+    {
+      "english": "I brake",
+      "romanji": "ブリーキをかげる",
+      "japanese": "ブリーキをかげる"
+    }
+  ]
+}

@@ -1,0 +1,96 @@
+{
+  "title": "City & Shops",
+  "subtitle": "Buildings",
+  "vocab": [
+    {
+      "english": "church",
+      "romanji": "きょうかい",
+      "japanese": "教会"
+    },
+    {
+      "english": "petrol station",
+      "romanji": "ガソリンスタンド",
+      "japanese": "ガソリンスタンド"
+    },
+    {
+      "english": "library",
+      "romanji": "としょかん",
+      "japanese": "図書館"
+    },
+    {
+      "english": "factory",
+      "romanji": "こうじょう",
+      "japanese": "工場"
+    },
+    {
+      "english": "museum",
+      "romanji": "びじゅつかん",
+      "japanese": "美術館"
+    },
+    {
+      "english": "skyscraper",
+      "romanji": "ちょうこうそうビル",
+      "japanese": "超高層ビル"
+    },
+    {
+      "english": "theater",
+      "romanji": "げきじょう",
+      "japanese": "劇場"
+    },
+    {
+      "english": "café",
+      "romanji": "きっさてん",
+      "japanese": "喫茶店"
+    },
+    {
+      "english": "post office",
+      "romanji": "ゆうびんきょく",
+      "japanese": "郵便局"
+    },
+    {
+      "english": "hospital",
+      "romanji": "びょういん",
+      "japanese": "病院"
+    },
+    {
+      "english": "pharmacy",
+      "romanji": "やっきょく",
+      "japanese": "薬局"
+    },
+    {
+      "english": "police station",
+      "romanji": "けいさつしょ",
+      "japanese": "警察署"
+    },
+    {
+      "english": "theme park",
+      "romanji": "テーマパーク",
+      "japanese": "テーマパーク"
+    },
+    {
+      "english": "school",
+      "romanji": "がっこう",
+      "japanese": "学校"
+    },
+    {
+      "english": "butcher shop",
+      "romanji": "にくや",
+      "japanese": "肉屋"
+    },
+    {
+      "english": "I leave",
+      "romanji": "しゅっぱつする",
+      "japanese": "出発する"
+    },
+    {
+      "english": "I pull",
+      "romanji": "ひく",
+      "japanese": "引く"
+    },
+    {
+      "english": "I push",
+      "romanji": "おす",
+      "japanese": "押す"
+    }
+  ]
+}

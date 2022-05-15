@@ -1,0 +1,81 @@
+{
+  "title": "Verbs & Phrases",
+  "subtitle": "Basic Phrases",
+  "vocab": [
+    {
+      "english": "hello",
+      "romanji": "こんにちは",
+      "japanese": "こんにちは"
+    },
+    {
+      "english": "thank you",
+      "romanji": "ありがとうございます",
+      "japanese": "ありがとうございます"
+    },
+    {
+      "english": "bye",
+      "romanji": "さようなら",
+      "japanese": "さようなら"
+    },
+    {
+      "english": "please",
+      "romanji": "おねがいします",
+      "japanese": "お願いします"
+    },
+    {
+      "english": "How are you?",
+      "romanji": "おげんきですか？",
+      "japanese": "お元気ですか？"
+    },
+    {
+      "english": "Fine, thank you.",
+      "romanji": "おかげさまでげんきです",
+      "japanese": "おかげさまで元気です",
+    },
+    {
+      "english": "How old are you?",
+      "romanji": "なんさいですか？",
+      "japanese": "何歳ですか？"
+    },
+    {
+      "english": "Nice to meet you!",
+      "romanji": "はじめまして",
+      "japanese": "初めまして"
+    },
+    {
+      "english": "What do you do?",
+      "romanji": "しょくぎょうはなんですか？",
+      "japanese": "職業は何ですか？"
+    },
+    {
+      "english": "Cheers!",
+      "romanji": "かんぱい！",
+      "japanese": "乾杯！"
+    },
+    {
+      "english": "Are you from here?",
+      "romanji": "じもとのかたですか？",
+      "japanese": "地元の方ですか？"
+    },
+    {
+      "english": "What is your name?",
+      "romanji": "おなまえはなんですか？",
+      "japanese": "お名前は何ですか？"
+    },
+    {
+      "english": "My name is Alex.",
+      "romanji": "わたしのなまえはアテクスです",
+      "japanese": "私の名前はアテクスです"
+    },
+    {
+      "english": "I am happy.",
+      "romanji": "うれしい",
+      "japanese": "嬉しい"
+    },
+    {
+      "english": "How's the weather?",
+      "romanji": "おてんきはどうですか？",
+      "japanese": "お天気はどうですか？"
+    }
+  ]
+}

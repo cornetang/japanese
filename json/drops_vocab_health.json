@@ -1,0 +1,96 @@
+{
+	"title": "People & Relationships",
+	"subtitle": "Health",
+	"vocab": [
+	  {
+	    "english": "ambulance",
+	    "romanji": "きゅうきゅうしゃ",
+	    "japanese": "救急車"
+	  },
+	  {
+	    "english": "plaster",
+	    "romanji": "ばんそうこう",
+	    "japanese": "絆創膏"
+	  },
+	  {
+	    "english": "makeup",
+	    "romanji": "けしょう",
+	    "japanese": "化粧"
+	  },
+	  {
+	    "english": "hairbrush",
+	    "romanji": "ヘアブラシ",
+	    "japanese": "ヘアブラシ"
+	  },
+	  {
+	    "english": "dizzy",
+	    "romanji": "めまい",
+	    "japanese": "目眩"
+	  },
+	  {
+	    "english": "cough",
+	    "romanji": "せき",
+	    "japanese": "咳"
+	  },
+	  {
+	    "english": "fever",
+	    "romanji": "ねつ",
+	    "japanese": "熱"
+	  },
+	  {
+	    "english": "headache",
+	    "romanji": "ずつう",
+	    "japanese": "頭痛"
+	  },
+	  {
+	    "english": "medicine",
+	    "romanji": "くすり",
+	    "japanese": "薬"
+	  },
+	  {
+	    "english": "toilet",
+	    "romanji": "トイレ",
+	    "japanese": "トイレ"
+	  },
+	  {
+	    "english": "toothache",
+	    "romanji": "はいた",
+	    "japanese": "歯痛"
+	  },
+	  {
+	    "english": "toothbrush",
+	    "romanji": "はブラシ",
+	    "japanese": "歯ブラシ"
+	  },
+	  {
+	    "english": "toothpaste",
+	    "romanji": "はみがきこ",
+	    "japanese": "歯磨き粉"
+	  },
+	  {
+	    "english": "towel",
+	    "romanji": "タオル",
+	    "japanese": "タオル"
+	  },
+	  {
+	    "english": "soap",
+	    "romanji": "せっけん",
+	    "japanese": "石鹸"
+	  },
+	  {
+	    "english": "I bath",
+	    "romanji": "おふろにはいる",
+	    "japanese": "お風呂に入る"
+	  },
+	  {
+	    "english": "I brush my teeth",
+	    "romanji": "はをみがく",
+	    "japanese": "歯を磨く"
+	  },
+	  {
+	    "english": "I shower",
+	    "romanji": "シャワーをあびる",
+	    "japanese": "シャワーを浴びる"
+	  }
+	]
+}
